@@ -1,90 +1,95 @@
 "use client";
 
-// Fires the `purchase` event — the most important event on the site.
-//
-// Duplicate protection: if the customer reloads this page, or comes back to it
-// later, we must NOT send the same purchase again (a very common real-world
-// GA4 data quality bug that inflates revenue). We keep a list of transaction
-// IDs that were already tracked and skip any we've seen.
-
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { formatPrice } from "@/lib/catalog";
-import { CURRENCY, track } from "@/lib/analytics";
-import { LAST_ORDER_KEY, TRACKED_ORDERS_KEY, type PlacedOrder } from "@/lib/order";
+import { pushPurchase } from "@/lib/datalayer";
+import { ORDER_KEY, SENT_PURCHASES_KEY, type Order } from "@/lib/order";
 
 export function ConfirmationView() {
-  const [order, setOrder] = useState<PlacedOrder | null | undefined>(undefined);
+  const [order, setOrder] = useState<Order | null | undefined>(undefined);
 
   useEffect(() => {
-    let placed: PlacedOrder | null = null;
+    let placed: Order | null = null;
     try {
-      const raw = sessionStorage.getItem(LAST_ORDER_KEY);
-      placed = raw ? (JSON.parse(raw) as PlacedOrder) : null;
+      const raw = sessionStorage.getItem(ORDER_KEY);
+      placed = raw ? JSON.parse(raw) : null;
     } catch {}
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setOrder(placed);
     if (!placed) return;
 
-    let tracked: string[] = [];
+    // purchase — once per order. Reloading this page must not send the same
+    // order again, so order ids that were already pushed are remembered.
+    let sent: string[] = [];
     try {
-      tracked = JSON.parse(localStorage.getItem(TRACKED_ORDERS_KEY) || "[]");
+      sent = JSON.parse(localStorage.getItem(SENT_PURCHASES_KEY) || "[]");
     } catch {}
-    if (tracked.includes(placed.transactionId)) return; // already sent — don't double count
-
-    track("purchase", {
-      user_id: placed.userId ?? undefined,
-      ecommerce: {
-        transaction_id: placed.transactionId,
-        currency: CURRENCY,
-        value: placed.totals.value,
-        tax: placed.totals.tax,
-        shipping: placed.totals.shipping,
-        ...(placed.coupon ? { coupon: placed.coupon } : {}),
-        shipping_tier: placed.shippingTier,
-        payment_type: placed.paymentType,
-        items: placed.items,
-      },
-    });
+    if (sent.includes(placed.id)) return;
     try {
-      localStorage.setItem(TRACKED_ORDERS_KEY, JSON.stringify([...tracked, placed.transactionId].slice(-50)));
+      localStorage.setItem(SENT_PURCHASES_KEY, JSON.stringify([...sent, placed.id].slice(-50)));
     } catch {}
+    pushPurchase(
+      placed.id,
+      placed.total,
+      placed.items.map(({ item_id, item_name, item_category, price, quantity }) => ({ item_id, item_name, item_category, price, quantity })),
+    );
   }, []);
 
-  if (order === undefined) return <div className="mx-auto max-w-3xl px-4 py-16">Loading…</div>;
+  if (order === undefined) return <div className="mx-auto min-h-[50vh] max-w-3xl px-5 py-16" />;
 
   if (order === null) {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-20 text-center">
-        <h1 className="text-3xl font-black tracking-tight">No recent order found</h1>
-        <Link href="/shop" className="mt-6 inline-block underline">Continue shopping</Link>
+      <div className="mx-auto max-w-3xl px-5 py-28 text-center">
+        <h1 className="font-display text-3xl font-medium tracking-tight">No recent order</h1>
+        <Link href="/" className="mt-6 inline-block underline underline-offset-4">Back to Verdian</Link>
       </div>
     );
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <p className="text-sm font-semibold uppercase tracking-widest text-forest">Order confirmed</p>
-      <h1 className="mt-2 text-4xl font-black tracking-tight">Thanks, {order.firstName}!</h1>
-      <p className="mt-3 text-stone-600">
-        Your order <span className="font-mono font-semibold text-black">{order.transactionId}</span> is confirmed. A receipt would be sent to {order.email} (this is a demo store — nothing ships).
+    <div className="mx-auto max-w-3xl px-5 py-16 sm:px-8">
+      <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">Order confirmed</p>
+      <h1 className="mt-4 font-display text-5xl font-medium tracking-tight">Thank you, {order.name.split(" ")[0]}.</h1>
+      <p className="mt-5 leading-relaxed text-muted">
+        Your order <span className="font-medium text-fg">{order.id}</span> has been placed. A confirmation would be sent to{" "}
+        {order.email}.
       </p>
-      <ul className="mt-8 divide-y divide-stone-200 border-y border-stone-200 text-sm">
-        {order.items.map((i) => (
-          <li key={`${i.item_id}-${i.item_variant}-${i.item_size}`} className="flex justify-between py-3">
-            <span>{i.item_name} <span className="text-stone-500">· {i.item_variant} · {i.item_size} × {i.quantity}</span></span>
-            <span>{formatPrice(i.price * i.quantity)}</span>
-          </li>
-        ))}
-      </ul>
-      <dl className="mt-4 ml-auto max-w-xs space-y-1 text-sm">
-        {order.totals.discount > 0 && <div className="flex justify-between"><dt>Discount</dt><dd>−{formatPrice(order.totals.discount)}</dd></div>}
-        <div className="flex justify-between"><dt>Shipping</dt><dd>{order.totals.shipping === 0 ? "Free" : formatPrice(order.totals.shipping)}</dd></div>
-        <div className="flex justify-between"><dt>Tax</dt><dd>{formatPrice(order.totals.tax)}</dd></div>
-        <div className="flex justify-between font-bold"><dt>Total</dt><dd>{formatPrice(order.totals.total)}</dd></div>
-      </dl>
-      <Link href="/shop" className="mt-10 inline-block rounded-full bg-black px-7 py-3.5 font-semibold text-white hover:bg-forest">
-        Keep shopping
+
+      <div className="mt-12 grid gap-8 border-t border-line pt-8 text-sm sm:grid-cols-2">
+        <div>
+          <h2 className="text-xs uppercase tracking-[0.16em] text-muted">Shipping to</h2>
+          <p className="mt-3 leading-relaxed">
+            {order.name}
+            <br />
+            {order.address.street}
+            <br />
+            {order.address.postalCode} {order.address.city}
+            <br />
+            {order.address.country}
+          </p>
+        </div>
+        <div>
+          <h2 className="text-xs uppercase tracking-[0.16em] text-muted">Items</h2>
+          <ul className="mt-3 space-y-2">
+            {order.items.map((i) => (
+              <li key={`${i.item_id}-${i.size}`} className="flex justify-between gap-4">
+                <span>
+                  {i.item_name} <span className="text-muted">· {i.size} × {i.quantity}</span>
+                </span>
+                <span>{formatPrice(i.price * i.quantity)}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 flex justify-between border-t border-line pt-4 text-base">
+            <span>Total</span>
+            <span>{formatPrice(order.total)}</span>
+          </p>
+        </div>
+      </div>
+
+      <Link href="/" className="mt-14 inline-block rounded-full bg-brand px-7 py-3.5 text-sm font-medium text-brand-fg">
+        Continue shopping
       </Link>
     </div>
   );

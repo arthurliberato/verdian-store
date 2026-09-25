@@ -1,46 +1,37 @@
 import Link from "next/link";
-import { categories } from "@/lib/catalog";
-import { NewsletterForm } from "./NewsletterForm";
+import { lines } from "@/lib/catalog";
 
 export function Footer() {
   return (
-    <footer className="mt-24 bg-stone-950 text-stone-300">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
+    <footer className="mt-32 border-t border-line">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[2fr_1fr_1fr]">
         <div>
-          <p className="text-2xl font-black tracking-tight text-white">VERDIAN</p>
-          <p className="mt-3 max-w-md text-sm">Get early access to limited drops, restocks, and member-only offers.</p>
-          <div className="mt-5 max-w-xl">
-            <NewsletterForm location="footer" />
-          </div>
+          <p className="font-display text-xl font-semibold tracking-[0.18em]">VERDIAN</p>
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
+            Considered footwear and apparel, made in small runs from leather, suede, and recycled materials.
+          </p>
         </div>
         <div>
-          <p className="font-semibold text-white">Shop</p>
-          <ul className="mt-3 space-y-2 text-sm">
-            {categories.map((c) => (
-              <li key={c.slug}>
-                <Link href={`/shop/${c.slug}`} className="hover:text-white">
-                  {c.name}
-                </Link>
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">Shop</p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {lines.map((l) => (
+              <li key={l.slug}>
+                <Link href={`/shop/${l.slug}`} className="hover:text-brand">{l.name}</Link>
               </li>
             ))}
-            <li>
-              <Link href="/shop" className="hover:text-white">
-                Shop all
-              </Link>
-            </li>
           </ul>
         </div>
         <div>
-          <p className="font-semibold text-white">Account</p>
-          <ul className="mt-3 space-y-2 text-sm">
-            <li><Link href="/account" className="hover:text-white">Sign in</Link></li>
-            <li><Link href="/wishlist" className="hover:text-white">Wishlist</Link></li>
-            <li><Link href="/cart" className="hover:text-white">Cart</Link></li>
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">Help</p>
+          <ul className="mt-4 space-y-2 text-sm text-muted">
+            <li>Free shipping and returns</li>
+            <li>Size guide</li>
+            <li>Care instructions</li>
           </ul>
         </div>
       </div>
-      <p className="border-t border-white/10 py-6 text-center text-xs text-stone-500">
-        Verdian is a fictional store built for analytics practice. No real orders are placed.
+      <p className="border-t border-line px-5 py-6 text-center text-xs text-muted">
+        © Verdian. A fictional brand — no real orders are placed.
       </p>
     </footer>
   );

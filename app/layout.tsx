@@ -1,39 +1,31 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
-import { StoreProvider } from "@/lib/store";
-import { GoogleTagManager } from "@/components/GoogleTagManager";
+import { Inter, Outfit } from "next/font/google";
+import { CartProvider } from "@/lib/cart";
 import { PageViewTracker, QueryChangeTracker } from "@/components/PageViewTracker";
-import { DataLayerDebug } from "@/components/DataLayerDebug";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Fonts are downloaded at build time and self-hosted by Next.js —
+// no requests to Google from the visitor's browser.
+const outfit = Outfit({ variable: "--font-outfit", subsets: ["latin"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Verdian — Classic, Performance & Street Footwear",
-    template: "%s | Verdian",
+    default: "Verdian — Classic, Performance & Street",
+    template: "%s — Verdian",
   },
-  description: "Heritage silhouettes, performance running gear, and limited street drops.",
+  description: "Considered footwear and apparel. Timeless Classics, technical Performance, and limited Street drops.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${outfit.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
-        <GoogleTagManager />
-        <StoreProvider>
-          {/* Must come before the page content so page_view fires first. */}
+        <CartProvider>
+          {/* Rendered before the page so page_view is pushed before view_item. */}
           <PageViewTracker />
           <Suspense fallback={null}>
             <QueryChangeTracker />
@@ -41,8 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
-          <DataLayerDebug />
-        </StoreProvider>
+        </CartProvider>
       </body>
     </html>
   );

@@ -1,47 +1,42 @@
 import Link from "next/link";
-import { formatPrice, type Product } from "@/lib/catalog";
-import { ProductArt } from "./ProductArt";
+import { formatPrice, siblingColorways, type Product } from "@/lib/catalog";
+import { ProductImage } from "./ProductImage";
 
-export function ProductCard({ product, onSelect }: { product: Product; onSelect?: () => void }) {
-  const allSoldOut = product.soldOutSizes.length === product.sizes.length;
-  const fewLeft = product.soldOutSizes.length >= 3 || (product.limited && product.lowStockSizes.length > 0);
+export function ProductCard({ product }: { product: Product }) {
+  const colorCount = siblingColorways(product).length;
   return (
-    <Link href={`/products/${product.slug}`} onClick={onSelect} className="group block" data-item-id={product.id}>
-      <div className="relative overflow-hidden rounded-xl bg-stone-100">
-        <ProductArt
-          type={product.type}
-          color={product.colors[0]}
-          className="aspect-square w-full transition-transform duration-500 group-hover:scale-105"
+    <Link href={`/products/${product.slug}`} className="group block">
+      <div className="relative overflow-hidden rounded-sm bg-surface">
+        <ProductImage
+          product={product}
+          className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
-        <div className="absolute left-3 top-3 flex flex-col gap-1">
-          {product.limited && <Badge className="bg-black text-white">Limited drop</Badge>}
-          {product.isNew && !product.limited && <Badge className="bg-white text-black">New</Badge>}
-          {product.compareAtPrice && <Badge className="bg-red-600 text-white">Sale</Badge>}
-        </div>
-        {allSoldOut ? (
-          <Badge className="absolute bottom-3 left-3 bg-white text-black">Sold out</Badge>
-        ) : fewLeft ? (
-          <Badge className="absolute bottom-3 left-3 bg-amber-300 text-black">Few sizes left</Badge>
-        ) : null}
+        {product.tag && (
+          <span className="absolute left-3 top-3 rounded-full bg-bg/90 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.12em]">
+            {product.tag}
+          </span>
+        )}
       </div>
-      <div className="mt-3 flex items-start justify-between gap-4">
+      <div className="mt-3 flex items-start justify-between gap-3 text-sm">
         <div>
-          <h3 className="font-medium leading-tight">{product.name}</h3>
-          <p className="text-sm text-stone-500 capitalize">
-            {product.category} · {product.colors.length} {product.colors.length === 1 ? "color" : "colors"}
+          <h3 className="font-medium">{product.model}</h3>
+          <p className="text-muted">
+            {product.colorway}
+            {colorCount > 1 && <span> · {colorCount} colors</span>}
           </p>
         </div>
-        <div className="text-right shrink-0">
-          <p className="font-medium">{formatPrice(product.price)}</p>
-          {product.compareAtPrice && (
-            <p className="text-sm text-stone-400 line-through">{formatPrice(product.compareAtPrice)}</p>
-          )}
-        </div>
+        <p className="shrink-0">{formatPrice(product.price)}</p>
       </div>
     </Link>
   );
 }
 
-function Badge({ children, className }: { children: React.ReactNode; className: string }) {
-  return <span className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide ${className}`}>{children}</span>;
+export function ProductGrid({ products }: { products: Product[] }) {
+  return (
+    <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
+      {products.map((p) => (
+        <ProductCard key={p.id} product={p} />
+      ))}
+    </div>
+  );
 }

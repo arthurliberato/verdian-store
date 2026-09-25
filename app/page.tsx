@@ -1,57 +1,61 @@
 import Link from "next/link";
-import { categories, products } from "@/lib/catalog";
-import { ProductArt } from "@/components/ProductArt";
-import { ProductList } from "@/components/ProductList";
-import { PromoLink } from "@/components/PromoBanner";
-import { NewsletterForm } from "@/components/NewsletterForm";
+import { getProductById, lines, products, formatPrice } from "@/lib/catalog";
+import { ProductGrid } from "@/components/ProductCard";
+import { ProductImage } from "@/components/ProductImage";
 
-const drops = products.filter((p) => p.limited);
-const classics = products.filter((p) => p.category === "classic").slice(0, 4);
-const heroProduct = products.find((p) => p.id === "VRD-ST-001")!;
+const hero = getProductById("VRD-ARC-CHALK-FOREST")!;
+const featured = ["VRD-PUL-GLACIER", "VRD-AMU-ACID", "VRD-SND-FOREST", "VRD-BRU-ATELIER-SAND", "VRD-PLT-WHITE-FOREST", "VRD-ECO-INDIGO", "VRD-HOD-FOREST", "VRD-CIM-MOSS-RUST"]
+  .map((id) => getProductById(id)!)
+  .filter(Boolean);
+const lineCovers: Record<string, string> = { classic: "VRD-SND-SAND", performance: "VRD-PUL-EMBER", street: "VRD-FSC-FOREST-BONE" };
+const eco = products.filter((p) => p.model === "Eco");
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-stone-100">
-        <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:py-20">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-forest">Drop 07 · Available now</p>
-            <h1 className="mt-3 text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">Phantom Hi OG</h1>
-            <p className="mt-5 max-w-md text-lg text-stone-600">
-              Tumbled leather, a numbered insole, and a colorway we will never make again. Limited sizes remaining.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <PromoLink
-                promotion={{ id: "drop-07", name: "Drop 07 Phantom Hi OG", creative: "hero_phantom_bred", slot: "home_hero", href: `/products/${heroProduct.slug}` }}
-                className="rounded-full bg-black px-7 py-3.5 font-semibold text-white hover:bg-forest"
-              >
-                Shop the drop
-              </PromoLink>
-              <PromoLink
-                promotion={{ id: "street-all", name: "Street collection", creative: "hero_secondary_cta", slot: "home_hero_secondary", href: "/shop/street" }}
-                className="rounded-full border border-black px-7 py-3.5 font-semibold hover:bg-black hover:text-white"
-              >
-                All Street
-              </PromoLink>
-            </div>
+      <section className="mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-10 sm:px-8 md:grid-cols-[1fr_1.1fr] md:items-center md:pt-16">
+        <div className="order-2 md:order-1">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">The Classic line</p>
+          <h1 className="mt-5 font-display text-5xl font-medium leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+            Made to be <br className="hidden sm:block" />worn in.
+          </h1>
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-muted">
+            The Arco is our flagship: full-grain leather, a stitched cupsole, and a shape we haven&apos;t needed to change.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-4">
+            <Link
+              href={`/products/${hero.slug}`}
+              className="rounded-full bg-brand px-7 py-3.5 text-sm font-medium text-brand-fg transition-opacity hover:opacity-90"
+            >
+              Shop Arco — {formatPrice(hero.price)}
+            </Link>
+            <Link href="/shop/classic" className="text-sm underline decoration-line underline-offset-8 hover:decoration-fg">
+              Explore Classic
+            </Link>
           </div>
-          <ProductArt type={heroProduct.type} color={heroProduct.colors[0]} className="w-full rounded-2xl" />
         </div>
+        <Link href={`/products/${hero.slug}`} className="order-1 block overflow-hidden rounded-sm bg-surface md:order-2">
+          <ProductImage product={hero} priority sizes="(min-width: 768px) 55vw, 100vw" className="aspect-[5/4] w-full object-cover" />
+        </Link>
       </section>
 
-      {/* Categories */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <h2 className="text-2xl font-bold tracking-tight">Shop by category</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {categories.map((c) => {
-            const p = products.find((x) => x.category === c.slug)!;
+      {/* Line navigation */}
+      <section className="mx-auto max-w-7xl px-5 sm:px-8" aria-labelledby="lines-heading">
+        <h2 id="lines-heading" className="sr-only">Shop by line</h2>
+        <div className="grid gap-4 md:grid-cols-3">
+          {lines.map((l) => {
+            const cover = getProductById(lineCovers[l.slug])!;
             return (
-              <Link key={c.slug} href={`/shop/${c.slug}`} className="group relative overflow-hidden rounded-2xl">
-                <ProductArt type={p.type} color={p.colors[0]} className="aspect-[4/3] w-full transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5 text-white">
-                  <p className="text-2xl font-bold">{c.name}</p>
-                  <p className="text-sm opacity-90">{c.tagline}</p>
+              <Link key={l.slug} href={`/shop/${l.slug}`} className="group relative block overflow-hidden rounded-sm bg-surface">
+                <ProductImage
+                  product={cover}
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-6 pt-20 text-white">
+                  <p className="text-xs uppercase tracking-[0.2em] opacity-80">{l.tagline}</p>
+                  <p className="mt-1 font-display text-3xl font-medium">{l.name}</p>
                 </div>
               </Link>
             );
@@ -59,54 +63,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Limited drops */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-        <div className="flex items-end justify-between">
+      {/* Featured */}
+      <section className="mx-auto max-w-7xl px-5 pt-28 sm:px-8">
+        <div className="flex items-end justify-between gap-6">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">Limited drops</h2>
-            <p className="text-stone-500">Numbered releases. No restocks.</p>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand">This season</p>
+            <h2 className="mt-3 font-display text-3xl font-medium tracking-tight sm:text-4xl">Featured</h2>
           </div>
-          <Link href="/shop/street" className="text-sm font-semibold underline underline-offset-4">View all</Link>
         </div>
-        <div className="mt-6">
-          <ProductList products={drops} listId="home_limited_drops" listName="Home - Limited drops" />
+        <div className="mt-10">
+          <ProductGrid products={featured} />
         </div>
       </section>
 
-      {/* Mid-page promotion */}
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <PromoLink
-          promotion={{ id: "performance-fall", name: "Fall running season", creative: "banner_velocity_run", slot: "home_mid_banner", href: "/shop/performance" }}
-          className="block rounded-2xl bg-forest px-8 py-14 text-white hover:opacity-95"
-        >
-          <p className="text-sm font-semibold uppercase tracking-widest opacity-80">Performance</p>
-          <p className="mt-2 text-4xl font-black tracking-tight">Run further this fall.</p>
-          <p className="mt-2 max-w-lg opacity-90">The Velocity Run 3 and Endurance Max, built for training season.</p>
-          <span className="mt-6 inline-block rounded-full bg-white px-6 py-3 font-semibold text-black">Shop Performance</span>
-        </PromoLink>
-      </section>
-
-      {/* Classics */}
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-        <div className="flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight">The classics</h2>
-            <p className="text-stone-500">Timeless silhouettes, made for comfort.</p>
+      {/* Editorial: Eco capsule */}
+      <section className="mx-auto mt-28 max-w-7xl px-5 sm:px-8">
+        <div className="grid overflow-hidden rounded-sm bg-forest text-[#f1eee7] md:grid-cols-2">
+          <div className="flex flex-col justify-center p-10 sm:p-16">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] opacity-70">Street · Eco capsule</p>
+            <h2 className="mt-4 font-display text-4xl font-medium leading-tight tracking-tight">
+              Recycled uppers. <br />Natural rubber. <br />Plant-based dye.
+            </h2>
+            <p className="mt-5 max-w-md leading-relaxed opacity-80">
+              The Eco is our lowest-impact sneaker yet, offered in undyed and plant-dyed colorways that change as you wear them.
+            </p>
+            <Link
+              href="/shop/street?type=Eco+Capsule"
+              className="mt-8 w-fit rounded-full bg-[#f1eee7] px-7 py-3.5 text-sm font-medium text-forest transition-opacity hover:opacity-90"
+            >
+              Shop the capsule
+            </Link>
           </div>
-          <Link href="/shop/classic" className="text-sm font-semibold underline underline-offset-4">View all</Link>
-        </div>
-        <div className="mt-6">
-          <ProductList products={classics} listId="home_classics" listName="Home - Classics" />
+          <div className="grid grid-cols-2">
+            {eco.map((p) => (
+              <Link key={p.id} href={`/products/${p.slug}`} aria-label={`${p.model} ${p.colorway}`}>
+                <ProductImage product={p} sizes="25vw" className="aspect-square w-full object-cover" />
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="mx-auto max-w-3xl px-4 pt-20 text-center sm:px-6">
-        <h2 className="text-3xl font-bold tracking-tight">Never miss a drop</h2>
-        <p className="mt-2 text-stone-500">Sign up for early access to limited releases and member offers.</p>
-        <div className="mt-6">
-          <NewsletterForm location="home" />
-        </div>
+      {/* Brand values */}
+      <section className="mx-auto mt-28 grid max-w-7xl gap-10 px-5 sm:px-8 md:grid-cols-3">
+        {[
+          ["Built to last", "Full-grain leathers, stitched soles, and a resoling program for our Classic line."],
+          ["Made responsibly", "Recycled polyester, natural rubber, and leather from certified tanneries."],
+          ["Free returns", "Free shipping and 30-day returns on every order, no questions asked."],
+        ].map(([title, body]) => (
+          <div key={title} className="border-t border-line pt-6">
+            <h3 className="font-display text-lg font-medium">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">{body}</p>
+          </div>
+        ))}
       </section>
     </>
   );
