@@ -1,0 +1,13 @@
+[
+  { "name": "id", "type": "STRING", "mode": "REQUIRED", "description": "SKU. Matches item_id in GA4 events" },
+  { "name": "name", "type": "STRING", "mode": "REQUIRED", "description": "Model + colorway, matches item_name in GA4 events" },
+  { "name": "model", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "line", "type": "STRING", "mode": "REQUIRED", "description": "Classic / Performance / Street" },
+  { "name": "category", "type": "STRING", "mode": "REQUIRED", "description": "footwear / apparel / accessories" },
+  { "name": "subcategory", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "colorway", "type": "STRING", "mode": "REQUIRED" },
+  { "name": "price", "type": "NUMERIC", "mode": "REQUIRED", "description": "USD" },
+  { "name": "sizes", "type": "STRING", "mode": "REPEATED" },
+  { "name": "description", "type": "STRING", "mode": "NULLABLE" },
+  { "name": "image", "type": "STRING", "mode": "NULLABLE" }
+]
