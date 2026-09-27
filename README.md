@@ -63,3 +63,10 @@ Example:
 ```
 
 Type `dataLayer` in the browser console to inspect pushes.
+
+## Google Tag Manager
+
+The GTM container loads only when `NEXT_PUBLIC_GTM_ID` is set (see
+`.env.example`). On Vercel: Project → Settings → Environment Variables, then
+redeploy — the value is baked in at build time. Without it, the site loads no
+tracking scripts at all.

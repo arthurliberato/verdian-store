@@ -32,8 +32,9 @@ Store (Next.js, Vercel) → GTM → GA4 → BigQuery → dbt → Looker Studio
 - [x] Dataset `raw_catalog` created (US)
 - [x] Catalog export script (`npm run export:catalog`)
 - [ ] Load `products.jsonl` into `raw_catalog.products`
-- [ ] Deploy the store to Vercel
-- [ ] Create GTM container, add it to the site
+- [x] Deploy the store to Vercel (https://verdian-store.vercel.app)
+- [x] Create GTM container (`GTM-MTT2JZP7`)
+- [ ] Add the container to the site (`NEXT_PUBLIC_GTM_ID` in Vercel)
 - [ ] Create GA4 property, configure tags in GTM (add `currency` in GTM)
 - [ ] Link GA4 to BigQuery (daily export)
 - [ ] First queries on the GA4 export (`UNNEST(items)`, join to catalog)
