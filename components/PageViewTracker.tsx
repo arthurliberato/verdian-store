@@ -16,8 +16,20 @@ import { pushPageView } from "@/lib/datalayer";
 
 let lastPath: string | null = null;
 
+// Query parameters added by debugging tools, not by the site. GTM's Preview
+// mode appends ?gtm_debug=<timestamp>; left in, every test session would show
+// up in reports as a different page. Real parameters (e.g. ?type=Running) stay.
+const DEBUG_PARAMS = ["gtm_debug"];
+
+function currentPath() {
+  const params = new URLSearchParams(window.location.search);
+  DEBUG_PARAMS.forEach((p) => params.delete(p));
+  const query = params.toString();
+  return window.location.pathname + (query ? `?${query}` : "");
+}
+
 function track() {
-  const path = window.location.pathname + window.location.search;
+  const path = currentPath();
   if (path === lastPath) return;
   lastPath = path;
   pushPageView(path);
