@@ -1,0 +1,76 @@
+# Synthetic visitors for the live store (traffic/run.ts).
+#
+# Scheduled runs only happen when the repository variable TRAFFIC_ENABLED is
+# "true" (Settings → Secrets and variables → Actions → Variables). Manual runs
+# (Actions → Synthetic traffic → Run workflow) always work.
+#
+# Visitor profiles (cookies, carts) and the ground-truth logs are kept on the
+# `traffic-data` branch, so returning visitors and the history survive between
+# runs. Vercel deployments for that branch are disabled in vercel.json.
+
+name: Synthetic traffic
+
+on:
+  schedule:
+    - cron: "17 */3 * * *" # every 3 hours, at minute 17
+  workflow_dispatch:
+    inputs:
+      sessions:
+        description: "Number of sessions (leave empty to base it on the hour)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: synthetic-traffic
+  cancel-in-progress: false
+
+jobs:
+  traffic:
+    if: github.event_name == 'workflow_dispatch' || vars.TRAFFIC_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Check out the traffic-data branch
+        run: |
+          git config user.name "verdian-traffic-bot"
+          git config user.email "verdian-traffic-bot@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin traffic-data >/dev/null; then
+            git fetch --depth 1 origin traffic-data:traffic-data
+            git worktree add traffic-data traffic-data
+          else
+            git worktree add --orphan -b traffic-data traffic-data
+          fi
+
+      - name: Run visitors
+        env:
+          TRAFFIC_STATE_DIR: traffic-data
+          SESSIONS: ${{ inputs.sessions }}
+        run: |
+          ARGS=""
+          if [[ "$SESSIONS" =~ ^[0-9]+$ ]]; then ARGS="--sessions $SESSIONS"; fi
+          npm run traffic -- $ARGS
+
+      - name: Save visitors and logs
+        if: always()
+        working-directory: traffic-data
+        run: |
+          cp ../vercel.json .
+          cp ../traffic/DATA_BRANCH.md README.md
+          git add -A
+          git commit -m "Traffic run $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push origin traffic-data
