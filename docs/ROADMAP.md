@@ -124,6 +124,9 @@ which is then compared with what GA4 recorded.
 
 **Tasks**
 
+- [x] Scripted visitor generator (`traffic/`): five archetypes, persistent
+      returning visitors, sources with UTMs/referrers, devices, time of day,
+      ground-truth JSONL log, GitHub Actions schedule (`TRAFFIC_ENABLED`)
 - [ ] Persona schema + first archetypes (heritage buyer, hype teen,
       performance runner…) with sampled individuals
 - [ ] Browser tools + page-to-text reader

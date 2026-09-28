@@ -70,3 +70,26 @@ The GTM container loads only when `NEXT_PUBLIC_GTM_ID` is set (see
 `.env.example`). On Vercel: Project → Settings → Environment Variables, then
 redeploy — the value is baked in at build time. Without it, the site loads no
 tracking scripts at all.
+
+## Synthetic traffic
+
+`traffic/run.ts` sends scripted visitors to the live store in a real browser
+(Playwright), so GTM and GA4 fire exactly as they do for people. Visitor types,
+sources and probabilities are in `traffic/archetypes.ts`.
+
+```bash
+npx playwright install chromium                 # once
+npm run traffic -- --sessions 3 --headed        # watch 3 visits
+npm run traffic -- --sessions 3 --always-buy    # test the full purchase flow
+```
+
+- **Visitors persist:** cookies and carts are saved, so they return later as
+  the same GA4 `client_id`.
+- **Ground truth:** every session is logged (archetype, source, device, each
+  action, GA4 `client_id`, purchase) as JSONL.
+- **Schedule:** `.github/workflows/traffic.yml` runs every 3 hours once the
+  repository variable `TRAFFIC_ENABLED` is `true`. Visitors and logs are kept
+  on the `traffic-data` branch (Vercel deployments disabled for it in
+  `vercel.json`).
+- GA4 geolocates by IP, so scheduled visits appear to come from GitHub's
+  data centers (mostly the US).
