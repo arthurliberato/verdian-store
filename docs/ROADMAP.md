@@ -39,12 +39,15 @@ Store (Next.js, Vercel) → GTM → GA4 → BigQuery → dbt → Looker Studio
 - [x] GA4 account + property `Verdian Store`, web stream (`G-5JNZXNTD6R`);
       history-based page views and form interactions turned off
 - [x] GTM: `GA4 - Google Tag` (`send_page_view: false`, Initialization trigger)
-- [ ] GTM: `GA4 - page_view` tag (`page_location` rebuilt from the clean `page_path`)
-- [ ] GTM: eCommerce tags (`view_item`, `add_to_cart`, `begin_checkout`,
-      `purchase`), adding `currency` in GTM
-- [ ] Publish the container (first version)
-- [ ] GA4 data retention set to 14 months
-- [ ] Link GA4 to BigQuery (daily export)
+- [x] GTM: `GA4 - page_view` tag (`page_location` rebuilt from the clean `page_path`)
+- [x] GTM: one GA4 tag for all eCommerce events (`view_item`, `add_to_cart`,
+      `begin_checkout`, `purchase`) with `currency: USD` — split per event later
+- [x] Publish the container (`v1 - launch: pages + ecommerce`)
+- [x] GA4 data retention set to 14 months
+- [x] GA4 form interactions confirmed off (was still sending `form_start`)
+- [x] Link GA4 to BigQuery (daily events + daily user data)
+- [x] Synthetic traffic live (first manual run: 5 visitors in GA4 Realtime)
+- [ ] Enable BigQuery billing (sandbox deletes tables after 60 days)
 - [ ] First queries on the GA4 export (`UNNEST(items)`, join to catalog)
 
 ## Phase 2 — Modeling and reporting
