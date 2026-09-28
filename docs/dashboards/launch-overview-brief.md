@@ -61,6 +61,7 @@ Also `scroll`, `session_start`, `first_visit`, `user_engagement` (automatic).
 | Event name | Nombre del evento | Dimension |
 | New / returning | Nuevo / recurrente | Dimension |
 | Active users | Usuarios activos | Metric |
+| Total users | Usuarios totales | Metric — use for the funnel (people per step) |
 | New users | Usuarios nuevos | Metric |
 | Sessions | Sesiones | Metric |
 | Engaged sessions | Sesiones con interacción | Metric |
@@ -97,6 +98,19 @@ END
 Order matters: "Arco Muta" and "Senda Low" must be matched before the Classic
 fallback, because "Arco" and "Senda" are Classic models.
 
+**Calculated field — Funnel step** (fixes the step order; Looker would
+otherwise sort event names alphabetically):
+
+```
+CASE Event name
+  WHEN "view_item" THEN "1 · View item"
+  WHEN "add_to_cart" THEN "2 · Add to cart"
+  WHEN "begin_checkout" THEN "3 · Begin checkout"
+  WHEN "purchase" THEN "4 · Purchase"
+  ELSE NULL
+END
+```
+
 **Expected values** (so labels and colors can be planned):
 - Session source / medium: `google / organic`, `meta / paid_social`,
   `newsletter / email`, `l.instagram.com / referral`, `(direct) / (none)`
@@ -117,10 +131,13 @@ fallback, because "Arco" and "Senda" are Classic models.
 4. **Acquisition table:** Session source / medium — Sessions, Engaged sessions,
    Ecommerce purchases, Purchase revenue; sorted by Sessions desc; heatmap or
    bars on revenue.
-5. **Funnel:** Event count for `view_item` → `add_to_cart` → `begin_checkout`
-   → `purchase` (Looker Studio funnel chart, or a bar chart of Event name
-   filtered to these four in this order). Show step-to-step drop-off if the
-   chart supports it.
+5. **Funnel:** dimension `Funnel step` (calculated field above), metric
+   **Total users** (people who reached each step, not Event count — a visitor
+   who clicks "Add to cart" twice is one person), sorted by `Funnel step`
+   ascending, filtered to exclude null steps. Preferred chart: Looker Studio
+   **funnel chart**, horizontal, with step-to-step drop-off labels. Fallback:
+   horizontal bar chart — note it cannot calculate drop-off between steps.
+   Step labels render beside the bars (axis), not above them.
 6. **Merchandise (item scope, separate charts):**
    - Product line (calculated) — Item revenue and Items purchased (bar).
    - Top 10 items table: Item name — Items viewed, Items added to cart, Items
