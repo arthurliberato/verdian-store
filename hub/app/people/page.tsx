@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { people, type Person } from "@/content/people";
+import { getPlan } from "@/content/plans";
 import { Avatar } from "@/components/Badges";
 
 export const metadata: Metadata = { title: "People" };
@@ -71,6 +73,11 @@ export default function PeoplePage() {
                   <dd className="mt-1 text-muted">{p.style}</dd>
                 </div>
               </dl>
+              {getPlan(p.id) && (
+                <Link href={`/plans/${p.id}`} className="mt-4 inline-block text-sm underline underline-offset-4">
+                  {getPlan(p.id)!.title} →
+                </Link>
+              )}
             </article>
           ))}
         </div>

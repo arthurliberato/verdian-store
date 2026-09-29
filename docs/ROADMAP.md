@@ -157,6 +157,11 @@ which is then compared with what GA4 recorded.
 - [ ] Ad exposure step with five creatives
 - [ ] Calibration against benchmarks
 - [ ] Recovery analysis: does the stack recover each persona's known behavior?
+- [ ] The simulation follows the Year 1 plans (`hub/content/plans.ts`):
+      Meta budget by month drives paid traffic volume, campaigns and drops
+      create spikes on their dates, The Weekly Edit lands on Wednesdays,
+      creator seeding grows Instagram Organic; session volume ramps to plan
+      (~290/day average)
 - [ ] Behaviour realism for CRO / behavioural analytics (Microsoft Clarity):
       scrolling with limited attention, hesitation, hovering, zoom taps on
       product images, rage clicks when something frustrates them, mis-taps on
@@ -200,14 +205,22 @@ so recruiters can see how requests are scoped, clarified and resolved.
       Claude rewrites and answers in character in Claude Code sessions
 - [x] Pages: home, requests (filterable), ticket threads with resolutions,
       people, dashboard catalogue
-- [ ] Deploy as a second Vercel project
+- [x] Deploy as a second Vercel project
+- [x] Year 1 plans (written before launch): company plan with five pillars,
+      a plan per team showing how each pillar shapes it, targets tagged by
+      where they can be measured, budgets, a shared calendar, and unit
+      economics (landed cost per model, shipping, fees, returns). The ticket
+      generator pulls twists from initiatives running on the request date
 - [ ] Work the first tickets end to end (clarify → resolve → document)
 - [ ] Later, optionally: live generation/replies with an Anthropic API key;
       Slack notifications for new tickets
 
 ## Phase 4 — Inventory and margin
 
-- [ ] Synthetic inventory + unit cost per SKU × size, loaded to `raw_inventory`
+- [ ] Unit costs from the Hub's unit economics (`hub/content/economics.ts`)
+      loaded to `raw_finance.unit_costs`; order costs and return rates alongside
+- [ ] Synthetic inventory per SKU × size from the merchandising buy plan, loaded to `raw_inventory`
+- [ ] Plan vs actual: Year 1 targets loaded to BigQuery and compared monthly
 - [ ] Margin and stock-to-sales analysis
 - [ ] Later, optionally: live stock in the store so sizes can sell out
 
