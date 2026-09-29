@@ -140,6 +140,25 @@ which is then compared with what GA4 recorded.
 - [ ] Calibration against benchmarks
 - [ ] Recovery analysis: does the stack recover each persona's known behavior?
 
+## Stakeholder requests — Verdian Hub (`hub/`)
+
+A separate intranet-style site (own Vercel project, Root Directory `hub`)
+where simulated stakeholders send data requests as tickets — public to read,
+so recruiters can see how requests are scoped, clarified and resolved.
+
+- [x] Org chart + 7 stakeholder agents (CEO, CFO, CMO, Performance Marketing,
+      E-commerce, CRM, Merchandising) with priorities, data they touch, style
+- [x] Request bank tagged by data maturity (L1 GA4 → L6 new tracking);
+      "anything goes" — includes requests the data can't answer yet
+- [x] Free ticket generator (`npm run ticket`), twists per stakeholder;
+      Claude rewrites and answers in character in Claude Code sessions
+- [x] Pages: home, requests (filterable), ticket threads with resolutions,
+      people, dashboard catalogue
+- [ ] Deploy as a second Vercel project
+- [ ] Work the first tickets end to end (clarify → resolve → document)
+- [ ] Later, optionally: live generation/replies with an Anthropic API key;
+      Slack notifications for new tickets
+
 ## Phase 4 — Inventory and margin
 
 - [ ] Synthetic inventory + unit cost per SKU × size, loaded to `raw_inventory`

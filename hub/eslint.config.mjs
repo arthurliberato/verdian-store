@@ -12,8 +12,6 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Verdian Hub is a separate app with its own lint config.
-    "hub/**",
   ]),
 ]);
 
