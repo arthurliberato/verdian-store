@@ -52,7 +52,7 @@ GTM governance:
       `DLV - {key}` variables, `CJS - {name}`, `LT - {name}` lookup tables
 - [ ] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
 - [ ] Every published version has a name and a description of what changed
-- [ ] Rename existing v1 items to the convention (publish as v2 — no behaviour change)
+- [ ] Rename existing items to the convention (publish as v3 — no behaviour change)
 
 Repo:
 - [x] 🤖 `docs/tracking/CHANGELOG.md`: dated log of every tracking change
@@ -103,7 +103,8 @@ Never test on the live container again.
 - [ ] 🧑 GA4 property **"Verdian Store – Staging"** (separate measurement ID)
 - [ ] 🧑 GTM environment **Staging**; 🤖 Vercel *Preview* deployments load it
       (environment `gtm_auth` / `gtm_preview` values set only for Preview)
-- [ ] 🧑 Lookup table on hostname → measurement ID, so preview traffic goes to
+- [ ] 🧑 Replace the v2 hostname condition with a lookup table on hostname →
+      measurement ID, so preview traffic goes to
       the staging property and production to the real one
 - [ ] 🧑 Rebuild tags on the v2 spec: one tag per eCommerce event (or a
       small set), `Send ecommerce data` on, event parameters from DLVs
