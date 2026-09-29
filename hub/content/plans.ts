@@ -95,6 +95,8 @@ export const plans: Plan[] = [
     ],
     initiatives: [
       { name: "Launch week", start: "2026-09-27", end: "2026-10-04", detail: "Store live, Drop 1 (Arco Muta Acid), fall campaign starts.", twist: "We're in launch week and I want to know if the story is landing." },
+      { name: "Operating rhythm starts", start: "2026-10-09", detail: "Weekly Leadership, Growth Stand-up, Creative Review, Trade Meeting and Monday Numbers begin.", twist: "We're starting proper weekly meetings and I want the numbers to be the same in all of them." },
+      { name: "Board deck frozen", start: "2026-11-16", detail: "Numbers must match the metrics dictionary; Daniel signs off.", twist: "The board deck freezes on Nov 16." },
       { name: "Q1 board meeting", start: "2026-11-19", detail: "First board meeting with real sales data.", twist: "The board meets on Nov 19 and I want this in the deck." },
       { name: "Strategy offsite and reforecast", start: "2027-01-14", detail: "Keep, change or drop each pillar based on the first quarter.", twist: "We're re-planning the year at the January offsite." },
       { name: "Series A preparation", start: "2027-07-01", end: "2027-09-30", detail: "Data room: growth, retention, unit economics, cohort charts.", twist: "Investors will be in the data room soon and every number has to hold up." },
@@ -139,7 +141,8 @@ export const plans: Plan[] = [
       { metric: "Month-end close", target: "≤ 5 working days", measuredIn: "Finance" },
     ],
     initiatives: [
-      { name: "Metrics dictionary", start: "2026-10-01", end: "2026-10-23", detail: "One written definition for revenue, orders, conversion rate, CAC, AOV and repeat rate.", twist: "I'm writing Verdian's metrics dictionary this month and need definitions nailed down." },
+      { name: "Metrics dictionary", start: "2026-10-01", end: "2026-10-30", detail: "One written definition for revenue, orders, conversion rate, CAC, AOV and repeat rate.", twist: "I'm writing Verdian's metrics dictionary this month and need definitions nailed down." },
+      { name: "Plan reconciliation memo", start: "2026-10-26", end: "2026-11-12", detail: "Bridge from the $340k plan to the acquisition model, with base, low and high scenarios for the board.", twist: "I need the reconciliation memo before Valeria picks her board stance on Nov 12." },
       { name: "October close", start: "2026-11-02", end: "2026-11-06", detail: "First full month after launch.", twist: "I'm closing October and the numbers need to reconcile." },
       { name: "Reorder cash plan", start: "2026-11-16", end: "2026-12-08", detail: "How much stock can be bought for spring without breaking runway.", twist: "I have to approve the spring reorder budget before Dec 8." },
       { name: "Q2 reforecast", start: "2027-01-05", end: "2027-01-20", detail: "Rebuild the year's forecast from real run-rates.", twist: "I'm rebuilding the forecast from actual run-rates." },
@@ -192,6 +195,7 @@ export const plans: Plan[] = [
     ],
     initiatives: [
       { name: "Fall launch campaign", start: "2026-09-27", end: "2026-11-15", detail: "Five creatives, same offer, different framing (campaign `fall_launch`).", twist: "We're in the middle of the fall launch campaign and I need to know what's working before I move budget." },
+      { name: "Always-on plan for February–September", start: "2026-12-15", end: "2027-01-15", detail: "Every month gets a live campaign; evergreen shoot in late January.", twist: "I'm planning always-on for February to September and need to know which angles to keep." },
       { name: "Holiday gifting", start: "2026-11-20", end: "2026-12-22", detail: "Gift guides, accessories and apparel bundles, care kit as stocking filler.", twist: "Holiday gifting starts Nov 20 and I have to lock the channel plan." },
       { name: "Black Friday early access", start: "2026-11-24", end: "2026-11-30", detail: "Subscribers get 48 h early access to Drop 2 restock. No discount.", twist: "We're doing early access instead of a Black Friday discount and I have to prove it works." },
       { name: "Running resolutions", start: "2027-01-02", end: "2027-01-31", detail: "January push for the Performance line (Pulso, Impulso).", twist: "January is our Performance push and I need a baseline for it." },
@@ -245,6 +249,8 @@ export const plans: Plan[] = [
     ],
     initiatives: [
       { name: "Creative test, round 1", start: "2026-09-27", end: "2026-10-25", detail: "Five creatives, equal budget; keep the best two.", twist: "Round 1 of the creative test ends Oct 25 and I have to cut creatives." },
+      { name: "Pixel and Conversions API", start: "2026-10-12", end: "2026-11-06", detail: "Browser and server purchase events, deduplicated; needed before retargeting can work.", twist: "Retargeting can't start until the pixel and Conversions API are live, and Kai needs a spec." },
+      { name: "Always-on prospecting", start: "2026-11-16", end: "2027-09-30", detail: "fall_launch folds into one evergreen campaign with the round 1 winners." },
       { name: "Cart retargeting", start: "2026-11-01", end: "2026-11-30", detail: "7-day cart abandoners, separate budget line.", twist: "I'm setting up cart retargeting for November." },
       { name: "Holiday scaling", start: "2026-11-20", end: "2026-12-20", detail: "Scale winners into holiday, cap CPA at $55.", twist: "I want to scale the winners into holiday without blowing CPA." },
     ],
@@ -282,7 +288,7 @@ export const plans: Plan[] = [
       { metric: "Footwear return rate", target: "16% → 12% after the size guide", measuredIn: "Not measured yet", note: "Returns live with Operations" },
     ],
     initiatives: [
-      { name: "Size guide and fit notes", start: "2026-10-19", end: "2026-11-20", detail: "Kai builds it; needs a before/after baseline.", twist: "Kai is building the size guide and I want a baseline before it ships." },
+      { name: "Size guide and fit notes", start: "2026-10-19", end: "2026-12-01", detail: "Kai builds it; needs a before/after baseline.", twist: "Kai is building the size guide and I want a baseline before it ships." },
       { name: "Drop 2 readiness", start: "2026-11-13", detail: "Load, stock display, sold-out sizes.", twist: "Drop 2 goes live on Nov 13 and the site has to hold." },
       { name: "Mobile product page redesign", start: "2027-01-11", end: "2027-03-05", detail: "Size selector and Add to cart above the fold on mobile.", twist: "I'm scoping the mobile product page redesign." },
       { name: "A/B testing programme", start: "2027-02-01", detail: "First test: the redesigned mobile product page.", twist: "We're about to start A/B testing and I want to pick the first test well." },
@@ -319,6 +325,7 @@ export const plans: Plan[] = [
       { metric: "Repeat purchase within 12 months", target: "18%", measuredIn: "Not measured yet" },
     ],
     initiatives: [
+      { name: "Sign-up form and popup", start: "2026-09-29", end: "2026-10-10", detail: "No discount: the reason to sign up is early access and drop alerts. Consent and source captured on every profile.", twist: "The sign-up form and popup go live by Oct 10 and I want to know how many people see them." },
       { name: "Welcome flow", start: "2026-09-27", end: "2026-10-31", detail: "Three emails over 10 days for new subscribers.", twist: "The welcome flow just went live and I want to know if it brings people back." },
       { name: "Post-purchase flow with care kit", start: "2026-11-02", end: "2026-12-15", detail: "Care tips plus a care kit offer 7 days after a footwear order.", twist: "I'm launching the post-purchase flow with the care kit cross-sell." },
       { name: "Win-back flow", start: "2027-02-01", detail: "For buyers with no order in 120 days.", twist: "I'm designing the win-back flow for lapsed buyers." },

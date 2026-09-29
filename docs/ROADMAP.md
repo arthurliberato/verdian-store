@@ -220,6 +220,31 @@ so recruiters can see how requests are scoped, clarified and resolved.
 - [ ] Later, optionally: live generation/replies with an Anthropic API key;
       Slack notifications for new tickets
 
+## Operating model (from research)
+
+`docs/research/operating-plan-research.md` (sourced benchmarks) reshaped the
+org and how it runs. Implemented in the Hub: three part-time specialists
+(social, performance creative editor, bookkeeper), role cards for everyone,
+meetings, RACI for six workflows, budget and incident rules, the request
+queue with SLAs, a risk register, the metrics dictionary draft, and an
+always-on + retargeting + bursts Meta structure with creative rules.
+
+The July plan and acquisition model are deliberately left as they were:
+reconciling them is DR-0008, and the research is the evidence for it.
+
+Data it implies (all synthetic, generated to match the plans):
+- [ ] **Order system:** the store has no backend, so `raw_orders` comes
+      from the traffic generator's purchase records (the ground truth). That
+      makes it the source of truth that GA4 is reconciled against,
+      including the orders GA4 misses
+- [ ] **Meta spend:** daily `raw_meta_ads` by campaign, ad set and ad,
+      following the monthly layer split in `hub/content/campaigns.ts`, with
+      CPM, CTR and frequency consistent with the traffic actually sent
+- [ ] **Email, seeding tracker, returns with reason codes, inventory
+      snapshots** as further raw tables, each owned by the person the RACI
+      names
+- [ ] GA4 order-ID coverage report (≥ 90% target) replaces "revenue within ±5%"
+
 ## Phase 4 — Inventory and margin
 
 - [ ] Unit costs from the Hub's unit economics (`hub/content/economics.ts`)

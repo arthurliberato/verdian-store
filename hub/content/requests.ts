@@ -85,6 +85,19 @@ export const requestBank: RequestTemplate[] = [
   { id: "merch-sell-through", from: ["hannah"], level: 5, category: "dashboard", title: "Sell-through by model and size", body: "For the reorder meeting I need sell-through by model, colorway and size." },
   { id: "merch-line-audience", from: ["hannah", "amara"], level: 3, category: "question", title: "Who buys Street vs Classic?", body: "Are Street buyers really younger, mobile, evening shoppers, and Classic buyers the opposite? Show me what the data says." },
   { id: "merch-apparel-attach", from: ["hannah"], level: 3, category: "question", title: "Do sneaker buyers add apparel?", body: "How often does an order with footwear also include apparel or accessories? Which combinations are most common?" },
+
+  // ─── Tensions between teams (docs/research/operating-plan-research.md §8) ──
+  { id: "t-real-revenue", from: ["daniel"], level: 2, category: "investigation", title: "Meta says $22k, the P&L says $19k", body: "Lucas's deck says Meta drove $22k in October. Our P&L says total net revenue was $19k. Explain in writing, with a definition for each number." },
+  { id: "t-black-friday", from: ["valeria"], level: 1, category: "question", title: "What would a Black Friday discount get us?", body: "Competitors are doing 25% off for Black Friday. What would we gain? Quick number." },
+  { id: "t-overstock-vs-winners", from: ["hannah", "lucas"], level: 3, category: "question", title: "Should ads push slow sellers or winners?", body: "Street Originals is at 20% sell-through and I want it in the ads. Lucas says it converts at half the rate. We both need the data before Thursday's trade meeting." },
+  { id: "t-arco-vs-street", from: ["amara"], level: 3, category: "question", title: "Are we starving Street by over-indexing on Arco?", body: "Three of five creatives are Arco, but Street is supposed to reach 30% of revenue. Is the Arco rule costing us Street sales?" },
+  { id: "t-popup", from: ["priya", "tomas"], level: 2, category: "investigation", title: "Does the popup hurt mobile conversion?", body: "The sign-up popup brings most of our new subscribers, but I think it hurts mobile conversion. Which is it, and what's the trade-off in dollars?" },
+  { id: "t-sprint", from: ["priya"], level: 1, category: "question", title: "Three urgent tickets, one sprint", body: "Kai has one sprint. Tracking, the size guide and the CRM form are all marked urgent. Estimate the business impact of each so I can rank them." },
+  { id: "t-returns-cost", from: ["daniel", "hannah"], level: 5, category: "question", title: "What do size returns cost us, by model?", body: "Ben says size returns are expensive. Before anyone suggests charging for return shipping, I want the cost of returns by model, including the resale loss." },
+  { id: "t-email-claims", from: ["daniel"], level: 3, category: "investigation", title: "Email claims 25% of revenue. Is that real?", body: "The email platform says it drove 25% of revenue. That seems high. How much of it would have happened anyway?" },
+  { id: "t-stockout-cost", from: ["hannah", "daniel"], level: 5, category: "question", title: "What does an Arco stockout cost?", body: "We'll run out of Arco 9–10.5 in January. Daniel says cash. I need the cost of the stockout in lost contribution to argue the reorder." },
+  { id: "t-board-metric", from: ["valeria"], level: 1, category: "question", title: "Can the board deck lead with sessions?", body: "Orders look small. Can we show sessions instead? They look better." },
+  { id: "t-sim-traffic", from: ["priya"], level: 2, category: "investigation", title: "Conversion dropped to 0.9% overnight", body: "Conversion fell to 0.9% overnight and nothing changed on the site. What happened?" },
 ];
 
 /**

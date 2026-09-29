@@ -102,7 +102,7 @@ The CFO has formally asked for this gap to be reconciled before the Nov 19 board
 
 ## 8. Known gaps (why we're asking)
 
-- **No always-on layer:** every campaign has an end date; Feb–Sep has $41.5k of Meta budget and no campaign to spend it.
+- **No always-on layer:** every campaign has an end date; Feb–Sep has $37.5k of Meta budget (corrected; the first version said $41.5k) and no campaign to spend it.
 - **Unclear ownership of creative:** who writes the brief, who makes the ads, who decides what gets cut, who approves.
 - **Missing roles?** No social media/community manager, no PR, no customer insights, no product/design team, no dedicated performance creative, no agency relationships described.
 - **No operating rhythm:** no weekly, monthly or quarterly meetings, no reporting cadence, no decision forums.

@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { campaigns, launchCreatives, utmConvention } from "@/content/campaigns";
+import {
+  briefTemplate,
+  campaigns,
+  creativeRoles,
+  fatigueRules,
+  launchCreatives,
+  metaSplit,
+  refreshCadence,
+  testingRules,
+  utmConvention,
+} from "@/content/campaigns";
 import { getPerson } from "@/content/people";
 import { Avatar } from "@/components/Badges";
-import { dateRange } from "@/components/PlanBits";
+import { dateRange, usd } from "@/components/PlanBits";
 
 export const metadata: Metadata = { title: "Campaigns and creative" };
 
@@ -39,16 +49,82 @@ export default function CampaignsPage() {
             </article>
           ))}
         </div>
-        <p className="mt-4 text-sm text-muted">
-          Testing rule (Noor and Lucas): equal budget for four weeks, then cut the weakest two on cost per purchase
-          and downstream behaviour, not click rate. One new creative enters every four weeks.
-        </p>
       </section>
 
       <section className="mt-12">
-        <h2 className="font-display text-xl font-medium">Campaigns</h2>
+        <h2 className="font-display text-xl font-medium">How creative gets made and cut</h2>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-line bg-surface">
+          <table className="w-full min-w-[640px] text-left text-sm">
+            <tbody className="divide-y divide-line">
+              {creativeRoles.map((r) => (
+                <tr key={r.step}><td className="w-56 px-4 py-3 font-medium">{r.step}</td><td className="px-4 py-3 text-muted">{r.who}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          {[
+            ["The brief (one page)", briefTemplate],
+            ["Refresh cadence", refreshCadence],
+            ["Fatigue: flag an ad when 2 of 3 are true over 7 days", fatigueRules],
+            ["Testing rules", testingRules],
+          ].map(([title, items]) => (
+            <div key={title as string} className="rounded-lg border border-line bg-surface p-5">
+              <h3 className="font-medium">{title as string}</h3>
+              <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-muted">
+                {(items as string[]).map((i) => <li key={i}>{i}</li>)}
+              </ol>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="font-display text-xl font-medium">Meta budget by layer</h2>
+        <p className="mt-1 max-w-3xl text-sm text-muted">
+          Always-on runs all year; retargeting is capped at about 10% because small audiences saturate fast and mostly
+          reach people who&apos;d buy anyway; bursts sit on top for drops and seasons.
+        </p>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-line bg-surface">
+          <table className="w-full min-w-[720px] text-right text-sm tabular-nums">
+            <thead className="border-b border-line text-xs uppercase tracking-[0.1em] text-muted">
+              <tr>
+                <th className="px-3 py-3 text-left font-medium">Month</th>
+                <th className="px-3 py-3 font-medium">Always-on</th>
+                <th className="px-3 py-3 font-medium">Retargeting</th>
+                <th className="px-3 py-3 font-medium">Bursts</th>
+                <th className="px-3 py-3 font-medium">Total</th>
+                <th className="px-3 py-3 text-left font-medium">Bursts for</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-line">
+              {metaSplit.map((m) => (
+                <tr key={m.month}>
+                  <td className="px-3 py-2 text-left">{m.month}</td>
+                  <td className="px-3 py-2">{usd(m.alwaysOn)}</td>
+                  <td className="px-3 py-2">{usd(m.retargeting)}</td>
+                  <td className="px-3 py-2">{usd(m.bursts)}</td>
+                  <td className="px-3 py-2 font-medium">{usd(m.total)}</td>
+                  <td className="px-3 py-2 text-left text-muted">{m.burstNote}</td>
+                </tr>
+              ))}
+              <tr className="font-medium">
+                <td className="px-3 py-2 text-left">Year</td>
+                {(["alwaysOn", "retargeting", "bursts", "total"] as const).map((k) => (
+                  <td key={k} className="px-3 py-2">{usd(metaSplit.reduce((s, m) => s + m[k], 0))}</td>
+                ))}
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {(["Always-on", "Burst", "Owned"] as const).map((layer) => (
+      <section key={layer} className="mt-12">
+        <h2 className="font-display text-xl font-medium">{layer === "Owned" ? "Owned channels (email and social)" : layer === "Burst" ? "Bursts" : "Always-on"}</h2>
         <div className="mt-4 space-y-4">
-          {campaigns.map((c) => (
+          {campaigns.filter((c) => c.layer === layer).map((c) => (
             <article key={c.id} className="rounded-lg border border-line bg-surface p-5">
               <header className="flex flex-wrap items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
@@ -72,6 +148,7 @@ export default function CampaignsPage() {
           ))}
         </div>
       </section>
+      ))}
 
       <section className="mt-12">
         <h2 className="font-display text-xl font-medium">UTM convention</h2>

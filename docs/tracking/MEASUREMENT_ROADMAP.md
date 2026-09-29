@@ -88,8 +88,10 @@ GA4 are built from it, never the other way round.
 | `add_payment_info` | order placed — demo store, `payment_type: "demo"` |
 | `purchase` | confirmation (+ `shipping`, `tax`, `coupon` when relevant) |
 
-- [ ] Custom events: `select_size` (item + size), `newsletter_signup`
-      (new footer form — gives Stage 4 and CRM something real to measure)
+- [ ] Custom events: `select_size` (item + size + in_stock), `size_guide_open`,
+      `newsletter_signup` (footer form and popup), `waitlist_join` (drops),
+      `refund` — so size-curve demand, list growth by source and drop
+      waitlists can be measured
 - [ ] `page_view` gains `page_type` (home / line / product / cart / checkout /
       confirmation), used as GA4's content group
 - [ ] Data layer typed in TypeScript; in development, pushes are validated
