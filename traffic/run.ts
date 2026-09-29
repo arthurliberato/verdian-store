@@ -1,6 +1,6 @@
 // Scripted visitor generator for the Verdian store.
 //
-//   npm run traffic                    # visits the live store, sessions based on the hour
+//   npm run traffic                    # visits the live store; volume from the acquisition model
 //   npm run traffic -- --sessions 3 --headed   # watch 3 visits in a visible browser
 //   npm run traffic -- --sessions 3 --always-buy   # test: every non-bouncer buys
 //
@@ -10,6 +10,10 @@
 //
 // Every session is written to a ground-truth log (JSONL) — what really
 // happened — to compare later with what GA4 recorded in BigQuery.
+//
+// Volume, channel mix and campaign names follow the marketing plan's
+// acquisition model (traffic/volume.ts → hub/content/acquisition.ts): each
+// run sends the sessions the model expects for the time since the last run.
 //
 // Environment:
 //   TRAFFIC_BASE_URL   store URL (default https://verdian-store.vercel.app)
@@ -25,7 +29,6 @@ import {
   archetypes,
   archetypeWeight,
   chance,
-  hourlyTraffic,
   pick,
   pickWeighted,
   randInt,
@@ -33,6 +36,7 @@ import {
   type Device,
   type SourceType,
 } from "./archetypes";
+import { creativeLanding, emailCampaign, metaCampaign, sessionsForWindow, sourceWeights } from "./volume";
 
 // ─── Configuration ─────────────────────────────────────────────────────
 
@@ -50,7 +54,6 @@ const HEADED = flag("headed");
 const CONCURRENCY = Number(option("concurrency") ?? 3);
 const DWELL_SCALE = Number(option("dwell-scale") ?? 1); // <1 = faster visits (testing)
 const ALWAYS_BUY = flag("always-buy"); // testing: push every non-bouncer through purchase
-const BASE_SESSIONS_PER_RUN = 6;
 const MAX_VISITORS = 800;
 const SESSION_TIMEOUT_MS = 4 * 60_000;
 
@@ -58,11 +61,6 @@ const DEVICE_PROFILES: Record<Device, string[]> = {
   desktop: ["Desktop Chrome", "Desktop Edge", "Desktop Safari"],
   tablet: ["iPad (gen 7)", "Galaxy Tab S4"],
   mobile: ["iPhone 13", "iPhone 12", "Pixel 5", "Galaxy S9+"],
-};
-
-const CAMPAIGNS = {
-  meta: "fall_launch",
-  email: "weekly_edit",
 };
 
 // ─── Visitors (persistent across runs) ─────────────────────────────────
@@ -80,6 +78,7 @@ type Visitor = {
 };
 
 const visitorsFile = path.join(STATE_DIR, "visitors.json");
+const lastRunFile = path.join(STATE_DIR, "last-run.json");
 const profileDir = path.join(STATE_DIR, "profiles");
 const logDir = path.join(STATE_DIR, "logs");
 
@@ -125,12 +124,18 @@ type SessionPlan = {
   isNew: boolean;
   source: SourceType;
   creative: number | null;
+  campaign: string | null;
   landingUrl: string;
   referrer: string | undefined;
 };
 
-function localHour(): number {
-  return Number(new Intl.DateTimeFormat("en-US", { hour: "numeric", hourCycle: "h23", timeZone: TIMEZONE }).format(new Date()));
+function localHour(date = new Date()): number {
+  return Number(new Intl.DateTimeFormat("en-US", { hour: "numeric", hourCycle: "h23", timeZone: TIMEZONE }).format(date));
+}
+
+function localWeekday(date = new Date()): number {
+  const name = new Intl.DateTimeFormat("en-US", { weekday: "short", timeZone: TIMEZONE }).format(date);
+  return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(name);
 }
 
 function lineSlug(line: Line) {
@@ -142,23 +147,33 @@ function productFor(line: Line | null) {
   return pick(pool);
 }
 
-function planSession(visitors: Visitor[], hour: number): SessionPlan {
-  const weights = Object.fromEntries(archetypes.map((a) => [a.id, archetypeWeight(a, hour)]));
-  const archetypeId = pickWeighted(weights);
+function creativeProduct(creative: number) {
+  const target = creativeLanding[creative];
+  const pool = products.filter((p) => p.model === target.model && (!target.colorway || p.colorway === target.colorway));
+  return pick(pool.length > 0 ? pool : products);
+}
+
+function planSession(visitors: Visitor[], hour: number, now: Date): SessionPlan {
+  // Channel first, from the acquisition model's mix for today; then the kind
+  // of person that channel brings.
+  const source = pickWeighted(sourceWeights(now, localWeekday(now)));
+  const weights = Object.fromEntries(archetypes.map((a) => [a.id, archetypeWeight(a, hour) * (a.sources[source] ?? 0)]));
+  const anyone = Object.values(weights).every((w) => w === 0);
+  const archetypeId = pickWeighted(anyone ? Object.fromEntries(archetypes.map((a) => [a.id, archetypeWeight(a, hour)])) : weights);
   const archetype = archetypes.find((a) => a.id === archetypeId)!;
 
+  // Direct and newsletter visits are mostly people who've been here before.
   const pool = visitors.filter((v) => v.archetype === archetype.id);
-  const returning = pool.length > 0 && chance(archetype.pReturning);
+  const pReturning = source === "direct" || source === "email" ? Math.min(0.9, archetype.pReturning * 2) : archetype.pReturning;
+  const returning = pool.length > 0 && chance(pReturning);
   const visitor = returning ? pick(pool) : newVisitor(archetype);
-
-  // Returning visitors often come straight back (bookmark, typed URL).
-  const source: SourceType = returning && chance(0.4) ? "direct" : pickWeighted(archetype.sources);
   const line = archetype.line ?? pick<Line>(["Classic", "Performance", "Street"]);
 
   let landingPath = "/";
   let query = "";
   let referrer: string | undefined;
   let creative: number | null = null;
+  let campaign: string | null = null;
 
   switch (source) {
     case "direct":
@@ -172,18 +187,24 @@ function planSession(visitors: Visitor[], hour: number): SessionPlan {
       referrer = "https://l.instagram.com/";
       landingPath = chance(0.6) ? `/products/${productFor(archetype.line).slug}` : `/shop/${lineSlug(line)}`;
       break;
-    case "meta_paid":
+    case "meta_paid": {
       creative = pick(archetype.creatives);
-      query = `?utm_source=meta&utm_medium=paid_social&utm_campaign=${CAMPAIGNS.meta}&utm_content=creative_${creative}`;
-      landingPath = chance(0.5) ? `/products/${productFor(archetype.line).slug}` : `/shop/${lineSlug(line)}`;
+      const meta = metaCampaign(now);
+      campaign = meta.campaign;
+      // Each creative lands on the product it shows, sometimes on its line page.
+      const product = creativeProduct(creative);
+      landingPath = chance(0.7) ? `/products/${product.slug}` : `/shop/${lineSlug(product.line)}`;
+      query = `?utm_source=meta&utm_medium=paid_social&utm_campaign=${campaign}&utm_content=creative_${creative}&utm_term=${meta.term(archetype.id)}`;
       break;
+    }
     case "email":
-      query = `?utm_source=newsletter&utm_medium=email&utm_campaign=${CAMPAIGNS.email}`;
+      campaign = emailCampaign(now);
+      query = `?utm_source=newsletter&utm_medium=email&utm_campaign=${campaign}&utm_content=${pick(["hero", "product_grid"])}`;
       landingPath = chance(0.5) ? "/" : `/shop/${lineSlug(line)}`;
       break;
   }
 
-  return { visitor, archetype, isNew: !returning, source, creative, landingUrl: BASE_URL + landingPath + query, referrer };
+  return { visitor, archetype, isNew: !returning, source, creative, campaign, landingUrl: BASE_URL + landingPath + query, referrer };
 }
 
 // ─── Ground-truth log ──────────────────────────────────────────────────
@@ -200,6 +221,7 @@ type SessionLog = {
   device_profile: string;
   source: SourceType;
   creative: number | null;
+  campaign: string | null;
   landing_url: string;
   referrer: string | null;
   started_at: string;
@@ -360,6 +382,7 @@ async function runSession(browser: Browser, plan: SessionPlan): Promise<SessionL
     device_profile: visitor.device_profile,
     source: plan.source,
     creative: plan.creative,
+    campaign: plan.campaign,
     landing_url: plan.landingUrl,
     referrer: plan.referrer ?? null,
     started_at: new Date().toISOString(),
@@ -464,17 +487,22 @@ async function main() {
   mkdirSync(profileDir, { recursive: true });
   mkdirSync(logDir, { recursive: true });
 
-  const hour = localHour();
-  const sessions = Number(option("sessions") ?? Math.max(1, Math.round(BASE_SESSIONS_PER_RUN * hourlyTraffic[hour] * (0.7 + Math.random() * 0.6))));
+  const now = new Date();
+  const hour = localHour(now);
+  // Sessions for the time since the last run, as the acquisition model expects.
+  const lastRun = existsSync(lastRunFile) ? new Date(JSON.parse(readFileSync(lastRunFile, "utf8")).at) : new Date(now.getTime() - 3_600_000);
+  const sessions = Number(option("sessions") ?? sessionsForWindow(lastRun, now, localHour));
   const visitors = loadVisitors();
-  console.log(`${sessions} sessions → ${BASE_URL} (local hour ${hour}, ${TIMEZONE}); ${visitors.length} known visitors`);
+  const minutes = Math.round((now.getTime() - lastRun.getTime()) / 60_000);
+  console.log(`${sessions} sessions → ${BASE_URL} (local hour ${hour}, ${TIMEZONE}; ${minutes} min since last run); ${visitors.length} known visitors`);
+  if (!option("sessions")) writeFileSync(lastRunFile, JSON.stringify({ at: now.toISOString() }));
 
   // Plan every session first so two parallel sessions never share a visitor.
   const plans: SessionPlan[] = [];
   const busy = new Set<string>();
   for (let i = 0; i < sessions; i++) {
-    let plan = planSession(visitors, hour);
-    for (let tries = 0; busy.has(plan.visitor.visitor_id) && tries < 5; tries++) plan = planSession(visitors, hour);
+    let plan = planSession(visitors, hour, now);
+    for (let tries = 0; busy.has(plan.visitor.visitor_id) && tries < 5; tries++) plan = planSession(visitors, hour, now);
     if (busy.has(plan.visitor.visitor_id)) continue;
     busy.add(plan.visitor.visitor_id);
     if (plan.isNew) visitors.push(plan.visitor);

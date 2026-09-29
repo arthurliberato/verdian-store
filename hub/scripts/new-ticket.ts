@@ -5,7 +5,8 @@
 //   npm run ticket -- --count 3        # several at once
 //
 // Picks a request the stakeholder would plausibly send, crosses it with a
-// "twist" from their current week, and writes content/tickets/DR-XXXX.json.
+// "twist" from their current week (preferably an initiative from their Year 1
+// plan that's running or coming up), and writes content/tickets/DR-XXXX.json.
 // No API calls: wording comes from the profiles and templates. Claude (in a
 // Claude Code session) can rewrite or answer tickets in character later.
 
@@ -13,6 +14,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { agents, getPerson } from "../content/people";
 import { requestBank, twists, type Priority } from "../content/requests";
+import { activeInitiatives } from "../content/plans";
 import type { Ticket } from "../lib/ticket-types";
 
 const args = process.argv.slice(2);
@@ -33,7 +35,7 @@ function nextId(): string {
 }
 
 function priorityFor(twist: string): Priority {
-  const urgentWords = /tomorrow|today|Thursday|Friday|next Tuesday|this week|before the weekend/i;
+  const urgentWords = /tomorrow|today|Thursday|Friday|next Tuesday|this week|before the weekend|launch week|middle of/i;
   if (urgentWords.test(twist)) return Math.random() < 0.5 ? "Urgent" : "High";
   return pick<Priority>(["Low", "Normal", "Normal", "High"]);
 }
@@ -64,7 +66,10 @@ function generate(fromId?: string): Ticket {
   const fresh = all.filter((r) => !open.has(r.id));
   const candidates = fresh.length > 0 ? fresh : all;
   const request = pick(candidates);
-  const twist = pick(twists[requester.id]);
+  // Prefer what's on the requester's plan right now (running or starting
+  // within three weeks); fall back to the generic twists.
+  const fromPlan = activeInitiatives(requester.id).map((i) => i.twist!);
+  const twist = fromPlan.length > 0 && Math.random() < 0.7 ? pick(fromPlan) : pick(twists[requester.id]);
   const priority = priorityFor(twist);
 
   const text = [pick(requester.greetings!), "", twist, "", request.body, "", pick(requester.signoffs!)].join("\n");

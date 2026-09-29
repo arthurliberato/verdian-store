@@ -71,6 +71,11 @@ export default function Home() {
             answer yet, and every thread shows how each one was scoped, clarified and resolved.
           </p>
           <p>
+            Every team works from a <Link href="/plans" className="underline underline-offset-4">Year 1 plan</Link> written
+            before launch: targets, budgets, a calendar, and business drivers like unit costs that GA4 never sees.
+            Requests come out of those plans.
+          </p>
+          <p>
             {dashboards.length} dashboards are catalogued in the <Link href="/dashboards" className="underline underline-offset-4">dashboard hub</Link>.
           </p>
         </div>

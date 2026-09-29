@@ -47,8 +47,26 @@ Store (Next.js, Vercel) → GTM → GA4 → BigQuery → dbt → Looker Studio
 - [x] GA4 form interactions confirmed off (was still sending `form_start`)
 - [x] Link GA4 to BigQuery (daily events + daily user data)
 - [x] Synthetic traffic live (first manual run: 5 visitors in GA4 Realtime)
-- [ ] Enable BigQuery billing (sandbox deletes tables after 60 days)
+- [x] Enable BigQuery billing ($300 trial; upgrade to paid before it ends)
+- [ ] Remove the sandbox 60-day expiry from existing datasets and tables
 - [ ] First queries on the GA4 export (`UNNEST(items)`, join to catalog)
+
+## Measurement maturity — GA4 + GTM
+
+From the launch setup to a state-of-the-art stack (governance, full GA4
+eCommerce spec, staging, consent, automated QA, server-side). Full plan in
+[`docs/tracking/MEASUREMENT_ROADMAP.md`](tracking/MEASUREMENT_ROADMAP.md);
+every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
+
+- [x] Stage 0 — Launch baseline
+- [ ] Stage 1 — Hygiene and governance
+- [ ] Stage 2 — Tracking plan and data layer v2
+- [ ] Stage 3 — Staging environment, then the GTM rebuild
+- [ ] Stage 4 — Consent and privacy
+- [ ] Stage 5 — Monitoring and data quality
+- [ ] Stage 6 — Server-side and first-party (optional)
+- [ ] Stage 7 — Integrations
+- [ ] Stage 8 — Customer accounts and `user_id`
 
 ## Phase 2 — Modeling and reporting
 
@@ -139,6 +157,45 @@ which is then compared with what GA4 recorded.
 - [ ] Ad exposure step with five creatives
 - [ ] Calibration against benchmarks
 - [ ] Recovery analysis: does the stack recover each persona's known behavior?
+- [x] Volume and channel mix follow the acquisition model
+      (`traffic/volume.ts` reads `hub/content/acquisition.ts`): ~220
+      sessions a day at launch, ~170 in December, Meta ~70%; each hourly run
+      sends the sessions expected since the previous run, shaped by hour of
+      day; newsletter clicks peak on Wednesdays
+- [x] Campaigns follow `hub/content/campaigns.ts`: fall_launch (three ad
+      sets in `utm_term`) → ao_prospecting from Nov 16, bursts on their
+      dates, bf_early_access for email; each creative lands on its own
+      product (creative_1 → Arco, creative_2 → Arco Muta Acid, creative_5 → Pulso…)
+- [ ] Traffic spikes on drop days and after creator posts; retargeting
+      traffic once a pixel exists
+- [ ] Behaviour realism for CRO / behavioural analytics (Microsoft Clarity):
+      scrolling with limited attention, hesitation, hovering, zoom taps on
+      product images, rage clicks when something frustrates them, mis-taps on
+      mobile — so heatmaps and recordings show something worth diagnosing
+- [ ] Meta ads by placement: ads clicked in Instagram arrive as
+      `utm_source=instagram&utm_medium=paid_social` (as in real life), so the
+      channel group's rule order is actually tested
+- [ ] CRO loop: find a leak in GA4 → diagnose it in Clarity → A/B test a fix
+      → measure the result against ground truth
+
+**Experimentation (A/B testing with GrowthBook)**
+
+The concepts behind Optimizely, VWO and AB Tasty, practised for free.
+GrowthBook is open source, has feature flags for Next.js and reads results
+straight from BigQuery (warehouse-native). Synthetic visitors make one thing
+possible that real companies never have: a *known* true effect to recover.
+
+- [ ] GrowthBook (free cloud plan) connected to BigQuery; SDK in the store
+      with an `experiment_viewed` event in the data layer → GTM → GA4
+- [ ] Experiment brief template: hypothesis, primary metric, guardrail
+      metrics, MDE, sample size and planned duration — written before launch
+- [ ] Planted effect: agents in the variant really behave differently (e.g.
+      +5% add-to-cart); does the test detect it, and how many days does it take?
+- [ ] A/A test: no difference planted — how often does it show a "winner"?
+- [ ] Peeking: stop at the first "significant" day vs the planned end; compare
+- [ ] SRM: deliberately break the 50/50 split and catch it
+- [ ] Segment traps: an effect only on mobile, hidden in the overall result
+- [ ] Client-side vs server-side assignment: flicker and what it does to results
 
 ## Stakeholder requests — Verdian Hub (`hub/`)
 
@@ -154,14 +211,47 @@ so recruiters can see how requests are scoped, clarified and resolved.
       Claude rewrites and answers in character in Claude Code sessions
 - [x] Pages: home, requests (filterable), ticket threads with resolutions,
       people, dashboard catalogue
-- [ ] Deploy as a second Vercel project
+- [x] Deploy as a second Vercel project
+- [x] Year 1 plans (written before launch): company plan with five pillars,
+      a plan per team showing how each pillar shapes it, targets tagged by
+      where they can be measured, budgets, a shared calendar, and unit
+      economics (landed cost per model, shipping, fees, returns). The ticket
+      generator pulls twists from initiatives running on the request date
 - [ ] Work the first tickets end to end (clarify → resolve → document)
 - [ ] Later, optionally: live generation/replies with an Anthropic API key;
       Slack notifications for new tickets
 
+## Operating model (from research)
+
+`docs/research/operating-plan-research.md` (sourced benchmarks) reshaped the
+org and how it runs. Implemented in the Hub: three part-time specialists
+(social, performance creative editor, bookkeeper), role cards for everyone,
+meetings, RACI for six workflows, budget and incident rules, the request
+queue with SLAs, a risk register, the metrics dictionary draft, and an
+always-on + retargeting + bursts Meta structure with creative rules.
+
+The July plan and acquisition model are deliberately left as they were:
+reconciling them is DR-0008, and the research is the evidence for it.
+
+Data it implies (all synthetic, generated to match the plans):
+- [ ] **Order system:** the store has no backend, so `raw_orders` comes
+      from the traffic generator's purchase records (the ground truth). That
+      makes it the source of truth that GA4 is reconciled against,
+      including the orders GA4 misses
+- [ ] **Meta spend:** daily `raw_meta_ads` by campaign, ad set and ad,
+      following the monthly layer split in `hub/content/campaigns.ts`, with
+      CPM, CTR and frequency consistent with the traffic actually sent
+- [ ] **Email, seeding tracker, returns with reason codes, inventory
+      snapshots** as further raw tables, each owned by the person the RACI
+      names
+- [ ] GA4 order-ID coverage report (≥ 90% target) replaces "revenue within ±5%"
+
 ## Phase 4 — Inventory and margin
 
-- [ ] Synthetic inventory + unit cost per SKU × size, loaded to `raw_inventory`
+- [ ] Unit costs from the Hub's unit economics (`hub/content/economics.ts`)
+      loaded to `raw_finance.unit_costs`; order costs and return rates alongside
+- [ ] Synthetic inventory per SKU × size from the merchandising buy plan, loaded to `raw_inventory`
+- [ ] Plan vs actual: Year 1 targets loaded to BigQuery and compared monthly
 - [ ] Margin and stock-to-sales analysis
 - [ ] Later, optionally: live stock in the store so sizes can sell out
 

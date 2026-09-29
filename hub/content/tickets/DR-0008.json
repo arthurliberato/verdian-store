@@ -1,0 +1,19 @@
+{
+  "id": "DR-0008",
+  "created_at": "2026-09-29T16:40:00.000Z",
+  "requester": "daniel",
+  "title": "The marketing plan doesn't reconcile with the company plan",
+  "category": "investigation",
+  "level": 1,
+  "priority": "High",
+  "due": "2026-10-09",
+  "status": "new",
+  "template_id": "cfo-plan-reconcile",
+  "thread": [
+    {
+      "from": "daniel",
+      "at": "2026-09-29T16:40:00.000Z",
+      "text": "Hi Arthur,\n\nI'm writing Verdian's metrics dictionary this month, and while I was at it I ran Amara's new acquisition model against the company plan. They don't agree:\n\n• Sessions: the model averages ~194 a day; the company plan needs ~290.\n• Revenue: the model lands around $179k for Year 1; the plan says $340k.\n• CAC: the model gives roughly $100 per new customer; our target is $55 or less.\n• Holiday: the plan needs 450 sessions a day in December; the model gets 170, because ad prices go up exactly when we need volume.\n• Email: 4,000 subscribers promised, the model reaches ~1,300. It also assumes a sign-up form we don't have.\n\nOddly, October is the one month where marketing is ahead of plan.\n\nWhat I need from you:\n1. Which assumptions drive the gap the most? I don't want to argue about all of them.\n2. What does the first week of real data say about the ones we can already check (sessions from Meta, conversion rate, cost per session)?\n3. What would have to be true to reach $340k, and is any of it realistic?\n\nValeria takes this to the board on Nov 19, so I'd rather we find the problem now than there.\n\nPlease include how each figure is defined. — Daniel"
+    }
+  ]
+}

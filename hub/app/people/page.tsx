@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { people, type Person } from "@/content/people";
+import Link from "next/link";
+import { getPerson, people, type Person } from "@/content/people";
+import { getPlan } from "@/content/plans";
 import { Avatar } from "@/components/Badges";
 
 export const metadata: Metadata = { title: "People" };
@@ -8,16 +10,23 @@ function OrgNode({ person }: { person: Person }) {
   const reports = people.filter((p) => p.reportsTo === person.id);
   return (
     <li>
-      <div className={`inline-flex items-center gap-3 rounded-lg border bg-surface px-3 py-2 ${person.id === "arthur" ? "border-brand" : "border-line"}`}>
+      <Link
+        href={`/people/${person.id}`}
+        className={`inline-flex items-center gap-3 rounded-lg border bg-surface px-3 py-2 hover:border-fg ${person.id === "arthur" ? "border-brand" : "border-line"}`}
+      >
         <Avatar id={person.id} />
         <div>
           <p className="text-sm font-medium">{person.name}</p>
-          <p className="text-xs text-muted">{person.title}</p>
+          <p className="text-xs text-muted">
+            {person.title}
+            {person.employment !== "Full-time" && ` · ${person.employment}`}
+            {person.dottedTo && ` · dotted line to ${getPerson(person.dottedTo)?.name.split(" ")[0]}`}
+          </p>
         </div>
         {person.agent && (
           <span className="ml-2 rounded-full bg-brand-soft px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide">Sends requests</span>
         )}
-      </div>
+      </Link>
       {reports.length > 0 && (
         <ul className="ml-5 mt-2 space-y-2 border-l border-line pl-5">
           {reports.map((r) => (
@@ -35,7 +44,10 @@ export default function PeoplePage() {
   return (
     <div className="max-w-5xl">
       <h1 className="font-display text-3xl font-medium tracking-tight">People</h1>
-      <p className="mt-2 text-muted">Who works at Verdian, and who sends data requests.</p>
+      <p className="mt-2 max-w-3xl text-muted">
+        Who works at Verdian, and who sends data requests. Twelve people plus three part-time specialists (contract,
+        freelance and outsourced), the usual shape for a seed-stage brand. Click anyone for their role card.
+      </p>
 
       <section className="mt-8">
         <h2 className="font-display text-xl font-medium">Organization</h2>
@@ -71,6 +83,12 @@ export default function PeoplePage() {
                   <dd className="mt-1 text-muted">{p.style}</dd>
                 </div>
               </dl>
+              <p className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                <Link href={`/people/${p.id}`} className="underline underline-offset-4">Role card →</Link>
+                {getPlan(p.id) && (
+                  <Link href={`/plans/${p.id}`} className="underline underline-offset-4">{getPlan(p.id)!.title} →</Link>
+                )}
+              </p>
             </article>
           ))}
         </div>
