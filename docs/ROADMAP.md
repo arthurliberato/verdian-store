@@ -157,6 +157,15 @@ which is then compared with what GA4 recorded.
 - [ ] Ad exposure step with five creatives
 - [ ] Calibration against benchmarks
 - [ ] Recovery analysis: does the stack recover each persona's known behavior?
+- [ ] Behaviour realism for CRO / behavioural analytics (Microsoft Clarity):
+      scrolling with limited attention, hesitation, hovering, zoom taps on
+      product images, rage clicks when something frustrates them, mis-taps on
+      mobile — so heatmaps and recordings show something worth diagnosing
+- [ ] Meta ads by placement: ads clicked in Instagram arrive as
+      `utm_source=instagram&utm_medium=paid_social` (as in real life), so the
+      channel group's rule order is actually tested
+- [ ] CRO loop: find a leak in GA4 → diagnose it in Clarity → A/B test a fix
+      → measure the result against ground truth
 
 ## Stakeholder requests — Verdian Hub (`hub/`)
 

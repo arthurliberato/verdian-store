@@ -40,6 +40,9 @@ GA4 admin:
 - [ ] Google signals: **off** (no ads to power; avoids data thresholding)
 - [ ] Custom channel group "Verdian channels": Meta paid (`paid_social`),
       Instagram organic, Newsletter, Organic search, Direct, Referral
+      — rule order matters (first match wins): Meta Paid → Newsletter →
+      Instagram Organic → default channels. Check first which default channel
+      `meta / paid_social` lands in (Paid Social or Paid Other)
 - [ ] Attribution settings reviewed and written down (model + lookback windows)
 - [x] Cross-domain: not needed (single domain); Google's suggested
       deployment-URL domain dismissed
