@@ -102,6 +102,20 @@ export default function PlansPage() {
               </Link>
             );
           })}
+          <Link href="/plans/acquisition" className="rounded-lg border border-line bg-surface p-5 hover:border-fg">
+            <p className="font-medium">Acquisition model</p>
+            <p className="text-xs text-muted">Marketing</p>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Bottom-up sessions by channel and month. It doesn&apos;t reconcile with the company plan.
+            </p>
+          </Link>
+          <Link href="/plans/campaigns" className="rounded-lg border border-line bg-surface p-5 hover:border-fg">
+            <p className="font-medium">Campaigns and creative</p>
+            <p className="text-xs text-muted">Marketing · Paid social · CRM</p>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Campaign calendar, the five launch creatives and the UTM convention behind the channel report.
+            </p>
+          </Link>
           <Link href="/plans/economics" className="rounded-lg border border-line bg-surface p-5 hover:border-fg">
             <p className="font-medium">Unit economics</p>
             <p className="text-xs text-muted">Finance · Merchandising</p>

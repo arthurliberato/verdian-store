@@ -44,6 +44,17 @@ export default async function PlanPage({ params }: PageProps<"/plans/[owner]">) 
       </header>
       <p className="mt-6 max-w-3xl leading-relaxed">{plan.summary}</p>
 
+      {plan.links && (
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          {plan.links.map((l) => (
+            <Link key={l.href} href={l.href} className="rounded-lg border border-line bg-surface p-4 hover:border-fg">
+              <p className="font-medium">{l.label} →</p>
+              <p className="mt-1 text-sm text-muted">{l.description}</p>
+            </Link>
+          ))}
+        </div>
+      )}
+
       <Section title={plan.shapedBy ? "Goals" : "Pillars"}>
         <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed">
           {plan.goals.map((g) => <li key={g}>{g}</li>)}

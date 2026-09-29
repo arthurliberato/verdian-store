@@ -160,8 +160,13 @@ which is then compared with what GA4 recorded.
 - [ ] The simulation follows the Year 1 plans (`hub/content/plans.ts`):
       Meta budget by month drives paid traffic volume, campaigns and drops
       create spikes on their dates, The Weekly Edit lands on Wednesdays,
-      creator seeding grows Instagram Organic; session volume ramps to plan
-      (~290/day average)
+      creator seeding grows Instagram Organic; session volume follows the
+      acquisition model (`hub/content/acquisition.ts`, ~194/day), not the
+      company plan's ~290 — the gap is DR-0008
+- [ ] Campaigns follow `hub/content/campaigns.ts`: `utm_campaign` switches
+      by date (fall_launch → holiday_gifting → running_resolutions…), Meta
+      ad sets sent as `utm_term`, and each creative lands on its own product
+      (creative_1 → Arco, creative_5 → Pulso…)
 - [ ] Behaviour realism for CRO / behavioural analytics (Microsoft Clarity):
       scrolling with limited attention, hesitation, hovering, zoom taps on
       product images, rage clicks when something frustrates them, mis-taps on

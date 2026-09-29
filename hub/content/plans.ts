@@ -59,6 +59,8 @@ export type Plan = {
   constraints?: string[];
   /** What they want to learn this year — where requests come from. */
   openQuestions?: string[];
+  /** Supporting documents inside the hub. */
+  links?: { label: string; href: string; description: string }[];
 };
 
 export const planYear = { label: "Year 1", start: "2026-10-01", end: "2027-09-30", approved: "2026-07-15" };
@@ -182,7 +184,8 @@ export const plans: Plan[] = [
       "Hold the full-price line through holiday: early access, not discounts.",
     ],
     targets: [
-      { metric: "Sessions by channel", target: "Meta Paid 35% · Organic Search 25% · Instagram Organic 20% · Newsletter 10% · Direct 10%", measuredIn: "GA4", note: "Verdian channels group" },
+      { metric: "Sessions by channel", target: "Meta Paid 70% · Direct 11% · Instagram Organic 10% · Organic Search 7% · Newsletter 2%", measuredIn: "GA4", note: "From the acquisition model; Verdian channels group" },
+      { metric: "Sessions a day", target: "~194 on average (model)", measuredIn: "GA4", note: "The company plan needs ~290. See DR-0008" },
       { metric: "Direct + organic search sessions", target: "+10% month over month", measuredIn: "GA4", note: "Her proxy for brand demand" },
       { metric: "Blended CAC", target: "≤ $55", measuredIn: "Not measured yet" },
       { metric: "Meta spend vs plan", target: "within ±10% each month", measuredIn: "Ad platforms" },
@@ -209,6 +212,10 @@ export const plans: Plan[] = [
       "Does Meta start journeys that other channels get credit for?",
       "Which creative brings buyers, not just clicks?",
       "Is brand demand (direct and organic search) growing?",
+    ],
+    links: [
+      { label: "Acquisition model", href: "/plans/acquisition", description: "Sessions per channel and month from written assumptions, compared with what the company plan needs." },
+      { label: "Campaigns and creative", href: "/plans/campaigns", description: "Campaign calendar, the five launch creatives, and the UTM convention." },
     ],
   },
 
@@ -240,6 +247,9 @@ export const plans: Plan[] = [
       { name: "Creative test, round 1", start: "2026-09-27", end: "2026-10-25", detail: "Five creatives, equal budget; keep the best two.", twist: "Round 1 of the creative test ends Oct 25 and I have to cut creatives." },
       { name: "Cart retargeting", start: "2026-11-01", end: "2026-11-30", detail: "7-day cart abandoners, separate budget line.", twist: "I'm setting up cart retargeting for November." },
       { name: "Holiday scaling", start: "2026-11-20", end: "2026-12-20", detail: "Scale winners into holiday, cap CPA at $55.", twist: "I want to scale the winners into holiday without blowing CPA." },
+    ],
+    links: [
+      { label: "Campaigns and creative", href: "/plans/campaigns", description: "Ad sets, the five launch creatives and the UTM convention he tags with." },
     ],
     constraints: ["Budget is fixed by month; underspend is lost, overspend needs Amara's approval."],
     openQuestions: ["Why does Meta report so many more purchases than GA4?", "Does the Arco creative actually sell Arcos?"],
