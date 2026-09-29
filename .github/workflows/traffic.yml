@@ -72,6 +72,7 @@ jobs:
         working-directory: traffic-data
         run: |
           cp ../vercel.json .
+          mkdir -p hub && cp ../hub/vercel.json hub/vercel.json
           cp ../traffic/DATA_BRANCH.md README.md
           git add -A
           git commit -m "Traffic run $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
