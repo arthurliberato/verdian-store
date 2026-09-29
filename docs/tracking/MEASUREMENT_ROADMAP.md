@@ -132,6 +132,25 @@ Never test on the live container again.
 - [ ] 🤖 Mask anything typed into checkout fields in recordings (Clarity masking
       settings + `data-clarity-mask` on the form); consent gating comes in Stage 4
 
+## Stage 3b — Product analytics (Amplitude) 🧑 + 🤖
+
+Web analytics (GA4) answers "where do visitors come from and do they
+convert"; behavioural analytics (Clarity, Stage 3) answers "how do they use
+this page"; product analytics answers "what do users do over time, and what
+brings them back". Same data layer, second destination.
+
+- [ ] 🧑 Amplitude project (free plan); tags in GTM send the same data layer
+      events as GA4 (production host only, folder `Amplitude`)
+- [ ] 🧑 Funnels: view_item → add_to_cart → begin_checkout → purchase, by
+      device and channel; compare the numbers with GA4 and explain differences
+- [ ] 🧑 Feature adoption: size guide, size selection, newsletter sign-up
+      (needs Stage 2 events) — and whether users of each convert or return more
+- [ ] 🧑 Paths: what people do after landing from each creative
+- [ ] 🧑 Retention and cohorts (weekly return rate by first-visit week and
+      first channel) — device-based now, person-based after Stage 8
+- [ ] Alternative worth knowing: PostHog (open source; analytics, recordings,
+      feature flags and experiments in one tool)
+
 ## Stage 4 — Consent and privacy 🤖 + 🧑
 
 - [ ] 🤖 Consent banner in the store (accept / reject / preferences),
@@ -139,7 +158,7 @@ Never test on the live container again.
 - [ ] 🤖 Consent Mode v2 defaults before GTM loads (`analytics_storage`,
       `ad_storage`, `ad_user_data`, `ad_personalization`), region-specific:
       denied by default in the EEA/UK, granted elsewhere; `update` on choice
-- [ ] 🧑 GTM consent settings per tag (GA4 and Clarity); GA4 consent check in Admin
+- [ ] 🧑 GTM consent settings per tag (GA4, Clarity and Amplitude); GA4 consent check in Admin
 - [ ] 🤖 Synthetic visitors accept or reject at realistic rates and log it,
       so the gap between ground truth and GA4 includes consent — like real life
 - [ ] PII review: no emails, names or addresses in URLs or event parameters
@@ -191,6 +210,8 @@ vs anonymous visits, joining web data to customer data.
 - [ ] 🧑 Reporting identity revisited: compare Device-based vs Observed vs
       Blended on the same period and document the differences
 - [ ] 🧑 GA4 user explorer and audiences built on logged-in users
+- [ ] 🧑 Amplitude with `user_id`: cross-device retention, repeat-purchase
+      cohorts and LTV by first channel — the full product analytics workflow
 - [ ] 🤖 Synthetic visitors: some create accounts and come back logged in on
       a second device, logged as ground truth — so cross-device stitching
       can be measured against what really happened

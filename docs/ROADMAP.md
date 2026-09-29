@@ -62,6 +62,7 @@ every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
 - [ ] Stage 1 — Hygiene and governance
 - [ ] Stage 2 — Tracking plan and data layer v2
 - [ ] Stage 3 — Staging environment, then the GTM rebuild
+- [ ] Stage 3b — Product analytics (Amplitude)
 - [ ] Stage 4 — Consent and privacy
 - [ ] Stage 5 — Monitoring and data quality
 - [ ] Stage 6 — Server-side and first-party (optional)
