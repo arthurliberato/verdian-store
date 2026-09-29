@@ -5,6 +5,12 @@ Add a GA4 annotation on the same date for anything that changes the numbers.
 
 | Date | Where | Change | Effect on data |
 |---|---|---|---|
+| 2026-09-29 | Vercel | `NEXT_PUBLIC_GTM_ID` scoped to Production only (recreated as Config) | Preview deployments load no tracking from their next build |
+| 2026-09-29 | GTM | v2 `production hostname only`: all triggers require Page Hostname = `verdian-store.vercel.app` | Deployment URLs (`verdian-store-*.vercel.app`) stop sending data |
+| 2026-09-29 | GA4 | Cross-domain suggestions dismissed (single-domain store; the extra domain was a Vercel deployment URL) | — |
+| 2026-09-29 | GA4 | Session timeout 30 min and engaged-session timer 10 s reviewed, kept at defaults | — (documented) |
+| 2026-09-29 | GA4 | Key events: only `purchase`, counted once per event | — (confirmed) |
+| 2026-09-29 | GA4 | Internal traffic rule (home IPv6 /64 + public IPv4) and filter **Active**; developer traffic filter **Active** | Own visits and debug traffic excluded from reports from this date |
 | 2026-09-28 | GitHub Actions | Scheduled synthetic traffic every 3 h | Steady volume from this date |
 | ≤ 2026-09-28 (confirm) | GA4 | Form interactions turned off (was sending `form_start`) | `form_start` stops |
 | ≤ 2026-09-28 (confirm) | GA4 | BigQuery daily export linked (events + user data) | Export tables from this date |

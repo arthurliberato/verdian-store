@@ -31,15 +31,20 @@ spec, then a staging environment *before* touching the live container.
 ## Stage 1 — Hygiene and governance 🧑
 
 GA4 admin:
-- [ ] Internal traffic rule + filter **Active**; developer traffic filter **Active**
-- [ ] Key events: only `purchase` (check it's marked)
-- [ ] Session timeout: keep 30 min; engaged session threshold: keep 10 s (document it)
+- [x] Internal traffic rule + filter **Active**; developer traffic filter **Active**
+- [x] Key events: only `purchase` (check it's marked)
+- [x] Session timeout: keep 30 min; engaged session threshold: keep 10 s (document it)
 - [ ] Reporting identity: **Device-based** until the store has logins
       (no `user_id`), so reports aren't subject to modelling surprises
 - [ ] Google signals: **off** (no ads to power; avoids data thresholding)
 - [ ] Custom channel group "Verdian channels": Meta paid (`paid_social`),
       Instagram organic, Newsletter, Organic search, Direct, Referral
 - [ ] Attribution settings reviewed and written down (model + lookback windows)
+- [x] Cross-domain: not needed (single domain); Google's suggested
+      deployment-URL domain dismissed
+- [x] Tracking limited to the production host: GTM triggers require
+      Page Hostname = `verdian-store.vercel.app` (v2); `NEXT_PUBLIC_GTM_ID`
+      scoped to Vercel Production
 - [ ] Unwanted referrals: none needed yet (no payment provider redirect) — noted
 
 GTM governance:
@@ -50,7 +55,7 @@ GTM governance:
 - [ ] Rename existing v1 items to the convention (publish as v2 — no behaviour change)
 
 Repo:
-- [ ] 🤖 `docs/tracking/CHANGELOG.md`: dated log of every tracking change
+- [x] 🤖 `docs/tracking/CHANGELOG.md`: dated log of every tracking change
 
 ## Stage 2 — Tracking plan and data layer v2 🤖 (then 🧑 review)
 
