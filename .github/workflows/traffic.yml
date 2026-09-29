@@ -12,11 +12,14 @@ name: Synthetic traffic
 
 on:
   schedule:
-    - cron: "17 */3 * * *" # every 3 hours, at minute 17
+    # Hourly. Each run sends the sessions the acquisition model expects for the
+    # time since the previous run (traffic/volume.ts), so a delayed run just
+    # sends a bigger batch (up to 3 hours' worth).
+    - cron: "7 * * * *"
   workflow_dispatch:
     inputs:
       sessions:
-        description: "Number of sessions (leave empty to base it on the hour)"
+        description: "Number of sessions (leave empty to follow the acquisition model)"
         required: false
         default: ""
 
