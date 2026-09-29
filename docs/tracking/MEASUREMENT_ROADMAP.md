@@ -115,6 +115,13 @@ Never test on the live container again.
 - [ ] 🧑 QA each event in Tag Assistant + GA4 DebugView on a preview URL,
       against a written checklist → publish to Staging → then Live
 - [ ] 🧑 GA4 annotation on the go-live date ("tracking v2")
+- [ ] 🧑 Behavioural analytics: **Microsoft Clarity** (free; same category as
+      Hotjar and Crazy Egg) installed as a GTM tag on the production host only,
+      with the GA4 integration on. Heatmaps, scroll maps, session recordings,
+      rage clicks. Recordings of synthetic visitors (and later AI shoppers)
+      show whether they behave like people
+- [ ] 🤖 Mask anything typed into checkout fields in recordings (Clarity masking
+      settings + `data-clarity-mask` on the form); consent gating comes in Stage 4
 
 ## Stage 4 — Consent and privacy 🤖 + 🧑
 
@@ -123,7 +130,7 @@ Never test on the live container again.
 - [ ] 🤖 Consent Mode v2 defaults before GTM loads (`analytics_storage`,
       `ad_storage`, `ad_user_data`, `ad_personalization`), region-specific:
       denied by default in the EEA/UK, granted elsewhere; `update` on choice
-- [ ] 🧑 GTM consent settings per tag; GA4 consent check in Admin
+- [ ] 🧑 GTM consent settings per tag (GA4 and Clarity); GA4 consent check in Admin
 - [ ] 🤖 Synthetic visitors accept or reject at realistic rates and log it,
       so the gap between ground truth and GA4 includes consent — like real life
 - [ ] PII review: no emails, names or addresses in URLs or event parameters
