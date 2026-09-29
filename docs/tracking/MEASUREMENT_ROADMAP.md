@@ -34,11 +34,11 @@ GA4 admin:
 - [x] Internal traffic rule + filter **Active**; developer traffic filter **Active**
 - [x] Key events: only `purchase` (check it's marked)
 - [x] Session timeout: keep 30 min; engaged session threshold: keep 10 s (document it)
-- [ ] Reporting identity: **Device-based** until the store has logins
+- [x] Reporting identity: **Device-based** until the store has logins
       (no `user_id`), so reports aren't subject to modelling surprises
       (revisited in Stage 8)
-- [ ] Google signals: **off** (no ads to power; avoids data thresholding)
-- [ ] Custom channel group "Verdian channels": Meta paid (`paid_social`),
+- [x] Google signals: **off** (no ads to power; avoids data thresholding)
+- [x] Custom channel group "Verdian channels": Meta paid (`paid_social`),
       Instagram organic, Newsletter, Organic search, Direct, Referral
       — rule order matters (first match wins): Meta Paid → Newsletter →
       Instagram Organic → default channels. Check first which default channel
