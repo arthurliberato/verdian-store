@@ -43,7 +43,11 @@ GA4 admin:
       — rule order matters (first match wins): Meta Paid → Newsletter →
       Instagram Organic → default channels. Check first which default channel
       `meta / paid_social` lands in (Paid Social or Paid Other)
-- [ ] Attribution settings reviewed and written down (model + lookback windows)
+- [x] Attribution settings: not available in this property without a Google
+      Ads link (the Advertising section only offers to connect Ads). GA4 keeps
+      its default (data-driven). Verdian's reporting doesn't depend on it:
+      session-scoped dimensions (last non-direct click) and first-user
+      dimensions in GA4, and traceable attribution built in BigQuery
 - [x] Cross-domain: not needed (single domain); Google's suggested
       deployment-URL domain dismissed
 - [x] Tracking limited to the production host: GTM triggers require
@@ -52,7 +56,7 @@ GA4 admin:
 - [ ] Unwanted referrals: none needed yet (no payment provider redirect) — noted
 
 GTM governance:
-- [ ] Naming convention: `GA4 - event - {name}`, `CE - {event}` triggers,
+- [ ] Naming convention (see `GTM_CONVENTIONS.md`): `GA4 - event - {name}`, `CE - {event}` triggers,
       `DLV - {key}` variables, `CJS - {name}`, `LT - {name}` lookup tables
 - [ ] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
 - [ ] Every published version has a name and a description of what changed

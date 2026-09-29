@@ -5,6 +5,8 @@ Add a GA4 annotation on the same date for anything that changes the numbers.
 
 | Date | Where | Change | Effect on data |
 |---|---|---|---|
+| 2026-09-29 | GA4 | Annotation added: traffic scaled to the acquisition model | — |
+| 2026-09-29 | GA4 | Attribution settings not available without a Google Ads link; default (data-driven) stays. Reporting uses session-scoped and first-user dimensions, and BigQuery for attribution | — (documented) |
 | 2026-09-29 | GitHub Actions | Synthetic traffic scaled to the acquisition model: hourly runs, ~220 sessions/day, Meta ~70%, campaign and creative landing by calendar, `utm_term` for ad sets | Sessions jump from ~15/day; channel mix shifts to Meta; new `utm_term` and `ao_prospecting` values later |
 | 2026-09-29 | GA4 | Custom channel group "Verdian channels" (Meta Paid → Newsletter → Instagram Organic → defaults) | New channel dimension; applies to past data too |
 | 2026-09-29 | GA4 | Reporting identity set to Device-based; Google signals and user-provided data confirmed off | Users = devices (`_ga` client_id), same as ground truth; no signals thresholding |
