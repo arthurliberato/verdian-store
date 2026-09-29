@@ -36,6 +36,7 @@ GA4 admin:
 - [x] Session timeout: keep 30 min; engaged session threshold: keep 10 s (document it)
 - [ ] Reporting identity: **Device-based** until the store has logins
       (no `user_id`), so reports aren't subject to modelling surprises
+      (revisited in Stage 8)
 - [ ] Google signals: **off** (no ads to power; avoids data thresholding)
 - [ ] Custom channel group "Verdian channels": Meta paid (`paid_social`),
       Instagram organic, Newsletter, Organic search, Direct, Referral
@@ -155,3 +156,27 @@ turned on.
 - [ ] Looker Studio moves from the GA4 connector to BigQuery marts (see ROADMAP Phase 2)
 - [ ] Later, if paid media is simulated end to end: Google Ads / Meta
       conversions API concepts documented against the synthetic creatives
+
+## Stage 8 — Customer accounts and `user_id` (after Stages 1–7) 🤖 + 🧑
+
+Verdian starts without logins, so GA4 only knows devices (the `_ga` cookie).
+Once the rest of the stack is solid, the store gets accounts, and with them
+the problems real retailers have: one person on several devices, logged-in
+vs anonymous visits, joining web data to customer data.
+
+- [ ] 🤖 Accounts in the store: sign up, log in, log out, order history
+      (demo only — no real personal data collected)
+- [ ] 🤖 `user_id` in the data layer on every page while logged in, and
+      cleared on logout; an internal random ID, **never** an email or
+      anything that identifies a person
+- [ ] 🤖 Events: `sign_up` (`method`), `login` (`method`)
+- [ ] 🧑 GTM: send `user_id` on the Google tag; user properties such as
+      `customer_type` (new / returning buyer) as user-scoped custom dimensions
+- [ ] 🧑 Reporting identity revisited: compare Device-based vs Observed vs
+      Blended on the same period and document the differences
+- [ ] 🧑 GA4 user explorer and audiences built on logged-in users
+- [ ] 🤖 Synthetic visitors: some create accounts and come back logged in on
+      a second device, logged as ground truth — so cross-device stitching
+      can be measured against what really happened
+- [ ] 🤖 + 🧑 BigQuery: `user_id` joins the GA4 export to a synthetic
+      customer table (`raw_crm`), opening LTV and repeat-purchase analysis

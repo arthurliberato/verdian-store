@@ -66,6 +66,7 @@ every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
 - [ ] Stage 5 — Monitoring and data quality
 - [ ] Stage 6 — Server-side and first-party (optional)
 - [ ] Stage 7 — Integrations
+- [ ] Stage 8 — Customer accounts and `user_id`
 
 ## Phase 2 — Modeling and reporting
 
