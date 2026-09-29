@@ -167,6 +167,25 @@ which is then compared with what GA4 recorded.
 - [ ] CRO loop: find a leak in GA4 → diagnose it in Clarity → A/B test a fix
       → measure the result against ground truth
 
+**Experimentation (A/B testing with GrowthBook)**
+
+The concepts behind Optimizely, VWO and AB Tasty, practised for free.
+GrowthBook is open source, has feature flags for Next.js and reads results
+straight from BigQuery (warehouse-native). Synthetic visitors make one thing
+possible that real companies never have: a *known* true effect to recover.
+
+- [ ] GrowthBook (free cloud plan) connected to BigQuery; SDK in the store
+      with an `experiment_viewed` event in the data layer → GTM → GA4
+- [ ] Experiment brief template: hypothesis, primary metric, guardrail
+      metrics, MDE, sample size and planned duration — written before launch
+- [ ] Planted effect: agents in the variant really behave differently (e.g.
+      +5% add-to-cart); does the test detect it, and how many days does it take?
+- [ ] A/A test: no difference planted — how often does it show a "winner"?
+- [ ] Peeking: stop at the first "significant" day vs the planned end; compare
+- [ ] SRM: deliberately break the 50/50 split and catch it
+- [ ] Segment traps: an effect only on mobile, hidden in the overall result
+- [ ] Client-side vs server-side assignment: flicker and what it does to results
+
 ## Stakeholder requests — Verdian Hub (`hub/`)
 
 A separate intranet-style site (own Vercel project, Root Directory `hub`)
