@@ -11,7 +11,7 @@ Add a GA4 annotation on the same date for anything that changes the numbers.
 | 2026-09-29 | GA4 | Custom channel group "Verdian channels" (Meta Paid → Newsletter → Instagram Organic → defaults) | New channel dimension; applies to past data too |
 | 2026-09-29 | GA4 | Reporting identity set to Device-based; Google signals and user-provided data confirmed off | Users = devices (`_ga` client_id), same as ground truth; no signals thresholding |
 | 2026-09-29 | Vercel | `NEXT_PUBLIC_GTM_ID` scoped to Production only (recreated as Config) | Preview deployments load no tracking from their next build |
-| 2026-09-29 | GTM | v2 `production hostname only`: custom event triggers require Page Hostname = `verdian-store.vercel.app`. The Google tag stayed on the built-in *Initialization - All Pages* trigger (built-in triggers can't take conditions); fixed in v3 | page_view and ecommerce events stop on deployment URLs; the Google tag itself still loaded there until v3 |
+| 2026-09-29 | GTM | v2 `production hostname only` was meant to add Page Hostname = `verdian-store.vercel.app` to every trigger, but on review in v3 none of the three had it: the custom event triggers were still *All Custom Events*, and the Google tag was on the built-in *Initialization - All Pages* (which can't take conditions). Fixed in v3 | None in practice: deployment URLs are only visited by Arthur, whose traffic is filtered as internal |
 | 2026-09-29 | GA4 | Cross-domain suggestions dismissed (single-domain store; the extra domain was a Vercel deployment URL) | — |
 | 2026-09-29 | GA4 | Session timeout 30 min and engaged-session timer 10 s reviewed, kept at defaults | — (documented) |
 | 2026-09-29 | GA4 | Key events: only `purchase`, counted once per event | — (confirmed) |
