@@ -47,8 +47,25 @@ Store (Next.js, Vercel) → GTM → GA4 → BigQuery → dbt → Looker Studio
 - [x] GA4 form interactions confirmed off (was still sending `form_start`)
 - [x] Link GA4 to BigQuery (daily events + daily user data)
 - [x] Synthetic traffic live (first manual run: 5 visitors in GA4 Realtime)
-- [ ] Enable BigQuery billing (sandbox deletes tables after 60 days)
+- [x] Enable BigQuery billing ($300 trial; upgrade to paid before it ends)
+- [ ] Remove the sandbox 60-day expiry from existing datasets and tables
 - [ ] First queries on the GA4 export (`UNNEST(items)`, join to catalog)
+
+## Measurement maturity — GA4 + GTM
+
+From the launch setup to a state-of-the-art stack (governance, full GA4
+eCommerce spec, staging, consent, automated QA, server-side). Full plan in
+[`docs/tracking/MEASUREMENT_ROADMAP.md`](tracking/MEASUREMENT_ROADMAP.md);
+every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
+
+- [x] Stage 0 — Launch baseline
+- [ ] Stage 1 — Hygiene and governance
+- [ ] Stage 2 — Tracking plan and data layer v2
+- [ ] Stage 3 — Staging environment, then the GTM rebuild
+- [ ] Stage 4 — Consent and privacy
+- [ ] Stage 5 — Monitoring and data quality
+- [ ] Stage 6 — Server-side and first-party (optional)
+- [ ] Stage 7 — Integrations
 
 ## Phase 2 — Modeling and reporting
 
