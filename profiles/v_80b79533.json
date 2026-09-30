@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.1819514972.1790791303",
+      "domain": ".verdian-store.vercel.app",
+      "path": "/",
+      "expires": 1825351303.037715,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1790791303$o1$g1$t1790791458$j28$l0$h0",
+      "domain": ".verdian-store.vercel.app",
+      "path": "/",
+      "expires": 1825351458.319415,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://verdian-store.vercel.app",
+      "localStorage": [
+        {
+          "name": "verdian_cart",
+          "value": "[{\"productId\":\"VRD-KIT-NATURAL\",\"size\":\"One size\",\"quantity\":2}]"
+        }
+      ]
+    }
+  ]
+}
