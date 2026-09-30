@@ -72,9 +72,11 @@ fires, its parameters and types, which GA4 report it feeds. Code, GTM and
 GA4 are built from it, never the other way round.
 
 - [ ] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
+      (draft written; waiting for review)
 - [ ] Richer items on every eCommerce event: `item_brand` (Verdian),
-      `item_category` (line), `item_category2` (footwear/apparel/accessories),
-      `item_category3` (subcategory), `item_variant` (colorway), `price`,
+      `item_category` (footwear/apparel/accessories, kept from v1),
+      `item_category2` (line), `item_category3` (subcategory),
+      `item_category4` (model), `item_variant` (colorway), `price`,
       `quantity`, `index`, `item_list_id` / `item_list_name`, plus `item_size`
       (custom item parameter) where a size is known
 - [ ] `currency` and `value` sent from the data layer (not constants in GTM)
