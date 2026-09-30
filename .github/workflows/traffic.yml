@@ -1,5 +1,12 @@
 # Synthetic visitors for the live store (traffic/run.ts).
 #
+# Primary trigger: an hourly call from cron-job.org to the workflow_dispatch
+# API (GitHub's own schedule below is best effort and often skips runs, so it
+# is only a backup). The call uses a fine-grained token owned by Arthur with
+# access to this repository only and Actions: read and write; it expires
+# 2027-09-30 and must be renewed before then. The token lives only in
+# cron-job.org, never in this repository.
+#
 # Scheduled runs only happen when the repository variable TRAFFIC_ENABLED is
 # "true" (Settings → Secrets and variables → Actions → Variables). Manual runs
 # (Actions → Synthetic traffic → Run workflow) always work.
