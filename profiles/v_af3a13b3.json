@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790805668$o2$g1$t1790805700$j28$l0$h0",
+      "value": "GS2.1.s1790811927$o3$g1$t1790811966$j21$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825365700.918084,
+      "expires": 1825371966.509933,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"11.5\",\"quantity\":1}]"
         }
       ]
     }
