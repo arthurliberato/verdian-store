@@ -59,7 +59,7 @@ eCommerce spec, staging, consent, automated QA, server-side). Full plan in
 every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
 
 - [x] Stage 0 — Launch baseline
-- [ ] Stage 1 — Hygiene and governance
+- [x] Stage 1 — Hygiene and governance
 - [ ] Stage 2 — Tracking plan and data layer v2
 - [ ] Stage 3 — Staging environment, then the GTM rebuild
 - [ ] Stage 3b — Product analytics (Amplitude)

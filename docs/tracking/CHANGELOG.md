@@ -5,6 +5,7 @@ Add a GA4 annotation on the same date for anything that changes the numbers.
 
 | Date | Where | Change | Effect on data |
 |---|---|---|---|
+| 2026-09-30 | GTM | v3 `naming convention and folders`: all items renamed to `GTM_CONVENTIONS.md`; folders; measurement ID in `Const - GA4 measurement ID`; Google tag on `Init - production host`; custom event triggers limited to `verdian-store.vercel.app`. 3 tags, 3 triggers, 8 variables. Tested in Preview (page_view, view_item, add_to_cart, begin_checkout, purchase) | None on production; deployment URLs now load no tags at all |
 | 2026-09-30 | GitHub Actions | Hourly runs now started by cron-job.org (workflow_dispatch API) instead of relying on GitHub's schedule, which skipped most runs on Sep 29 | Steady hourly traffic from this date; the Sep 29 gap (18:10–23:47 UTC) had no synthetic sessions |
 | 2026-09-29 | GA4 | Annotation added: traffic scaled to the acquisition model | — |
 | 2026-09-29 | GA4 | Attribution settings not available without a Google Ads link; default (data-driven) stays. Reporting uses session-scoped and first-user dimensions, and BigQuery for attribution | — (documented) |

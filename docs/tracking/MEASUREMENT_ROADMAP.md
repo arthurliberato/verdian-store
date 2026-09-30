@@ -53,14 +53,14 @@ GA4 admin:
 - [x] Tracking limited to the production host: GTM triggers require
       Page Hostname = `verdian-store.vercel.app` (v2); `NEXT_PUBLIC_GTM_ID`
       scoped to Vercel Production
-- [ ] Unwanted referrals: none needed yet (no payment provider redirect) — noted
+- [x] Unwanted referrals: none needed yet (no payment provider redirect) — noted
 
 GTM governance:
-- [ ] Naming convention (see `GTM_CONVENTIONS.md`): `GA4 - event - {name}`, `CE - {event}` triggers,
+- [x] Naming convention (see `GTM_CONVENTIONS.md`): `GA4 - event - {name}`, `CE - {event}` triggers,
       `DLV - {key}` variables, `CJS - {name}`, `LT - {name}` lookup tables
-- [ ] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
-- [ ] Every published version has a name and a description of what changed
-- [ ] Rename existing items to the convention (publish as v3 — no behaviour change)
+- [x] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
+- [x] Every published version has a name and a description of what changed
+- [x] Rename existing items to the convention (publish as v3 — no behaviour change)
 
 Repo:
 - [x] 🤖 `docs/tracking/CHANGELOG.md`: dated log of every tracking change
