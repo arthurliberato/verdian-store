@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.424292874.1790774394",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1790776895$o1$g0$t1790776895$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825334393.511244,
+      "expires": 1825336895.701818,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790774393$o1$g1$t1790776983$j41$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.2076452295.1790776896",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825336983.13086,
+      "expires": 1825336895.702258,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CLM-MOSS\",\"size\":\"6\",\"quantity\":1},{\"productId\":\"VRD-PLT-WHITE-FOREST\",\"size\":\"10.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
