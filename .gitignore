@@ -43,3 +43,7 @@ next-env.d.ts
 
 # traffic generator local state
 traffic/.state
+
+# Playwright
+/test-results/
+/playwright-report/
