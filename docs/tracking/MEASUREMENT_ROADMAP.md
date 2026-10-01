@@ -74,14 +74,14 @@ GA4 are built from it, never the other way round.
 - [x] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
       (approved; decisions from the line-by-line build added)
 - [x] `lib/datalayer.ts` v2 written line by line and wired into the store
-- [ ] Richer items on every eCommerce event: `item_brand` (Verdian),
+- [x] Richer items on every eCommerce event: `item_brand` (Verdian),
       `item_category` (footwear/apparel/accessories, kept from v1),
       `item_category2` (line), `item_category3` (subcategory),
       `item_category4` (model), `item_variant` (colorway), `price`,
       `quantity`, `index`, `item_list_id` / `item_list_name`, plus `item_size`
       (custom item parameter) where a size is known
-- [ ] `currency` and `value` sent from the data layer (not constants in GTM)
-- [ ] Full recommended eCommerce funnel:
+- [x] `currency` and `value` sent from the data layer (not constants in GTM)
+- [x] Full recommended eCommerce funnel (plus `view_promotion` / `select_promotion`):
 
 | Event | Fires when |
 |---|---|
@@ -95,17 +95,17 @@ GA4 are built from it, never the other way round.
 | `add_payment_info` | order placed — demo store, `payment_type: "demo"` |
 | `purchase` | confirmation (+ `shipping`, `tax`, `coupon` when relevant) |
 
-- [ ] Custom events: `select_size` (item + size + in_stock), `size_guide_open`,
-      `newsletter_signup` (footer form and popup), `waitlist_join` (drops),
-      `refund` — so size-curve demand, list growth by source and drop
-      waitlists can be measured
-- [ ] `page_view` gains `page_type` (home / line / product / cart / checkout /
-      confirmation), used as GA4's content group
-- [ ] Data layer typed in TypeScript; in development, pushes are validated
+- [x] Custom events: `select_size`, `newsletter_signup` (footer form),
+      `checkout_error`
+- [ ] Planned, when their feature ships: `size_guide_open`, newsletter popup,
+      `waitlist_join` (drops), `refund` (server-side, Stage 6)
+- [x] `page_view` gains `page_type` (home / line / product / cart / checkout /
+      confirmation / not_found / other), used as GA4's content group
+- [x] Data layer typed in TypeScript; in development, pushes are validated
       against the plan and warn in the console
-- [ ] **Automated data layer tests** (Playwright, run in CI on every PR): each
+- [x] **Automated data layer tests** (Playwright, run in CI on every PR): each
       journey asserts the exact sequence and shape of pushes
-- [ ] Traffic generator updated so synthetic visitors use the new
+- [x] Traffic generator updated so synthetic visitors use the new
       interactions (lists, sizes, cart edits, newsletter) and log them as
       ground truth
 

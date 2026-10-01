@@ -209,7 +209,25 @@ function planSession(visitors: Visitor[], hour: number, now: Date): SessionPlan 
 
 // ─── Ground-truth log ──────────────────────────────────────────────────
 
-type Action = { t: string; type: string; path?: string; item_id?: string; size?: string; quantity?: number };
+type Action = {
+  t: string;
+  type: string;
+  path?: string;
+  item_id?: string;
+  size?: string;
+  quantity?: number;
+  /** Product list clicked from (home_featured, line_{slug}, pdp_related) and position from 1. */
+  list?: string;
+  index?: number;
+  /** Promotion clicked (promotion_id). */
+  promotion?: string;
+  /** Checkout field that failed, and why. */
+  field?: string;
+  reason?: string;
+  /** How far an abandoned checkout got: "contact" or "shipping". */
+  stage?: string;
+};
+type Logger = (type: string, extra?: Omit<Action, "t" | "type">) => void;
 
 type SessionLog = {
   session_key: string;
@@ -268,18 +286,58 @@ async function openLine(page: Page, line: Line) {
   await navigate(page, link);
 }
 
-async function openProduct(page: Page, preferLine: Line | null) {
+/** The product list a grid on this page is (docs/tracking/TRACKING_PLAN.md). */
+function listFor(pathname: string): string | undefined {
+  if (pathname === "/") return "home_featured";
+  if (pathname.startsWith("/shop/")) return `line_${pathname.split("/")[2]}`;
+  if (pathname.startsWith("/products/")) return "pdp_related";
+  return undefined;
+}
+
+/** Opens a product from a link on the page; returns what was clicked (list position or promotion). */
+async function openProduct(page: Page, preferLine: Line | null): Promise<Omit<Action, "t" | "type"> | null> {
   // Exclude the page we're on (its own colorway swatch links here too).
   const here = new URL(page.url()).pathname;
   const hrefs = await page.locator('main a[href^="/products/"]').evaluateAll(
     (els, current) => els.map((e) => e.getAttribute("href")!).filter((h) => h && h !== current),
     here,
   );
-  if (hrefs.length === 0) return false;
+  if (hrefs.length === 0) return null;
   const preferred = preferLine ? hrefs.filter((h) => slugToProduct.get(h.split("/")[2])?.line === preferLine) : [];
   const href = pick(preferred.length > 0 && chance(0.8) ? preferred : hrefs);
-  await navigate(page, page.locator(`main a[href="${href}"]`).first());
-  return true;
+  const link = page.locator(`main a[href="${href}"]`).first();
+  const clicked = await link.evaluate((a) => {
+    const promotion = a.getAttribute("data-promotion");
+    if (promotion) return { promotion };
+    if (!a.classList.contains("group")) return {};
+    const cards = Array.from(a.closest("div.grid")?.querySelectorAll(":scope > a.group") ?? []);
+    return { index: cards.indexOf(a) + 1 };
+  });
+  const list = clicked.index ? listFor(here) : undefined;
+  await navigate(page, link);
+  return { item_id: slugToProduct.get(href.split("/")[2])?.id, ...clicked, ...(list ? { list } : {}) };
+}
+
+/** Clicks a promotion on the home page (hero or line tile). */
+async function openPromotion(page: Page): Promise<string | null> {
+  const links = page.locator("main a[data-promotion]");
+  const n = await links.count();
+  if (n === 0) return null;
+  const link = links.nth(randInt(0, n - 1));
+  const promotion = await link.getAttribute("data-promotion");
+  await navigate(page, link);
+  return promotion;
+}
+
+/** Clicks a size button without adding to cart: size demand that doesn't convert. */
+async function trySize(page: Page): Promise<string | null> {
+  const sizes = page.locator("fieldset button:not([aria-pressed='true'])");
+  const n = await sizes.count();
+  if (n === 0) return null;
+  const button = sizes.nth(randInt(0, n - 1));
+  const size = (await button.textContent())?.trim() ?? null;
+  await button.click();
+  return size;
 }
 
 async function switchColorway(page: Page) {
@@ -298,14 +356,22 @@ async function applyFilter(page: Page) {
   return true;
 }
 
-async function addToCart(page: Page): Promise<Omit<Action, "t" | "type"> | null> {
+async function addToCart(page: Page, log: Logger): Promise<Omit<Action, "t" | "type"> | null> {
   if (!page.url().includes("/products/")) return null;
+  // Some visitors try a size or two before settling.
+  const tries = chance(0.35) ? randInt(1, 2) : 0;
+  for (let i = 0; i < tries; i++) {
+    const tried = await trySize(page);
+    if (tried) log("select_size", { size: tried });
+    await page.waitForTimeout(randInt(800, 2500) * DWELL_SCALE);
+  }
   const sizes = page.locator("fieldset button");
   let size: string | undefined;
   const n = await sizes.count();
   if (n > 0) {
     const button = sizes.nth(randInt(0, n - 1));
     size = (await button.textContent())?.trim();
+    if ((await button.getAttribute("aria-pressed")) !== "true") log("select_size", { size });
     await button.click();
   }
   let quantity = 1;
@@ -331,20 +397,109 @@ const CITIES = [
   ["Seattle", "98101"], ["Miami", "33130"], ["Portland", "97205"], ["Atlanta", "30303"],
 ];
 
-async function placeOrder(page: Page) {
-  const first = pick(FIRST_NAMES);
-  const last = pick(LAST_NAMES);
+type Shopper = { first: string; last: string; city: string; zip: string };
+
+function newShopper(): Shopper {
   const [city, zip] = pick(CITIES);
-  await page.fill("#name", `${first} ${last}`);
-  await page.fill("#email", `${first}.${last}.${randInt(100, 999)}@example.com`.toLowerCase());
+  return { first: pick(FIRST_NAMES), last: pick(LAST_NAMES), city, zip };
+}
+
+const emailOf = (s: Shopper) => `${s.first}.${s.last}.${randInt(100, 999)}@example.com`.toLowerCase();
+
+async function fillContact(page: Page, s: Shopper) {
+  await page.fill("#name", `${s.first} ${s.last}`);
+  await page.waitForTimeout(randInt(1000, 3000) * DWELL_SCALE);
+  await page.fill("#email", emailOf(s));
+}
+
+async function fillShipping(page: Page, s: Shopper) {
   await page.fill("#street", `${randInt(10, 999)} ${pick(["Oak", "Maple", "Pine", "Cedar", "Elm"])} St`);
-  await page.fill("#city", city);
-  await page.fill("#postalCode", zip);
+  await page.waitForTimeout(randInt(1000, 3000) * DWELL_SCALE);
+  await page.fill("#city", s.city);
+  await page.fill("#postalCode", s.zip);
+}
+
+/** Clicks "Place order" while the form is incomplete; logs the fields the browser rejects. */
+async function submitTooEarly(page: Page, log: Logger) {
+  const invalid = await page.locator("form[aria-label='Checkout'] :is(input, select):invalid").evaluateAll((els) =>
+    els.map((e) => {
+      const input = e as HTMLInputElement;
+      return { field: input.name, reason: input.validity.valueMissing ? "missing" : "invalid" };
+    }),
+  );
+  await page.getByRole("button", { name: /Place order/ }).click();
+  for (const f of invalid) log("checkout_error", { field: f.field === "postalCode" ? "postal_code" : f.field, reason: f.reason });
+}
+
+/** Fills checkout step by step, sometimes with mistakes first, and places the order. */
+async function placeOrder(page: Page, log: Logger) {
+  const shopper = newShopper();
+  if (chance(0.06)) {
+    // Typo in the email: the browser rejects it, the visitor fixes it.
+    await page.fill("#name", `${shopper.first} ${shopper.last}`);
+    await page.fill("#email", `${shopper.first}.${shopper.last}.example.com`.toLowerCase());
+    await submitTooEarly(page, log);
+    await page.waitForTimeout(randInt(2000, 5000) * DWELL_SCALE);
+  }
+  await fillContact(page, shopper);
+  if (chance(0.12)) {
+    // Tries to place the order before entering the address.
+    await submitTooEarly(page, log);
+    await page.waitForTimeout(randInt(2000, 5000) * DWELL_SCALE);
+  }
+  await fillShipping(page, shopper);
+  await page.waitForTimeout(randInt(2000, 6000) * DWELL_SCALE);
   await page.getByRole("button", { name: /Place order/ }).click();
   await page.waitForURL("**/checkout/confirmation", { timeout: 20_000 });
   await page.getByRole("heading", { name: /^Thank you/ }).waitFor({ timeout: 10_000 });
   const order = await page.evaluate(() => JSON.parse(sessionStorage.getItem("verdian_last_order") ?? "null"));
   return order ? { transaction_id: order.id as string, value: order.total as number } : null;
+}
+
+/** Leaves checkout partway: after the contact details, or after a complete address. */
+async function abandonCheckout(page: Page): Promise<string> {
+  const shopper = newShopper();
+  if (chance(0.5)) {
+    if (chance(0.6)) await fillContact(page, shopper);
+    return "contact";
+  }
+  await fillContact(page, shopper);
+  await fillShipping(page, shopper);
+  await page.waitForTimeout(randInt(3000, 10000) * DWELL_SCALE);
+  return "shipping";
+}
+
+/** Sometimes changes the cart before checking out. Returns false if the cart ends up empty. */
+async function editCart(page: Page, log: Logger): Promise<boolean> {
+  const increase = page.getByRole("button", { name: /Increase quantity of/ });
+  const decrease = page.getByRole("button", { name: /Decrease quantity of/ });
+  const remove = page.getByRole("button", { name: "Remove" });
+  if (chance(0.12) && (await increase.count()) > 0) {
+    await increase.first().click();
+    log("cart_increase");
+    await page.waitForTimeout(randInt(1000, 3000) * DWELL_SCALE);
+  }
+  if (chance(0.08) && (await decrease.count()) > 0) {
+    await decrease.first().click();
+    log("cart_decrease");
+    await page.waitForTimeout(randInt(1000, 3000) * DWELL_SCALE);
+  }
+  if (chance(0.1) && (await remove.count()) > 1) {
+    await remove.last().click();
+    log("cart_remove");
+    await page.waitForTimeout(randInt(1000, 3000) * DWELL_SCALE);
+  }
+  return (await page.locator('main a[href="/checkout"]').count()) > 0;
+}
+
+/** Newsletter sign-up in the footer. The address is made up and never leaves the browser. */
+async function signUpNewsletter(page: Page): Promise<boolean> {
+  const input = page.getByPlaceholder("Email address");
+  if ((await input.count()) === 0) return false;
+  await input.scrollIntoViewIfNeeded();
+  await input.fill(emailOf(newShopper()));
+  await page.getByRole("button", { name: "Sign up" }).click();
+  return true;
 }
 
 /** GA4 client_id from the _ga cookie ("GA1.1.123456789.1700000000" → "123456789.1700000000"). */
@@ -369,7 +524,7 @@ async function runSession(browser: Browser, plan: SessionPlan): Promise<SessionL
   page.setDefaultTimeout(20_000);
 
   const actions: Action[] = [];
-  const log = (type: string, extra: Omit<Action, "t" | "type"> = {}) =>
+  const log: Logger = (type, extra = {}) =>
     actions.push({ t: new Date().toISOString(), type, path: currentPath(page), ...extra });
 
   const entry: SessionLog = {
@@ -407,33 +562,49 @@ async function runSession(browser: Browser, plan: SessionPlan): Promise<SessionL
     for (let i = 0; i < pages; i++) {
       const onProduct = page.url().includes("/products/");
       const onShop = page.url().includes("/shop/");
+      const onHome = new URL(page.url()).pathname === "/";
       const step = pickWeighted({
         product: 0.5,
         line: 0.2,
+        promotion: onHome ? 0.25 : 0,
         colorway: onProduct ? 0.15 : 0,
+        size: onProduct ? 0.12 : 0,
         filter: onShop ? 0.15 : 0,
       });
       let done: string | null = null;
-      if (step === "product" && (await openProduct(page, archetype.line))) done = "open_product";
+      let extra: Omit<Action, "t" | "type"> = {};
+      if (step === "product") {
+        const opened = await openProduct(page, archetype.line);
+        if (opened) [done, extra] = ["open_product", opened];
+      }
+      if (step === "promotion") {
+        const promotion = await openPromotion(page);
+        if (promotion) [done, extra] = ["select_promotion", { promotion }];
+      }
       if (step === "colorway" && (await switchColorway(page))) done = "switch_colorway";
+      if (step === "size") {
+        const size = await trySize(page);
+        if (size) [done, extra] = ["select_size", { size }];
+      }
       if (step === "filter" && (await applyFilter(page))) done = "apply_filter";
       if (!done) {
         await openLine(page, archetype.line ?? pick<Line>(["Classic", "Performance", "Street"]));
         done = "open_line";
       }
-      log(done);
+      log(done, extra);
       await dwell(page, archetype.dwell);
     }
 
     // Add to cart (open a product first if needed)
     if (pages > 0 && chance(ALWAYS_BUY ? 1 : Math.min(1, archetype.pAddToCart * boost))) {
       if (!page.url().includes("/products/")) {
-        if (!(await openProduct(page, archetype.line))) await openLine(page, archetype.line ?? "Classic");
-        if (!page.url().includes("/products/")) await openProduct(page, archetype.line);
-        log("open_product");
+        let opened = await openProduct(page, archetype.line);
+        if (!opened) await openLine(page, archetype.line ?? "Classic");
+        if (!page.url().includes("/products/")) opened = await openProduct(page, archetype.line);
+        log("open_product", opened ?? {});
         await dwell(page, archetype.dwell);
       }
-      const added = await addToCart(page);
+      const added = await addToCart(page, log);
       if (added) {
         log("add_to_cart", added);
         entry.outcome = "add_to_cart";
@@ -446,25 +617,31 @@ async function runSession(browser: Browser, plan: SessionPlan): Promise<SessionL
       await navigate(page, page.locator('header a[href="/cart"]').first());
       log("view_cart");
       await dwell(page, [3, 10]);
-      await navigate(page, page.locator('main a[href="/checkout"]').first());
-      log("begin_checkout");
-      entry.outcome = "checkout";
-      await dwell(page, [5, 15]);
+      const stillFull = await editCart(page, log);
+      if (stillFull) {
+        await navigate(page, page.locator('main a[href="/checkout"]').first());
+        log("begin_checkout");
+        entry.outcome = "checkout";
+        await dwell(page, [5, 15]);
 
-      if (chance(ALWAYS_BUY ? 1 : Math.min(1, archetype.pPurchase * boost))) {
-        const order = await placeOrder(page);
-        if (order) {
-          log("purchase");
-          entry.outcome = "purchase";
-          entry.transaction_id = order.transaction_id;
-          entry.value = order.value;
-          visitor.purchases += 1;
-          await dwell(page, [3, 8]);
+        if (chance(ALWAYS_BUY ? 1 : Math.min(1, archetype.pPurchase * boost))) {
+          const order = await placeOrder(page, log);
+          if (order) {
+            log("purchase");
+            entry.outcome = "purchase";
+            entry.transaction_id = order.transaction_id;
+            entry.value = order.value;
+            visitor.purchases += 1;
+            await dwell(page, [3, 8]);
+          }
+        } else {
+          log("abandon_checkout", { stage: await abandonCheckout(page) });
         }
-      } else {
-        log("abandon_checkout");
       }
     }
+
+    // Newsletter: an occasional sign-up from people who aren't subscribers already.
+    if (pages > 0 && plan.source !== "email" && chance(0.04) && (await signUpNewsletter(page))) log("newsletter_signup");
     log("leave");
   } catch (err) {
     entry.outcome = "error";

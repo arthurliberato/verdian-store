@@ -24,5 +24,11 @@ export function PromotionLink({
   link,
   ...props
 }: { promoted: PromotedProduct; link: string } & React.ComponentProps<typeof Link>) {
-  return <Link {...props} onClick={() => pushSelectPromotion(promoted.promotion, promoted.product, link)} />;
+  return (
+    <Link
+      {...props}
+      data-promotion={promoted.promotion.promotion_id}
+      onClick={() => pushSelectPromotion(promoted.promotion, promoted.product, link)}
+    />
+  );
 }
