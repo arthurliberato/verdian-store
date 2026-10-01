@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790859672$o3$g1$t1790859765$j32$l0$h0",
+      "value": "GS2.1.s1790859672$o3$g1$t1790860224$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825419765.293005,
+      "expires": 1825420224.129851,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TRP-FOREST\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-TRP-FOREST\",\"size\":\"M\",\"quantity\":1},{\"productId\":\"VRD-RAZ-WHEAT\",\"size\":\"13\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
