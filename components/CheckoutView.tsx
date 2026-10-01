@@ -4,17 +4,36 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { formatPrice, getProductById } from "@/lib/catalog";
-import { useCart } from "@/lib/cart";
-import { pushBeginCheckout, toItem } from "@/lib/datalayer";
+import { useCart, withProducts } from "@/lib/cart";
+import {
+  pushAddPaymentInfo,
+  pushAddShippingInfo,
+  pushBeginCheckout,
+  pushCheckoutError,
+  toItem,
+  type CheckoutField,
+} from "@/lib/datalayer";
 import { ORDER_KEY, newOrderId, type Order } from "@/lib/order";
 
 const field = "mt-1.5 w-full rounded-sm border border-line bg-bg px-4 py-3 outline-none transition-colors focus:border-fg";
+
+// Form field names → the field names the data layer reports (docs/tracking/TRACKING_PLAN.md).
+const CHECKOUT_FIELDS: Record<string, CheckoutField> = {
+  name: "name",
+  email: "email",
+  street: "street",
+  city: "city",
+  postalCode: "postal_code",
+  country: "country",
+};
+const SHIPPING_FIELDS = ["street", "city", "postalCode", "country"];
 
 export function CheckoutView() {
   const router = useRouter();
   const { ready, lines, subtotal, clear } = useCart();
   const [placing, setPlacing] = useState(false);
   const started = useRef(false);
+  const shippingSent = useRef(false);
 
   // Load the confirmation page (and its title) ahead of time.
   useEffect(() => {
@@ -25,17 +44,39 @@ export function CheckoutView() {
   useEffect(() => {
     if (!ready || started.current || lines.length === 0) return;
     started.current = true;
-    pushBeginCheckout();
-  }, [ready, lines.length]);
+    pushBeginCheckout(withProducts(lines));
+  }, [ready, lines]);
+
+  // add_shipping_info — the first time every shipping field is valid in this checkout. validity.valid
+  // is read instead of checkValidity(), which would fire "invalid" events and report false errors.
+  function checkShipping(e: React.FormEvent<HTMLFormElement>) {
+    if (shippingSent.current) return;
+    const form = e.currentTarget;
+    const valid = SHIPPING_FIELDS.every((name) => {
+      const input = form.elements.namedItem(name);
+      return input instanceof HTMLInputElement || input instanceof HTMLSelectElement ? input.validity.valid : false;
+    });
+    if (!valid) return;
+    shippingSent.current = true;
+    pushAddShippingInfo(withProducts(lines));
+  }
+
+  // checkout_error — the browser blocked "Place order" because a field is missing or invalid.
+  // Only the field's name and the reason are sent, never what was typed.
+  function reportInvalid(e: React.FormEvent<HTMLFormElement>) {
+    const input = e.target as HTMLInputElement | HTMLSelectElement;
+    const reported = CHECKOUT_FIELDS[input.name];
+    if (reported) pushCheckoutError(reported, input.validity.valueMissing ? "missing" : "invalid");
+  }
 
   function placeOrder(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const get = (k: string) => String(form.get(k) ?? "").trim();
-    const items = lines.flatMap((l) => {
-      const p = getProductById(l.productId);
-      return p ? [{ ...toItem(p, l.quantity), quantity: l.quantity, colorway: p.colorway, size: l.size }] : [];
-    });
+    const cart = withProducts(lines);
+    pushAddPaymentInfo(cart);
+    // The order keeps its items as sent to the data layer, so purchase reports what was charged.
+    const items = cart.map(({ product, size, quantity }) => ({ ...toItem(product, quantity), item_size: size }));
     const order: Order = {
       id: newOrderId(),
       placedAt: new Date().toISOString(),
@@ -68,7 +109,13 @@ export function CheckoutView() {
 
   return (
     <div className="mx-auto grid max-w-6xl gap-12 px-5 py-12 sm:px-8 lg:grid-cols-[1fr_380px]">
-      <form onSubmit={placeOrder} className="space-y-10" aria-label="Checkout">
+      <form
+        onSubmit={placeOrder}
+        onChange={checkShipping}
+        onInvalidCapture={reportInvalid}
+        className="space-y-10"
+        aria-label="Checkout"
+      >
         <h1 className="font-display text-4xl font-medium tracking-tight">Checkout</h1>
 
         <fieldset className="space-y-4">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { lines } from "@/lib/catalog";
+import { NewsletterForm } from "./NewsletterForm";
 
 export function Footer() {
   return (
@@ -10,6 +11,9 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
             Considered footwear and apparel, made in small runs from leather, suede, and recycled materials.
           </p>
+          <p className="mt-8 text-xs font-medium uppercase tracking-[0.16em] text-muted">Newsletter</p>
+          <p className="mt-2 max-w-sm text-sm text-muted">Drop alerts and early access. No discounts, ever.</p>
+          <NewsletterForm location="footer" />
         </div>
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">Shop</p>

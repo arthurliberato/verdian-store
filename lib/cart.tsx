@@ -4,8 +4,17 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { getProductById, type Product } from "./catalog";
+import type { CartLineInput } from "./datalayer";
 
 export type CartLine = { productId: string; size: string; quantity: number };
+
+// Cart lines with their catalog product, as the data layer's cart events need them.
+export function withProducts(lines: CartLine[]): CartLineInput[] {
+  return lines.flatMap((l) => {
+    const product = getProductById(l.productId);
+    return product ? [{ product, size: l.size, quantity: l.quantity }] : [];
+  });
+}
 
 type CartState = {
   ready: boolean;

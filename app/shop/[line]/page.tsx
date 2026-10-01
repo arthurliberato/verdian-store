@@ -60,7 +60,11 @@ export default async function LinePage({ params, searchParams }: PageProps<"/sho
       </p>
       <div className="mt-6">
         {list.length > 0 ? (
-          <ProductGrid products={list} />
+          <ProductGrid
+            products={list}
+            list={{ item_list_id: `line_${line.slug}`, item_list_name: `${line.name} line` }}
+            listFilter={active ?? "all"}
+          />
         ) : (
           <p className="py-20 text-center text-muted">
             Nothing here yet. <Link href={base} className="underline">See all {line.name}</Link>

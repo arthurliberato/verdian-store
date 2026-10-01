@@ -1,12 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 import { formatPrice, getProductById } from "@/lib/catalog";
-import { useCart } from "@/lib/cart";
+import { useCart, withProducts } from "@/lib/cart";
+import { pushAddToCart, pushRemoveFromCart, pushViewCart } from "@/lib/datalayer";
 import { ProductImage } from "./ProductImage";
 
 export function CartView() {
   const { ready, lines, subtotal, setQuantity, remove } = useCart();
+  const viewed = useRef(false);
+
+  // view_cart — once per cart page view, when the stored cart has loaded. Empty carts send nothing.
+  useEffect(() => {
+    if (!ready || viewed.current) return;
+    viewed.current = true;
+    pushViewCart(withProducts(lines));
+  }, [ready, lines]);
 
   if (!ready) return <div className="mx-auto min-h-[50vh] max-w-6xl px-5 py-12 sm:px-8" />;
 
@@ -46,11 +56,20 @@ export function CartView() {
                   </div>
                   <div className="mt-auto flex items-center gap-5 pt-4 text-sm">
                     <div className="flex items-center rounded-full border border-line">
-                      <button type="button" className="px-3 py-1.5" onClick={() => setQuantity(line.productId, line.size, line.quantity - 1)} aria-label={`Decrease quantity of ${p.name}`}>−</button>
+                      <button type="button" className="px-3 py-1.5" onClick={() => {
+                          setQuantity(line.productId, line.size, line.quantity - 1);
+                          pushRemoveFromCart(p, 1, line.size);
+                        }} aria-label={`Decrease quantity of ${p.name}`}>−</button>
                       <span className="w-6 text-center">{line.quantity}</span>
-                      <button type="button" className="px-3 py-1.5" onClick={() => setQuantity(line.productId, line.size, line.quantity + 1)} aria-label={`Increase quantity of ${p.name}`}>+</button>
+                      <button type="button" className="px-3 py-1.5" onClick={() => {
+                          setQuantity(line.productId, line.size, line.quantity + 1);
+                          pushAddToCart(p, 1, line.size, "cart");
+                        }} aria-label={`Increase quantity of ${p.name}`}>+</button>
                     </div>
-                    <button type="button" onClick={() => remove(line.productId, line.size)} className="text-muted underline underline-offset-4 hover:text-fg">
+                    <button type="button" onClick={() => {
+                        remove(line.productId, line.size);
+                        pushRemoveFromCart(p, line.quantity, line.size);
+                      }} className="text-muted underline underline-offset-4 hover:text-fg">
                       Remove
                     </button>
                   </div>

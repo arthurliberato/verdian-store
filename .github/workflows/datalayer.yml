@@ -1,0 +1,52 @@
+# Data layer tests (docs/tracking/TRACKING_PLAN.md §7): every pull request builds the store and
+# walks the shopping journeys in Chromium, desktop and mobile, checking each data layer push.
+# A failure here means the store would send GA4 something the tracking plan doesn't allow.
+
+name: Data layer tests
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: datalayer-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    # Same pinned image as the traffic workflow, for Playwright's browser dependencies.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Data layer tests
+        run: npm run test:datalayer
+
+      - name: Keep traces of failed tests
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: test-results/
+          retention-days: 7

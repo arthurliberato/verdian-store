@@ -59,9 +59,10 @@ eCommerce spec, staging, consent, automated QA, server-side). Full plan in
 every change is logged in [`docs/tracking/CHANGELOG.md`](tracking/CHANGELOG.md).
 
 - [x] Stage 0 — Launch baseline
-- [ ] Stage 1 — Hygiene and governance
+- [x] Stage 1 — Hygiene and governance
 - [ ] Stage 2 — Tracking plan and data layer v2
 - [ ] Stage 3 — Staging environment, then the GTM rebuild
+- [ ] Stage 3b — Product analytics (Amplitude)
 - [ ] Stage 4 — Consent and privacy
 - [ ] Stage 5 — Monitoring and data quality
 - [ ] Stage 6 — Server-side and first-party (optional)
@@ -269,3 +270,22 @@ else's analytics:
 
 The list of planted problems is kept out of this repository until the audit
 is done.
+
+## Later — Site changes that break tracking
+
+A redesign or a checkout rebuild is the most common way tracking breaks in
+real companies: a renamed button, a new checkout step or a changed URL, and
+events silently stop or change shape. That's why tracking QA belongs in
+every release.
+
+- [ ] A planned store redesign (for example the mobile product page, or a
+      rebuilt checkout) shipped through the tracking change process
+- [ ] Release QA checklist: every data layer event still fires with the
+      same shape; GTM Preview and GA4 DebugView pass; purchase coverage
+      unchanged
+- [ ] Automated data layer tests in CI (Measurement roadmap, Stage 2) catch
+      the break before release, and a deliberately unguarded change shows
+      what happens when they don't
+- [ ] Post-release check: compare event volumes and GA4 coverage for 7 days
+      before vs after, against the ground truth
+

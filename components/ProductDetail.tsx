@@ -4,8 +4,11 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { formatPrice, type Product } from "@/lib/catalog";
 import { useCart } from "@/lib/cart";
-import { pushAddToCart, pushViewItem } from "@/lib/datalayer";
+import { pushAddToCart, pushSelectItem, pushSelectSize, pushViewItem, type ProductList } from "@/lib/datalayer";
 import { ProductImage } from "./ProductImage";
+
+// The colorway swatches are a product list (docs/tracking/TRACKING_PLAN.md): select_item only.
+const COLORWAYS: ProductList = { item_list_id: "pdp_colorways", item_list_name: "Other colorways" };
 
 export function ProductDetail({ product, colorways }: { product: Product; colorways: Product[] }) {
   const { add } = useCart();
@@ -30,7 +33,7 @@ export function ProductDetail({ product, colorways }: { product: Product; colorw
       return;
     }
     add(product, size, quantity);
-    pushAddToCart(product, quantity);
+    pushAddToCart(product, quantity, size, "product_page");
     setAdded(true);
     setQuantity(1);
   }
@@ -56,7 +59,7 @@ export function ProductDetail({ product, colorways }: { product: Product; colorw
             Color <span className="text-muted">— {product.colorway}</span>
           </p>
           <ul className="mt-3 flex flex-wrap gap-3" aria-label="Colorways">
-            {colorways.map((c) => {
+            {colorways.map((c, i) => {
               const current = c.id === product.id;
               return (
                 <li key={c.id}>
@@ -67,6 +70,9 @@ export function ProductDetail({ product, colorways }: { product: Product; colorw
                   aria-label={`${c.colorway}${current ? " (selected)" : ""}`}
                   aria-current={current ? "true" : undefined}
                   title={c.colorway}
+                  onClick={() => {
+                    if (!current) pushSelectItem(COLORWAYS, c, i + 1);
+                  }}
                   className={`grid h-11 w-11 place-items-center rounded-full border transition-colors ${
                     current ? "border-fg" : "border-transparent hover:border-line"
                   }`}
@@ -96,6 +102,7 @@ export function ProductDetail({ product, colorways }: { product: Product; colorw
                   key={s}
                   type="button"
                   onClick={() => {
+                    if (size !== s) pushSelectSize(product, s);
                     setSize(s);
                     setError(false);
                     setAdded(false);

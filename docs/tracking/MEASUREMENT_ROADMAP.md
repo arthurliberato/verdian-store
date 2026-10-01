@@ -43,20 +43,24 @@ GA4 admin:
       — rule order matters (first match wins): Meta Paid → Newsletter →
       Instagram Organic → default channels. Check first which default channel
       `meta / paid_social` lands in (Paid Social or Paid Other)
-- [ ] Attribution settings reviewed and written down (model + lookback windows)
+- [x] Attribution settings: not available in this property without a Google
+      Ads link (the Advertising section only offers to connect Ads). GA4 keeps
+      its default (data-driven). Verdian's reporting doesn't depend on it:
+      session-scoped dimensions (last non-direct click) and first-user
+      dimensions in GA4, and traceable attribution built in BigQuery
 - [x] Cross-domain: not needed (single domain); Google's suggested
       deployment-URL domain dismissed
 - [x] Tracking limited to the production host: GTM triggers require
       Page Hostname = `verdian-store.vercel.app` (v2); `NEXT_PUBLIC_GTM_ID`
       scoped to Vercel Production
-- [ ] Unwanted referrals: none needed yet (no payment provider redirect) — noted
+- [x] Unwanted referrals: none needed yet (no payment provider redirect) — noted
 
 GTM governance:
-- [ ] Naming convention: `GA4 - event - {name}`, `CE - {event}` triggers,
+- [x] Naming convention (see `GTM_CONVENTIONS.md`): `GA4 - event - {name}`, `CE - {event}` triggers,
       `DLV - {key}` variables, `CJS - {name}`, `LT - {name}` lookup tables
-- [ ] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
-- [ ] Every published version has a name and a description of what changed
-- [ ] Rename existing items to the convention (publish as v3 — no behaviour change)
+- [x] Folders: `GA4 config`, `GA4 ecommerce`, `GA4 engagement`, `Utilities`
+- [x] Every published version has a name and a description of what changed
+- [x] Rename existing items to the convention (publish as v3 — no behaviour change)
 
 Repo:
 - [x] 🤖 `docs/tracking/CHANGELOG.md`: dated log of every tracking change
@@ -67,14 +71,17 @@ The tracking plan becomes the single source of truth: every event, when it
 fires, its parameters and types, which GA4 report it feeds. Code, GTM and
 GA4 are built from it, never the other way round.
 
-- [ ] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
-- [ ] Richer items on every eCommerce event: `item_brand` (Verdian),
-      `item_category` (line), `item_category2` (footwear/apparel/accessories),
-      `item_category3` (subcategory), `item_variant` (colorway), `price`,
+- [x] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
+      (approved; decisions from the line-by-line build added)
+- [x] `lib/datalayer.ts` v2 written line by line and wired into the store
+- [x] Richer items on every eCommerce event: `item_brand` (Verdian),
+      `item_category` (footwear/apparel/accessories, kept from v1),
+      `item_category2` (line), `item_category3` (subcategory),
+      `item_category4` (model), `item_variant` (colorway), `price`,
       `quantity`, `index`, `item_list_id` / `item_list_name`, plus `item_size`
       (custom item parameter) where a size is known
-- [ ] `currency` and `value` sent from the data layer (not constants in GTM)
-- [ ] Full recommended eCommerce funnel:
+- [x] `currency` and `value` sent from the data layer (not constants in GTM)
+- [x] Full recommended eCommerce funnel (plus `view_promotion` / `select_promotion`):
 
 | Event | Fires when |
 |---|---|
@@ -88,17 +95,17 @@ GA4 are built from it, never the other way round.
 | `add_payment_info` | order placed — demo store, `payment_type: "demo"` |
 | `purchase` | confirmation (+ `shipping`, `tax`, `coupon` when relevant) |
 
-- [ ] Custom events: `select_size` (item + size + in_stock), `size_guide_open`,
-      `newsletter_signup` (footer form and popup), `waitlist_join` (drops),
-      `refund` — so size-curve demand, list growth by source and drop
-      waitlists can be measured
-- [ ] `page_view` gains `page_type` (home / line / product / cart / checkout /
-      confirmation), used as GA4's content group
-- [ ] Data layer typed in TypeScript; in development, pushes are validated
+- [x] Custom events: `select_size`, `newsletter_signup` (footer form),
+      `checkout_error`
+- [ ] Planned, when their feature ships: `size_guide_open`, newsletter popup,
+      `waitlist_join` (drops), `refund` (server-side, Stage 6)
+- [x] `page_view` gains `page_type` (home / line / product / cart / checkout /
+      confirmation / not_found / other), used as GA4's content group
+- [x] Data layer typed in TypeScript; in development, pushes are validated
       against the plan and warn in the console
-- [ ] **Automated data layer tests** (Playwright, run in CI on every PR): each
+- [x] **Automated data layer tests** (Playwright, run in CI on every PR): each
       journey asserts the exact sequence and shape of pushes
-- [ ] Traffic generator updated so synthetic visitors use the new
+- [x] Traffic generator updated so synthetic visitors use the new
       interactions (lists, sizes, cart edits, newsletter) and log them as
       ground truth
 
@@ -114,9 +121,10 @@ Never test on the live container again.
       the staging property and production to the real one
 - [ ] 🧑 Rebuild tags on the v2 spec: one tag per eCommerce event (or a
       small set), `Send ecommerce data` on, event parameters from DLVs
-- [ ] 🧑 GA4 custom definitions: `page_type` (content group), `item_size`
-      (item-scoped), `size` (event-scoped, for `select_size`),
-      `newsletter_location`
+- [ ] 🧑 GA4 custom definitions as listed in `TRACKING_PLAN.md` §6
+- [ ] 🧑 Scroll Depth trigger (25/50/75/90) → GA4 scroll tag (and the
+      Amplitude tag in 3b); GA4 enhanced-measurement scroll switched off.
+      Outbound click trigger once the store links out
 - [ ] 🧑 QA each event in Tag Assistant + GA4 DebugView on a preview URL,
       against a written checklist → publish to Staging → then Live
 - [ ] 🧑 GA4 annotation on the go-live date ("tracking v2")
@@ -128,6 +136,25 @@ Never test on the live container again.
 - [ ] 🤖 Mask anything typed into checkout fields in recordings (Clarity masking
       settings + `data-clarity-mask` on the form); consent gating comes in Stage 4
 
+## Stage 3b — Product analytics (Amplitude) 🧑 + 🤖
+
+Web analytics (GA4) answers "where do visitors come from and do they
+convert"; behavioural analytics (Clarity, Stage 3) answers "how do they use
+this page"; product analytics answers "what do users do over time, and what
+brings them back". Same data layer, second destination.
+
+- [ ] 🧑 Amplitude project (free plan); tags in GTM send the same data layer
+      events as GA4 (production host only, folder `Amplitude`)
+- [ ] 🧑 Funnels: view_item → add_to_cart → begin_checkout → purchase, by
+      device and channel; compare the numbers with GA4 and explain differences
+- [ ] 🧑 Feature adoption: size guide, size selection, newsletter sign-up
+      (needs Stage 2 events) — and whether users of each convert or return more
+- [ ] 🧑 Paths: what people do after landing from each creative
+- [ ] 🧑 Retention and cohorts (weekly return rate by first-visit week and
+      first channel) — device-based now, person-based after Stage 8
+- [ ] Alternative worth knowing: PostHog (open source; analytics, recordings,
+      feature flags and experiments in one tool)
+
 ## Stage 4 — Consent and privacy 🤖 + 🧑
 
 - [ ] 🤖 Consent banner in the store (accept / reject / preferences),
@@ -135,7 +162,7 @@ Never test on the live container again.
 - [ ] 🤖 Consent Mode v2 defaults before GTM loads (`analytics_storage`,
       `ad_storage`, `ad_user_data`, `ad_personalization`), region-specific:
       denied by default in the EEA/UK, granted elsewhere; `update` on choice
-- [ ] 🧑 GTM consent settings per tag (GA4 and Clarity); GA4 consent check in Admin
+- [ ] 🧑 GTM consent settings per tag (GA4, Clarity and Amplitude); GA4 consent check in Admin
 - [ ] 🤖 Synthetic visitors accept or reject at realistic rates and log it,
       so the gap between ground truth and GA4 includes consent — like real life
 - [ ] PII review: no emails, names or addresses in URLs or event parameters
@@ -187,6 +214,8 @@ vs anonymous visits, joining web data to customer data.
 - [ ] 🧑 Reporting identity revisited: compare Device-based vs Observed vs
       Blended on the same period and document the differences
 - [ ] 🧑 GA4 user explorer and audiences built on logged-in users
+- [ ] 🧑 Amplitude with `user_id`: cross-device retention, repeat-purchase
+      cohorts and LTV by first channel — the full product analytics workflow
 - [ ] 🤖 Synthetic visitors: some create accounts and come back logged in on
       a second device, logged as ground truth — so cross-device stitching
       can be measured against what really happened
