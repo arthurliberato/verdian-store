@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drill — Early access</title>
+  <link rel="stylesheet" href="/style.css">
+  <!-- GTM loads from app.js, using the container in the URL: /?gtm=GTM-XXXXXXX -->
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Something new is coming.</h1>
+    <p>Leave your email and we'll tell you first.</p>
+
+    <form id="signup">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com">
+      <button type="submit">Notify me</button>
+    </form>
+    <p id="thanks" hidden>Thanks, you're on the list.</p>
+  </main>
+  <p id="container" class="note">No GTM container loaded. Add <code>?gtm=GTM-XXXXXXX</code> to the URL.</p>
+</body>
+</html>

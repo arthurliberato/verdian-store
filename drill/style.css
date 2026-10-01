@@ -1,0 +1,9 @@
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; box-sizing: border-box;
+  background: #f6f5f1; color: #1c211e; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 32rem; width: 100%; }
+h1 { font-size: 2.2rem; line-height: 1.15; margin: 0 0 12px; }
+form { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+label { width: 100%; font-size: 14px; }
+input { flex: 1 1 14rem; min-width: 0; font: inherit; padding: 10px 14px; border: 1px solid #c9ccc4; border-radius: 999px; }
+button { font: inherit; padding: 10px 18px; border: 0; border-radius: 999px; background: #23573f; color: #fff; cursor: pointer; }
+.note { position: fixed; bottom: 12px; left: 0; right: 0; text-align: center; margin: 0; font-size: 12px; color: #6a716c; }
