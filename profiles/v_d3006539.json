@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790811882$o4$g1$t1790811906$j36$l0$h0",
+      "value": "GS2.1.s1790823739$o5$g1$t1790823760$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825371906.686515,
+      "expires": 1825383760.611928,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ERT-UNDYED\",\"size\":\"M\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
