@@ -1,11 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 import { formatPrice, siblingColorways, type Product } from "@/lib/catalog";
+import { pushSelectItem, pushViewItemList, type ProductList } from "@/lib/datalayer";
 import { ProductImage } from "./ProductImage";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product, list, index }: { product: Product; list: ProductList; index: number }) {
   const colorCount = siblingColorways(product).length;
   return (
-    <Link href={`/products/${product.slug}`} className="group block">
+    <Link href={`/products/${product.slug}`} onClick={() => pushSelectItem(list, product, index)} className="group block">
       <div className="relative overflow-hidden rounded-sm bg-surface">
         <ProductImage
           product={product}
@@ -31,11 +35,23 @@ export function ProductCard({ product }: { product: Product }) {
   );
 }
 
-export function ProductGrid({ products }: { products: Product[] }) {
+// A grid is a product list (docs/tracking/TRACKING_PLAN.md): view_item_list once per list and filter
+// shown, select_item when a card is clicked. The ref also stops React's development-only double
+// effect run from pushing it twice.
+export function ProductGrid({ products, list, listFilter }: { products: Product[]; list: ProductList; listFilter?: string }) {
+  const shown = useRef<string | null>(null);
+
+  useEffect(() => {
+    const key = `${list.item_list_id}|${listFilter ?? ""}`;
+    if (shown.current === key || products.length === 0) return;
+    shown.current = key;
+    pushViewItemList(list, products, listFilter);
+  }, [list, products, listFilter]);
+
   return (
     <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:grid-cols-4">
-      {products.map((p) => (
-        <ProductCard key={p.id} product={p} />
+      {products.map((p, i) => (
+        <ProductCard key={p.id} product={p} list={list} index={i + 1} />
       ))}
     </div>
   );

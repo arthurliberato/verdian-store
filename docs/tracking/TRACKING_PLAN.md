@@ -1,6 +1,6 @@
 # Tracking plan — data layer v2
 
-**Status:** draft for review · **Owner:** Arthur (plan) · Kai (implementation) ·
+**Status:** approved, implemented in `lib/datalayer.ts` (v2) · **Owner:** Arthur (plan) · Kai (implementation) ·
 **Replaces:** the five-event launch data layer (v1)
 
 This is the single source of truth for what the Verdian store announces to
@@ -27,6 +27,14 @@ tracking change process (Hub → Operating model) and a line in `CHANGELOG.md`.
    are never pushed. `transaction_id` is a random order ID.
 7. **Items always use the full item schema (§4)**, so any report can be cut
    by line, model, colorway or size.
+8. **Two sets of parameters.** GA4's own parameters (`transaction_id`,
+   `item_list_id`, `payment_type`, `shipping_tier`, promotion fields) go
+   inside `ecommerce`, where GTM's "Send ecommerce data" reads them. Our
+   custom parameters (`cart_location`, `list_filter`, `in_stock`…) go
+   outside, read with `DLV -` variables.
+9. **The data layer carries business facts only the site knows** (product,
+   price, cart, which field failed). Browser behaviour GTM can see by itself
+   (scroll depth, outbound clicks) is captured by GTM listeners, not pushed.
 
 ## 2. The questions this plan answers
 
@@ -38,6 +46,9 @@ Data requests). If a row here has no question, the event shouldn't exist.
 | Where does mobile leak in the funnel? (Priya) | `view_item_list` → `select_item` → `view_item` → `add_to_cart` → `view_cart` → `begin_checkout` → `add_shipping_info` → `add_payment_info` → `purchase`, all with device |
 | Which product pages get views but no add-to-carts? (Priya, Hannah) | `view_item`, `add_to_cart` with full items |
 | Which lists and positions sell? Home featured vs line pages vs "you may also like" (Priya, Lucas) | `view_item_list`, `select_item` with `item_list_id`, `item_list_name`, `index` |
+| Does the home hero sell the product it features? Which line tile gets clicked? (Lucas) | `view_promotion`, `select_promotion` |
+| Which checkout fields stop people? (Priya) | `checkout_error` with `checkout_field` |
+| Do ads land on broken pages? (Lucas) | `page_view` with `page_type: not_found` by landing page and `utm_content` |
 | Do people switch colorways before buying? (Priya, Hannah) | `select_item` from the colorway swatches |
 | Which sizes do people want, including ones we don't stock enough of? (Hannah) | `select_size` with `item_size` (and `in_stock` once inventory exists) |
 | Is the Arco franchise 35% of pairs? What sells by line, model, colorway? (Valeria, Hannah) | `item_category2` (line), `item_category4` (model), `item_variant` (colorway) on every item |
@@ -56,17 +67,20 @@ Status: **existing** (v1, unchanged) · **changed** (v1 event, new parameters) �
 | Event | Status | Fires when | Parameters (besides items, currency, value) |
 |---|---|---|---|
 | `page_view` | changed | Every page, on load and on every client-side route change | `page_title`, `page_path`, **`page_type`** |
+| `view_promotion` | new | The home page is shown: one per promotion (hero, three line tiles) | GA4 promotion fields (see Promotions); items = the product the creative shows |
+| `select_promotion` | new | A link inside a promotion is clicked | Same promotion fields; `promotion_link` (`image`, `button`, `explore_line`, `tile`) |
 | `view_item_list` | new | A product grid is shown (once per page view per list) | `item_list_id`, `item_list_name`, `list_filter` |
 | `select_item` | new | A product card or colorway swatch is clicked | `item_list_id`, `item_list_name` (items carry `index`) |
 | `view_item` | changed | Product page shown | — |
-| `select_size` | new | A size button is clicked on the product page | items carry `item_size`; `in_stock` (always `true` until inventory exists) |
+| `select_size` | new | A different size button is clicked on the product page | **Plain event, not ecommerce:** `product_id`, `product_model`, `product_size`, `in_stock` (always `true` until inventory exists). GA4 only reliably reads items on its own ecommerce events; sizes bought stay on cart and purchase items |
 | `add_to_cart` | changed | "Add to cart" on the product page, or **+** in the cart | `cart_location` (`product_page` / `cart`) |
 | `remove_from_cart` | new | **−** or **Remove** in the cart | — (items carry the quantity removed) |
 | `view_cart` | new | Cart page shown with at least one item | — |
 | `begin_checkout` | changed | Checkout page shown | — (now with items and value) |
 | `add_shipping_info` | new | All shipping fields are valid for the first time in this checkout | `shipping_tier: "free_standard"` |
+| `checkout_error` | new | "Place order" is blocked because a field is missing or invalid (one event per field) | `checkout_field` (`name`, `email`, `street`, `city`, `postal_code`, `country`), `error_reason` (`missing` / `invalid`). Never what was typed |
 | `add_payment_info` | new | "Place order" clicked (demo store — no payment is collected) | `payment_type: "demo"` |
-| `purchase` | changed | Confirmation page shown (once per order, de-duplicated as in v1) | `transaction_id`, `shipping: 0`, `tax: 0` |
+| `purchase` | changed | Confirmation page shown (once per order, de-duplicated as in v1) | `transaction_id`, `shipping: 0`, `tax: 0`. Items are the ones saved with the order, so prices are what was charged |
 | `newsletter_signup` | new | Newsletter form submitted successfully (new footer form) | `signup_location` (`footer`, later `popup`, `checkout`) |
 | `size_guide_open` | planned | Size guide opened on a product page | items (the product) |
 | `waitlist_join` | planned | Waitlist form submitted on a drop page | items (the drop product), `drop_id` |
@@ -77,7 +91,10 @@ Not in the data layer (sent automatically by GA4 enhanced measurement):
 
 ### `page_type` values
 
-`home` · `line` · `product` · `cart` · `checkout` · `confirmation` · `other`
+`home` · `line` · `product` · `cart` · `checkout` · `confirmation` · `not_found` · `other`
+
+`not_found` comes from a marker on the 404 page (`data-page-type="not_found"`),
+not from the URL: `/products/old-name` looks like a product page but isn't.
 
 Sent to GA4 as `content_group` too (by GTM), so every GA4 report can be
 grouped by type of page.
@@ -92,6 +109,21 @@ grouped by type of page.
 | `pdp_colorways` | Other colorways | Colorway swatches (only `select_item`, no list view) |
 
 `index` is the product's position in its list, starting at 1.
+
+`value` on `view_item_list` is the total of every product on the grid. It
+means nothing and GA4 doesn't count it as revenue: ignore it in analysis.
+
+### Promotions
+
+| `promotion_id` | `promotion_name` | `creative_name` | `creative_slot` | Item |
+|---|---|---|---|---|
+| `arco_flagship` | Arco: Made to be worn in | `worn_in_hero` | `home_hero` | Arco Chalk Forest |
+| `line_classic` / `line_performance` / `line_street` | {Line} line | `line_tile` | `home_lines_1` to `_3` | The tile's cover product |
+
+GA4 reports promotions at item level, so every promotion carries a product.
+For line tiles that's the cover product in the picture: **analyse tiles by
+promotion name or slot, not by item**. `promotion_link` stays out of
+`creative_name` so views and clicks of the same creative match up.
 
 ## 4. Item schema
 
@@ -111,7 +143,19 @@ Every item in every ecommerce event:
 | `quantity` | `1` | cart | Every event; `1` where there's no cart line |
 | `index` | `3` | list position | Only in list events and events that follow a list click |
 | `item_list_id` / `item_list_name` | `line_street` / `Street line` | list | Only in list events |
-| `item_size` | `10.5` | size selected | Custom item parameter; from `select_size` on |
+| `item_size` | `10.5` | size selected | Custom item parameter; on cart, checkout and purchase items |
+| `is_markdown` | `false` | pricing | Custom item parameter, **required**; `false` until the archive sale |
+| `discount` | `66` | pricing | Full price minus price, per unit; only on markdown items |
+
+### Markdowns (archive sale, Jan 20–31, 2027)
+
+`price` is what the customer pays per unit; `discount` is the full price
+minus that, per unit; `is_markdown` flags the item; `value` is therefore what
+was actually charged. No `coupon` (no codes, by policy). The cart reprices at
+checkout: every event sends the price at that moment, `purchase` sends what
+was charged. Product page and data layer read prices from one function.
+
+Possible future item parameter: `tag` (`New` / `Limited`) to compare drops.
 
 ## 5. Examples
 
@@ -140,10 +184,15 @@ dataLayer.push({ event: "add_payment_info", ecommerce: { currency: "USD", value:
 
 - GTM: tags per event group; `currency` and `value` read from the data layer
   (no constants in tags); `page_type` → `content_group`.
-- GA4 custom definitions: `page_type` (event), `list_filter` (event),
-  `cart_location` (event), `signup_location` (event), `in_stock` (event),
-  `item_size` (item-scoped). `shipping_tier` and `payment_type` are
-  recommended parameters but still need registering to appear in reports.
+- GA4 custom definitions: event-scoped `page_type`, `list_filter`,
+  `cart_location`, `signup_location`, `in_stock`, `product_size`,
+  `product_model`, `promotion_link`, `checkout_field`, `error_reason`;
+  item-scoped `item_size`, `is_markdown`. `shipping_tier` and
+  `payment_type` are recommended parameters but still need registering to
+  appear in reports.
+- GTM listeners, sent to GA4 and (Stage 3b) Amplitude: Scroll Depth at
+  25/50/75/90% with GA4's automatic scroll switched off; outbound `click`
+  once the store links out.
 - The launch key event stays: only `purchase`.
 
 ## 7. Acceptance and QA

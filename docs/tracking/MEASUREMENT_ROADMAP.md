@@ -71,8 +71,9 @@ The tracking plan becomes the single source of truth: every event, when it
 fires, its parameters and types, which GA4 report it feeds. Code, GTM and
 GA4 are built from it, never the other way round.
 
-- [ ] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
-      (draft written; waiting for review)
+- [x] `docs/tracking/TRACKING_PLAN.md`: event table + item parameter table
+      (approved; decisions from the line-by-line build added)
+- [x] `lib/datalayer.ts` v2 written line by line and wired into the store
 - [ ] Richer items on every eCommerce event: `item_brand` (Verdian),
       `item_category` (footwear/apparel/accessories, kept from v1),
       `item_category2` (line), `item_category3` (subcategory),
@@ -120,9 +121,10 @@ Never test on the live container again.
       the staging property and production to the real one
 - [ ] 🧑 Rebuild tags on the v2 spec: one tag per eCommerce event (or a
       small set), `Send ecommerce data` on, event parameters from DLVs
-- [ ] 🧑 GA4 custom definitions: `page_type` (content group), `item_size`
-      (item-scoped), `size` (event-scoped, for `select_size`),
-      `newsletter_location`
+- [ ] 🧑 GA4 custom definitions as listed in `TRACKING_PLAN.md` §6
+- [ ] 🧑 Scroll Depth trigger (25/50/75/90) → GA4 scroll tag (and the
+      Amplitude tag in 3b); GA4 enhanced-measurement scroll switched off.
+      Outbound click trigger once the store links out
 - [ ] 🧑 QA each event in Tag Assistant + GA4 DebugView on a preview URL,
       against a written checklist → publish to Staging → then Live
 - [ ] 🧑 GA4 annotation on the go-live date ("tracking v2")

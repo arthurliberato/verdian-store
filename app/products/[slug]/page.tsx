@@ -39,7 +39,7 @@ export default async function ProductPage({ params }: PageProps<"/products/[slug
         <section className="mx-auto max-w-7xl px-5 pt-24 sm:px-8">
           <h2 className="font-display text-2xl font-medium tracking-tight">More from {product.line}</h2>
           <div className="mt-8">
-            <ProductGrid products={related} />
+            <ProductGrid products={related} list={{ item_list_id: "pdp_related", item_list_name: "You may also like" }} />
           </div>
         </section>
       )}

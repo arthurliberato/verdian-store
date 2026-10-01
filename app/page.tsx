@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getProductById, lines, products, formatPrice } from "@/lib/catalog";
 import { ProductGrid } from "@/components/ProductCard";
 import { ProductImage } from "@/components/ProductImage";
+import { PromotionLink, PromotionViews, type PromotedProduct } from "@/components/Promotions";
 
 const hero = getProductById("VRD-ARC-CHALK-FOREST")!;
 const featured = ["VRD-PUL-GLACIER", "VRD-AMU-ACID", "VRD-SND-FOREST", "VRD-BRU-ATELIER-SAND", "VRD-PLT-WHITE-FOREST", "VRD-ECO-INDIGO", "VRD-HOD-FOREST", "VRD-CIM-MOSS-RUST"]
@@ -10,9 +11,25 @@ const featured = ["VRD-PUL-GLACIER", "VRD-AMU-ACID", "VRD-SND-FOREST", "VRD-BRU-
 const lineCovers: Record<string, string> = { classic: "VRD-SND-SAND", performance: "VRD-PUL-EMBER", street: "VRD-FSC-FOREST-BONE" };
 const eco = products.filter((p) => p.model === "Eco");
 
+// Internal promotions (docs/tracking/TRACKING_PLAN.md). Each names the product its creative shows.
+const heroPromotion: PromotedProduct = {
+  promotion: { promotion_id: "arco_flagship", promotion_name: "Arco: Made to be worn in", creative_name: "worn_in_hero", creative_slot: "home_hero" },
+  product: hero,
+};
+const linePromotions: Record<string, PromotedProduct> = Object.fromEntries(
+  lines.map((l, i) => [
+    l.slug,
+    {
+      promotion: { promotion_id: `line_${l.slug}`, promotion_name: `${l.name} line`, creative_name: "line_tile", creative_slot: `home_lines_${i + 1}` },
+      product: getProductById(lineCovers[l.slug])!,
+    },
+  ]),
+);
+
 export default function Home() {
   return (
     <>
+      <PromotionViews promotions={[heroPromotion, ...Object.values(linePromotions)]} />
       {/* Hero */}
       <section className="mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-10 sm:px-8 md:grid-cols-[1fr_1.1fr] md:items-center md:pt-16">
         <div className="order-2 md:order-1">
@@ -24,20 +41,32 @@ export default function Home() {
             The Arco is our flagship: full-grain leather, a stitched cupsole, and a shape we haven&apos;t needed to change.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <Link
+            <PromotionLink
+              promoted={heroPromotion}
+              link="button"
               href={`/products/${hero.slug}`}
               className="rounded-full bg-brand px-7 py-3.5 text-sm font-medium text-brand-fg transition-opacity hover:opacity-90"
             >
               Shop Arco — {formatPrice(hero.price)}
-            </Link>
-            <Link href="/shop/classic" className="text-sm underline decoration-line underline-offset-8 hover:decoration-fg">
+            </PromotionLink>
+            <PromotionLink
+              promoted={heroPromotion}
+              link="explore_line"
+              href="/shop/classic"
+              className="text-sm underline decoration-line underline-offset-8 hover:decoration-fg"
+            >
               Explore Classic
-            </Link>
+            </PromotionLink>
           </div>
         </div>
-        <Link href={`/products/${hero.slug}`} className="order-1 block overflow-hidden rounded-sm bg-surface md:order-2">
+        <PromotionLink
+          promoted={heroPromotion}
+          link="image"
+          href={`/products/${hero.slug}`}
+          className="order-1 block overflow-hidden rounded-sm bg-surface md:order-2"
+        >
           <ProductImage product={hero} priority sizes="(min-width: 768px) 55vw, 100vw" className="aspect-[5/4] w-full object-cover" />
-        </Link>
+        </PromotionLink>
       </section>
 
       {/* Line navigation */}
@@ -45,11 +74,17 @@ export default function Home() {
         <h2 id="lines-heading" className="sr-only">Shop by line</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {lines.map((l) => {
-            const cover = getProductById(lineCovers[l.slug])!;
+            const promoted = linePromotions[l.slug];
             return (
-              <Link key={l.slug} href={`/shop/${l.slug}`} className="group relative block overflow-hidden rounded-sm bg-surface">
+              <PromotionLink
+                key={l.slug}
+                promoted={promoted}
+                link="tile"
+                href={`/shop/${l.slug}`}
+                className="group relative block overflow-hidden rounded-sm bg-surface"
+              >
                 <ProductImage
-                  product={cover}
+                  product={promoted.product}
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="aspect-square w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
@@ -57,7 +92,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] opacity-80">{l.tagline}</p>
                   <p className="mt-1 font-display text-3xl font-medium">{l.name}</p>
                 </div>
-              </Link>
+              </PromotionLink>
             );
           })}
         </div>
@@ -72,7 +107,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-10">
-          <ProductGrid products={featured} />
+          <ProductGrid products={featured} list={{ item_list_id: "home_featured", item_list_name: "Home — Featured" }} />
         </div>
       </section>
 

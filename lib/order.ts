@@ -7,7 +7,8 @@ export type Order = {
   email: string;
   address: { street: string; city: string; postalCode: string; country: string };
   total: number;
-  items: (DataLayerItem & { quantity: number; colorway: string; size: string })[];
+  // Exactly what the data layer is sent at purchase: prices as charged, size in item_size.
+  items: DataLayerItem[];
 };
 
 export const ORDER_KEY = "verdian_last_order";

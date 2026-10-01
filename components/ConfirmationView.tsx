@@ -29,11 +29,7 @@ export function ConfirmationView() {
     try {
       localStorage.setItem(SENT_PURCHASES_KEY, JSON.stringify([...sent, placed.id].slice(-50)));
     } catch {}
-    pushPurchase(
-      placed.id,
-      placed.total,
-      placed.items.map(({ item_id, item_name, item_category, price, quantity }) => ({ item_id, item_name, item_category, price, quantity })),
-    );
+    pushPurchase(placed.id, placed.items);
   }, []);
 
   if (order === undefined) return <div className="mx-auto min-h-[50vh] max-w-3xl px-5 py-16" />;
@@ -73,9 +69,9 @@ export function ConfirmationView() {
           <h2 className="text-xs uppercase tracking-[0.16em] text-muted">Items</h2>
           <ul className="mt-3 space-y-2">
             {order.items.map((i) => (
-              <li key={`${i.item_id}-${i.size}`} className="flex justify-between gap-4">
+              <li key={`${i.item_id}-${i.item_size}`} className="flex justify-between gap-4">
                 <span>
-                  {i.item_name} <span className="text-muted">· {i.size} × {i.quantity}</span>
+                  {i.item_name} <span className="text-muted">· {i.item_size} × {i.quantity}</span>
                 </span>
                 <span>{formatPrice(i.price * i.quantity)}</span>
               </li>
