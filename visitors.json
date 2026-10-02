@@ -1,5 +1,71 @@
 [
  {
+  "visitor_id": "v_265dd15c",
+  "archetype": "heritage",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-09-30T13:40:17.673Z",
+  "last_seen": "2026-10-02T13:04:07.926Z",
+  "visits": 3,
+  "purchases": 1,
+  "client_id": "758964194.1790775619"
+ },
+ {
+  "visitor_id": "v_ee355875",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-02T13:01:07.319Z",
+  "last_seen": "2026-10-02T13:01:22.844Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "366089944.1790946077"
+ },
+ {
+  "visitor_id": "v_d5dd67b2",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-02T13:01:07.318Z",
+  "last_seen": "2026-10-02T13:01:16.378Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2136727450.1790946070"
+ },
+ {
+  "visitor_id": "v_ce14bc7c",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-02T13:01:07.318Z",
+  "last_seen": "2026-10-02T13:01:16.126Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1778325761.1790946069"
+ },
+ {
+  "visitor_id": "v_1faa6ba9",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-10-02T13:01:07.319Z",
+  "last_seen": "2026-10-02T13:01:16.101Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1856918114.1790946073"
+ },
+ {
+  "visitor_id": "v_e0ee0321",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-02T13:01:07.319Z",
+  "last_seen": "2026-10-02T13:01:13.104Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1139632132.1790946069"
+ },
+ {
   "visitor_id": "v_7ee9448b",
   "archetype": "window_shopper",
   "device": "mobile",
@@ -2616,17 +2682,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "554464132.1790830868"
- },
- {
-  "visitor_id": "v_265dd15c",
-  "archetype": "heritage",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-09-30T13:40:17.673Z",
-  "last_seen": "2026-10-01T04:04:55.873Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "758964194.1790775619"
  },
  {
   "visitor_id": "v_30086732",
