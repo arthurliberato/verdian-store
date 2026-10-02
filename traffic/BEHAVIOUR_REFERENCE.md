@@ -44,6 +44,20 @@ lengthen dwell times on product pages. Verdian is a premium, full-price
 brand with mostly cold Meta traffic, so landing at or slightly below the
 fashion averages is the realistic target.
 
+### Pages and products viewed
+
+| Metric | Benchmark | Verdian synthetic (Sep 30–Oct 1) | Verdict |
+|---|---|---|---|
+| Pages per session, all industries | 3.5–5 ([Contentsquare](https://support.contentsquare.com/hc/article_attachments/5744694885276) ~5 in 2021; [Focus Digital](https://focus-digital.co/average-pages-per-session-industry-benchmarks/) 3.8; [Store Growers](https://www.storegrowers.com/ecommerce-metrics-benchmarks/) 4.1) | 3.0 | |
+| Pages per session, apparel & footwear | 8–10, highest of all industries (category browsing, comparison) ([Focus Digital](https://focus-digital.co/average-pages-per-session-industry-benchmarks/), [BigDelta](https://bigdelta.com/blog/pages-per-session-benchmarks); aggregator blogs) | 3.0 overall, 5.7 without bounces, 8.4 for buyers | **Too low for non-buyers**; target ~5–7 overall |
+| Mobile vs desktop pages | ~2.5 vs ~3.5 (Google Shopping traffic) | 2.5 vs 4.0 | OK |
+| Products viewed before purchase | No reliable published figure found | Median 4 (range 1–6) before first add | Measure on the GA4 public dataset |
+
+What apparel shoppers check before buying ([PowerReviews survey](https://www.powerreviews.com/apparel-footwear-shopping-survey-2022/)):
+price 84%, ratings and reviews 78% (most read 1–25 reviews), customer photos 56%;
+plus size information 84% (Baymard, §3). Verdian has no reviews and no size
+guide: realistic reasons to hesitate, and future A/B test candidates.
+
 ## 2. How people look at and move through pages
 
 | Pattern | Evidence | Source |
