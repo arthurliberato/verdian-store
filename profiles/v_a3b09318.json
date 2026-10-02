@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.568873312.1790823700",
+      "value": "GA1.1.1400393876.1790902961",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825383699.749486,
+      "expires": 1825462960.985577,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790902870$o3$g1$t1790902902$j28$l0$h0",
+      "value": "GS2.1.s1790902960$o1$g0$t1790902961$j59$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825462902.282155,
+      "expires": 1825462961.014701,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PRT-CARBON\",\"size\":\"XS\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
