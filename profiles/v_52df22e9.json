@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790906487$o1$g1$t1790906510$j37$l0$h0",
+      "value": "GS2.1.s1790981846$o2$g1$t1790981889$j17$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825466510.548897,
+      "expires": 1825541889.248274,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BPK-CARBON\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
