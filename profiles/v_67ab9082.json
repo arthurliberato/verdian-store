@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790895777$o1$g1$t1790895793$j44$l0$h0",
+      "value": "GS2.1.s1790910118$o2$g1$t1790910169$j9$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825455793.997868,
+      "expires": 1825470169.427564,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-FOG\",\"size\":\"12\",\"quantity\":2}]"
         }
       ]
     }
