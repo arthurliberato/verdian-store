@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790725821$o2$g1$t1790725846$j35$l0$h0",
+      "value": "GS2.1.s1790989298$o3$g1$t1790989332$j26$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825285846.877493,
+      "expires": 1825549332.564471,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BRH-MIST\",\"size\":\"XS\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
