@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.148702906.1790964079",
+      "value": "GA1.1.314483477.1791028960",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825524079.198713,
+      "expires": 1825588960.066463,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791028976$o2$g1$t1791029031$j5$l0$h0",
+      "value": "GS2.1.s1791028960$o1$g0$t1791028960$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825589031.754413,
+      "expires": 1825588960.103782,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-CREAM-GREY\",\"size\":\"11.5\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
