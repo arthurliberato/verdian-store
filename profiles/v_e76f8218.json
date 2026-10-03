@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.249102620.1791043276",
+      "domain": ".verdian-store.vercel.app",
+      "path": "/",
+      "expires": 1825603275.641407,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1791043275$o1$g1$t1791043350$j49$l0$h0",
+      "domain": ".verdian-store.vercel.app",
+      "path": "/",
+      "expires": 1825603350.251499,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://verdian-store.vercel.app",
+      "localStorage": [
+        {
+          "name": "verdian_cart",
+          "value": "[{\"productId\":\"VRD-CIM-CLAY\",\"size\":\"10\",\"quantity\":1}]"
+        }
+      ]
+    }
+  ]
+}
