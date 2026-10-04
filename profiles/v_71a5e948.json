@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.951229987.1791061295",
+      "value": "GA1.1.1154034268.1791074060",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825621294.812765,
+      "expires": 1825634059.843613,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791074120$o2$g1$t1791074140$j40$l0$h0",
+      "value": "GS2.1.s1791074059$o1$g1$t1791074084$j35$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825634140.107047,
+      "expires": 1825634084.108451,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TRJ-FOREST-CREAM\",\"size\":\"L\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
