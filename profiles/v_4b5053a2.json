@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1256752140.1790725738",
+      "value": "GA1.1.147632958.1791144125",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825285737.724185,
+      "expires": 1825704124.828271,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790725737$o1$g0$t1790725737$j60$l0$h0",
+      "value": "GS2.1.s1791144124$o1$g1$t1791144163$j21$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825285737.761729,
+      "expires": 1825704163.012918,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-ACID\",\"size\":\"9\",\"quantity\":1}]"
         }
       ]
     }
