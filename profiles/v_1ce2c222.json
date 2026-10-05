@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791140471$o1$g1$t1791140500$j31$l0$h0",
+      "value": "GS2.1.s1791176470$o2$g1$t1791176522$j8$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825700500.628983,
+      "expires": 1825736522.07192,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-MCP-OLIVE\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
