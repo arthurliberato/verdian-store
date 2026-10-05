@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790981847$o2$g1$t1790981889$j18$l0$h0",
+      "value": "GS2.1.s1791219668$o3$g1$t1791219728$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825541889.998853,
+      "expires": 1825779728.575818,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-KIT-NATURAL\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MUVHZ82R-EMBE\"]"
         }
       ]
     }
