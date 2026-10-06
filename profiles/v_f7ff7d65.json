@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791154872$o1$g1$t1791154906$j26$l0$h0",
+      "value": "GS2.1.s1791327747$o2$g1$t1791327789$j18$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825714906.548132,
+      "expires": 1825887789.573901,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PRJ-CARBON\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
