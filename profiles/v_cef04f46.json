@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1000508937.1790877674",
+      "value": "GA1.1.814210978.1791247613",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825437674.425964,
+      "expires": 1825807612.962161,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790877674$o1$g0$t1790877674$j60$l0$h0",
+      "value": "GS2.1.s1791247612$o1$g1$t1791247632$j40$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825437674.469588,
+      "expires": 1825807632.609686,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CLM-OAT\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
