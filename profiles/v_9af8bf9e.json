@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1315269028.1791032458",
+      "value": "GA1.1.1776285781.1791387140",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825592457.679808,
+      "expires": 1825947140.462802,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791032457$o1$g0$t1791032457$j60$l0$h0",
+      "value": "GS2.1.s1791387140$o1$g1$t1791387306$j29$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825592457.702668,
+      "expires": 1825947306.967736,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BLK-FOREST\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
