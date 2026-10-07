@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.137000213.1790960466",
+      "value": "GA1.1.1246559787.1791331325",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825520465.60481,
+      "expires": 1825891325.461249,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1790960465$o1$g1$t1790960529$j60$l0$h0",
+      "value": "GS2.1.s1791331325$o1$g1$t1791331346$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825520529.954666,
+      "expires": 1825891346.90533,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-SLATE\",\"size\":\"11\",\"quantity\":1}]"
         }
       ]
     }
