@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791133264$o2$g1$t1791133352$j34$l0$h0",
+      "value": "GS2.1.s1791345700$o3$g1$t1791345777$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825693352.61955,
+      "expires": 1825905777.862971,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CMP-NAVY\",\"size\":\"6.5\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MUXL0WBY-LS4C\"]"
         }
       ]
     }
