@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791396234$o1$g1$t1791396313$j49$l0$h0",
+      "value": "GS2.1.s1791489727$o2$g1$t1791489829$j36$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825956313.244787,
+      "expires": 1826049829.497755,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CLM-INK\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
