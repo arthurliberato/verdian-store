@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791486064$o3$g1$t1791486133$j60$l0$h0",
+      "value": "GS2.1.s1791500470$o4$g1$t1791500570$j28$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826046133.468987,
+      "expires": 1826060570.902892,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TSH-FOREST\",\"size\":\"L\",\"quantity\":1},{\"productId\":\"VRD-PRJ-VOLT\",\"size\":\"S\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MV056NEQ-PKGA\"]"
         }
       ]
     }
