@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.188100920.1791075667",
+      "value": "GA1.1.1987246856.1791424557",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825635666.696737,
+      "expires": 1825984556.613459,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791075666$o1$g1$t1791075704$j22$l0$h0",
+      "value": "GS2.1.s1791424556$o1$g1$t1791424573$j43$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825635704.097268,
+      "expires": 1825984573.768201,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TRP-CARBON\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }
