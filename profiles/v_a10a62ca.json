@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791410507$o2$g1$t1791410555$j12$l0$h0",
+      "value": "GS2.1.s1791468068$o3$g1$t1791468224$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825970555.085263,
+      "expires": 1826028224.70862,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TRP-FOREST\",\"size\":\"M\",\"quantity\":2}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MUZLXCX7-YUFZ\"]"
         }
       ]
     }
