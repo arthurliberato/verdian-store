@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791072229$o3$g1$t1791072291$j60$l0$h0",
+      "value": "GS2.1.s1791421309$o4$g1$t1791421376$j53$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825632291.056962,
+      "expires": 1825981376.72498,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PRT-GLACIER\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
