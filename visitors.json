@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_2dcf924a",
+  "archetype": "window_shopper",
+  "device": "tablet",
+  "device_profile": "Galaxy Tab S4",
+  "first_seen": "2026-10-06T02:01:16.100Z",
+  "last_seen": "2026-10-09T16:14:07.451Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "441702131.1791252162"
+ },
+ {
+  "visitor_id": "v_a692688e",
+  "archetype": "window_shopper",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-10-09T16:13:20.651Z",
+  "last_seen": "2026-10-09T16:13:55.848Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "944658873.1791562402"
+ },
+ {
+  "visitor_id": "v_33a3adfe",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-09T16:13:20.651Z",
+  "last_seen": "2026-10-09T16:13:23.580Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "465486527.1791562402"
+ },
+ {
   "visitor_id": "v_556a648d",
   "archetype": "hype",
   "device": "mobile",
@@ -7524,17 +7557,6 @@
   "client_id": "1748790460.1791252165"
  },
  {
-  "visitor_id": "v_2dcf924a",
-  "archetype": "window_shopper",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-06T02:01:16.100Z",
-  "last_seen": "2026-10-06T02:03:35.283Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "441702131.1791252162"
- },
- {
   "visitor_id": "v_86d48e31",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "992941383.1791216119"
- },
- {
-  "visitor_id": "v_a7cf7b20",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-04T17:00:55.530Z",
-  "last_seen": "2026-10-05T16:01:58.660Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "340552572.1791133325"
- },
- {
-  "visitor_id": "v_0948b44c",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-10-05T16:01:11.386Z",
-  "last_seen": "2026-10-05T16:01:19.604Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1333136902.1791216073"
  }
 ]
