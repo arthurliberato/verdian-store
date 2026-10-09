@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1210386228.1791054083",
+      "value": "GA1.1.1285131342.1791518467",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825614083.298544,
+      "expires": 1826078466.789357,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791165819$o2$g1$t1791165870$j9$l0$h0",
+      "value": "GS2.1.s1791518466$o1$g1$t1791518580$j12$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825725870.560662,
+      "expires": 1826078580.268045,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-VNT-GHOST\",\"size\":\"12\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
