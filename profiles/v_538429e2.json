@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.73740476.1790902918",
+      "value": "GA1.1.1469852188.1791565375",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825462917.795513,
+      "expires": 1826125375.3102,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791219668$o3$g1$t1791219728$j60$l0$h0",
+      "value": "GS2.1.s1791565375$o1$g1$t1791565409$j26$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825779728.575818,
+      "expires": 1826125409.550551,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -28,10 +28,6 @@
         {
           "name": "verdian_cart",
           "value": "[]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MUVHZ82R-EMBE\"]"
         }
       ]
     }
