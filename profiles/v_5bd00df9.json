@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1723220527.1790964064",
+      "value": "GA1.1.181575740.1791590621",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825524064.135874,
+      "expires": 1826150621.419963,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791241279$o2$g1$t1791241307$j32$l0$h0",
+      "value": "GS2.1.s1791590621$o1$g0$t1791590621$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825801307.039839,
+      "expires": 1826150621.45846,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-CREAM-GREY\",\"size\":\"7\",\"quantity\":2},{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"13\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

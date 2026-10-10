@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791572453$o5$g1$t1791572492$j21$l0$h0",
+      "value": "GS2.1.s1791590473$o6$g1$t1791590552$j46$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826132492.785263,
+      "expires": 1826150552.152309,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-IMP-COBALT\",\"size\":\"8\",\"quantity\":1}]"
         }
       ]
     }
