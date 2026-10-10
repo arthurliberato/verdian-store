@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791601255$o1$g1$t1791601286$j29$l0$h0",
+      "value": "GS2.1.s1791630054$o2$g1$t1791630109$j5$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826161286.903902,
+      "expires": 1826190109.630173,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -28,6 +28,10 @@
         {
           "name": "verdian_cart",
           "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MV2AB44M-QGU6\"]"
         }
       ]
     }
