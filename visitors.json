@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_6a513e23",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-08T05:01:14.284Z",
+  "last_seen": "2026-10-10T15:20:33.920Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "211661209.1791435678"
+ },
+ {
+  "visitor_id": "v_f1acf282",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-10T15:19:40.192Z",
+  "last_seen": "2026-10-10T15:20:12.701Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1287553924.1791645583"
+ },
+ {
+  "visitor_id": "v_6e340410",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-10T15:19:40.193Z",
+  "last_seen": "2026-10-10T15:19:46.555Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1296882090.1791645582"
+ },
+ {
   "visitor_id": "v_32036559",
   "archetype": "window_shopper",
   "device": "desktop",
@@ -5082,17 +5115,6 @@
   "client_id": "1535247480.1790906487"
  },
  {
-  "visitor_id": "v_6a513e23",
-  "archetype": "runner",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-10-08T05:01:14.284Z",
-  "last_seen": "2026-10-08T05:02:05.226Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "211661209.1791435678"
- },
- {
   "visitor_id": "v_e002e9e2",
   "archetype": "window_shopper",
   "device": "tablet",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1442045445.1791299299"
- },
- {
-  "visitor_id": "v_9a6d6b45",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-05T15:01:04.555Z",
-  "last_seen": "2026-10-06T15:03:12.138Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1901024668.1791212472"
- },
- {
-  "visitor_id": "v_d455afa2",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-06T15:01:18.678Z",
-  "last_seen": "2026-10-06T15:01:47.999Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "337009041.1791298904"
  }
 ]
