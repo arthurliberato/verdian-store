@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.492172937.1791324066",
+      "value": "GA1.1.615989876.1791669665",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825884065.823561,
+      "expires": 1826229664.652787,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791324065$o1$g0$t1791324065$j60$l0$h0",
+      "value": "GS2.1.s1791669664$o1$g1$t1791669736$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825884065.850886,
+      "expires": 1826229736.340653,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-CLAY\",\"size\":\"11\",\"quantity\":1}]"
         }
       ]
     }
