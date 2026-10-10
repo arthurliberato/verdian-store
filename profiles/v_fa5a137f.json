@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.747214935.1791327681",
+      "value": "GA1.1.918921768.1791675061",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825887680.590146,
+      "expires": 1826235061.489375,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791327680$o1$g1$t1791327737$j3$l0$h0",
+      "value": "GS2.1.s1791675061$o1$g0$t1791675061$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825887737.339987,
+      "expires": 1826235061.544336,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TSH-CARBON\",\"size\":\"XXL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
