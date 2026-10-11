@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791644580$o1$g1$t1791644618$j22$l0$h0",
+      "value": "GS2.1.s1791755610$o2$g1$t1791755742$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826204618.648244,
+      "expires": 1826315742.686825,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CRW-OAT\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
