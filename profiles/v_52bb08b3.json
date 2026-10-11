@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791561679$o1$g1$t1791561693$j46$l0$h0",
+      "value": "GS2.1.s1791759661$o2$g1$t1791759687$j34$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826121693.404715,
+      "expires": 1826319687.366382,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CRW-NAVY\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }
