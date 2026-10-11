@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_52ced5c9",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-10-08T12:04:27.181Z",
+  "last_seen": "2026-10-11T10:01:50.012Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1116455548.1791461068"
+ },
+ {
+  "visitor_id": "v_870ad75d",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-11T10:00:51.554Z",
+  "last_seen": "2026-10-11T10:00:58.794Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "930999762.1791712853"
+ },
+ {
+  "visitor_id": "v_c166e473",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-11T10:00:51.553Z",
+  "last_seen": "2026-10-11T10:00:54.207Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1773232412.1791712853"
+ },
+ {
   "visitor_id": "v_5e520e69",
   "archetype": "bouncer",
   "device": "mobile",
@@ -6468,17 +6501,6 @@
   "client_id": "832300591.1791461130"
  },
  {
-  "visitor_id": "v_52ced5c9",
-  "archetype": "runner",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-10-08T12:04:27.181Z",
-  "last_seen": "2026-10-08T12:05:29.006Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1116455548.1791461068"
- },
- {
   "visitor_id": "v_54d7289a",
   "archetype": "hype",
   "device": "mobile",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "589184693.1791342068"
- },
- {
-  "visitor_id": "v_be333bda",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-10-07T03:01:03.878Z",
-  "last_seen": "2026-10-07T03:01:11.565Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1217707805.1791342065"
- },
- {
-  "visitor_id": "v_8862df5a",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-07T03:01:03.879Z",
-  "last_seen": "2026-10-07T03:01:09.685Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1106329193.1791342065"
  }
 ]
