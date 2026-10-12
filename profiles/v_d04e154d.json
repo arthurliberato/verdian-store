@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.844396424.1791410521",
+      "value": "GA1.1.2043411697.1791766920",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825970520.673687,
+      "expires": 1826326919.835511,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791410520$o1$g1$t1791410540$j40$l0$h0",
+      "value": "GS2.1.s1791766919$o1$g1$t1791766949$j30$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825970540.854533,
+      "expires": 1826326949.181105,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-AMU-BONE-CARBON\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ERT-CLAY\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
