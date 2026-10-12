@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791582009$o3$g1$t1791582140$j1$l0$h0",
+      "value": "GS2.1.s1791817331$o4$g1$t1791817454$j4$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826142140.091685,
+      "expires": 1826377454.952801,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SND-CREAM-NAVY\",\"size\":\"13\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-SND-CREAM-NAVY\",\"size\":\"13\",\"quantity\":2},{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"8\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
