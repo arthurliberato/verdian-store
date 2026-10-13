@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_48376e6a",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-10-13T05:00:58.119Z",
+  "last_seen": "2026-10-13T05:01:05.571Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1016943708.1791867659"
+ },
+ {
+  "visitor_id": "v_07b90c13",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-13T05:00:58.119Z",
+  "last_seen": "2026-10-13T05:01:04.484Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1975302990.1791867659"
+ },
+ {
+  "visitor_id": "v_844254de",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-12T11:01:01.080Z",
+  "last_seen": "2026-10-13T05:01:03.920Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "309367983.1791802863"
+ },
+ {
   "visitor_id": "v_ae21c03e",
   "archetype": "heritage",
   "device": "desktop",
@@ -2154,17 +2187,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "162044412.1791802862"
- },
- {
-  "visitor_id": "v_844254de",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-12T11:01:01.080Z",
-  "last_seen": "2026-10-12T11:01:09.284Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "309367983.1791802863"
  },
  {
   "visitor_id": "v_61f67b5a",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "231346513.1791511445"
- },
- {
-  "visitor_id": "v_7c78e796",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-09T02:01:03.658Z",
-  "last_seen": "2026-10-09T02:04:04.599Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1482701299.1791511417"
- },
- {
-  "visitor_id": "v_10408734",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-06T12:01:07.041Z",
-  "last_seen": "2026-10-09T02:03:46.479Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1278908831.1791288069"
  }
 ]
