@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791511293$o3$g1$t1791511366$j60$l0$h0",
+      "value": "GS2.1.s1791860548$o4$g1$t1791860696$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826071366.394376,
+      "expires": 1826420696.226703,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TRJ-CARBON\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
