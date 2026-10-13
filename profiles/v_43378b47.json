@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1578016708.1791514864",
+      "value": "GA1.1.608384961.1791885666",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826074863.999654,
+      "expires": 1826445666.036154,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791514863$o1$g0$t1791514864$j59$l0$h0",
+      "value": "GS2.1.s1791885666$o1$g1$t1791885736$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826074864.031472,
+      "expires": 1826445736.063956,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-CHALK-FOREST\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
