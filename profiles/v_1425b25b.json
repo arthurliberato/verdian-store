@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791759838$o1$g1$t1791759867$j31$l0$h0",
+      "value": "GS2.1.s1791925273$o2$g1$t1791925296$j37$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826319867.429726,
+      "expires": 1826485296.149892,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RSK-CARBON-VOLT\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
