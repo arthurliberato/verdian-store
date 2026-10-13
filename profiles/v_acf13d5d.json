@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.908543638.1791550925",
+      "value": "GA1.1.1204193877.1791910974",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826110925.422315,
+      "expires": 1826470974.287801,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791550925$o1$g1$t1791550939$j46$l0$h0",
+      "value": "GS2.1.s1791910974$o1$g1$t1791911000$j34$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826110939.605427,
+      "expires": 1826471000.446422,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-UNDYED\",\"size\":\"9.5\",\"quantity\":1}]"
         }
       ]
     }
