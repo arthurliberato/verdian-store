@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791604868$o1$g0$t1791604868$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1663534316.1791979283",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826164868.106219,
+      "expires": 1826539283.22381,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.1165779111.1791604868",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1791979283$o1$g1$t1791979332$j11$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826164868.106647,
+      "expires": 1826539332.71946,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-VNT-CARBON\",\"size\":\"6\",\"quantity\":1}]"
         }
       ]
     }
