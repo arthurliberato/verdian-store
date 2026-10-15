@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791925305$o1$g1$t1791925352$j13$l0$h0",
+      "value": "GS2.1.s1792065662$o2$g1$t1792065705$j17$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826485352.839037,
+      "expires": 1826625705.485676,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-UNDYED\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
