@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.2066871032.1791675062",
+      "value": "GA1.1.1277491446.1792026212",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826235061.511393,
+      "expires": 1826586212.219339,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791675061$o1$g1$t1791675119$j2$l0$h0",
+      "value": "GS2.1.s1792026212$o1$g1$t1792026255$j17$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826235119.462604,
+      "expires": 1826586255.553931,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-ASH\",\"size\":\"7.5\",\"quantity\":2}]"
+          "value": "[{\"productId\":\"VRD-CMP-WHITE-CLAY\",\"size\":\"9.5\",\"quantity\":1}]"
         }
       ]
     }

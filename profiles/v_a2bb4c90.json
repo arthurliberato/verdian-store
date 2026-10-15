@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791928979$o1$g1$t1791929004$j35$l0$h0",
+      "value": "GS2.1.s1792026199$o2$g1$t1792026246$j13$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826489004.071722,
+      "expires": 1826586246.478978,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"6.5\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MV8U5P9R-073M\"]"
         }
       ]
     }
