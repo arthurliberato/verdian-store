@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.951229987.1791061295",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1792033310$o1$g0$t1792033310$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825621294.812765,
+      "expires": 1826593310.779058,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791684127$o4$g1$t1791684154$j33$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.251804264.1792033311",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826244154.273838,
+      "expires": 1826593310.780702,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TRJ-FOREST-CREAM\",\"size\":\"L\",\"quantity\":2},{\"productId\":\"VRD-CIM-MOSS-RUST\",\"size\":\"9.5\",\"quantity\":1},{\"productId\":\"VRD-SND-STONE\",\"size\":\"6\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
