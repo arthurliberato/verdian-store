@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791903726$o3$g1$t1791903735$j51$l0$h0",
+      "value": "GS2.1.s1792101698$o4$g1$t1792101735$j23$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826463735.279995,
+      "expires": 1826661735.381308,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PLT-BONE\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
