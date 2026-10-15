@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_3aaf9859",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-13T20:01:09.069Z",
+  "last_seen": "2026-10-15T05:02:11.981Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "730191829.1791921670"
+ },
+ {
+  "visitor_id": "v_7d13cf6f",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-15T05:01:01.685Z",
+  "last_seen": "2026-10-15T05:01:34.106Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "568949300.1792040463"
+ },
+ {
+  "visitor_id": "v_7d2ddc85",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-15T05:01:01.686Z",
+  "last_seen": "2026-10-15T05:01:05.279Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "142005768.1792040463"
+ },
+ {
   "visitor_id": "v_12e11901",
   "archetype": "runner",
   "device": "desktop",
@@ -3507,17 +3540,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "846085519.1791921722"
- },
- {
-  "visitor_id": "v_3aaf9859",
-  "archetype": "runner",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-13T20:01:09.069Z",
-  "last_seen": "2026-10-13T20:02:34.432Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "730191829.1791921670"
  },
  {
   "visitor_id": "v_3c875377",
@@ -8776,27 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "2038976097.1791561706"
- },
- {
-  "visitor_id": "v_5eccfdbc",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-11T03:01:09.211Z",
-  "last_seen": "2026-10-11T03:01:40.387Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1027366937.1791687670"
- },
- {
-  "visitor_id": "v_45e5eeb9",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-11T02:01:05.789Z",
-  "last_seen": "2026-10-11T02:03:30.564Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "392381596.1791684203"
  }
 ]
