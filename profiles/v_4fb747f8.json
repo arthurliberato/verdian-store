@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791752518$o1$g1$t1791752537$j41$l0$h0",
+      "value": "GS2.1.s1792105337$o2$g1$t1792105367$j30$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826312537.941135,
+      "expires": 1826665367.544105,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"9\",\"quantity\":1}]"
         }
       ]
     }
