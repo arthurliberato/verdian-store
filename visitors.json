@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_0616998f",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-16T10:01:03.036Z",
+  "last_seen": "2026-10-16T10:02:47.204Z",
+  "visits": 1,
+  "purchases": 1,
+  "client_id": "67123579.1792144865"
+ },
+ {
+  "visitor_id": "v_4ff7c3e0",
+  "archetype": "bouncer",
+  "device": "tablet",
+  "device_profile": "iPad (gen 7)",
+  "first_seen": "2026-10-16T10:01:03.035Z",
+  "last_seen": "2026-10-16T10:01:12.227Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1764111521.1792144865"
+ },
+ {
+  "visitor_id": "v_b6365275",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-10T23:01:02.123Z",
+  "last_seen": "2026-10-16T10:01:11.124Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "1364805386.1791673268"
+ },
+ {
   "visitor_id": "v_edb1f21a",
   "archetype": "heritage",
   "device": "tablet",
@@ -3166,17 +3199,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "419447624.1792015382"
- },
- {
-  "visitor_id": "v_b6365275",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-10-10T23:01:02.123Z",
-  "last_seen": "2026-10-14T22:03:01.813Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1364805386.1791673268"
  },
  {
   "visitor_id": "v_438b2c41",
@@ -8776,27 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "1507919758.1791680552"
- },
- {
-  "visitor_id": "v_44a9d10f",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-12T01:01:02.999Z",
-  "last_seen": "2026-10-12T01:05:13.898Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "2079634366.1791767108"
- },
- {
-  "visitor_id": "v_4a2cc096",
-  "archetype": "bouncer",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-12T01:01:02.999Z",
-  "last_seen": "2026-10-12T01:05:08.513Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "700872747.1791767102"
  }
 ]
