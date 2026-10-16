@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1418508991.1791784890",
+      "value": "GA1.1.988851634.1792162875",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826344890.362107,
+      "expires": 1826722874.922038,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791784890$o1$g1$t1791784912$j38$l0$h0",
+      "value": "GS2.1.s1792162874$o1$g1$t1792162933$j1$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826344912.822112,
+      "expires": 1826722933.63558,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-MCP-OLIVE\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
