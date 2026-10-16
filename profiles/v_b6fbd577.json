@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1789312227.1791504086",
+      "value": "GA1.1.1641770643.1792112466",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826064086.416678,
+      "expires": 1826672466.491045,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791759660$o2$g1$t1791759674$j46$l0$h0",
+      "value": "GS2.1.s1792112466$o1$g1$t1792112547$j41$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826319674.296464,
+      "expires": 1826672547.741786,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PRT-GLACIER\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }
