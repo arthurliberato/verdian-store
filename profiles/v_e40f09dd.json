@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.244710398.1791767013",
+      "value": "GA1.1.2002597222.1792126873",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826327013.31165,
+      "expires": 1826686872.824086,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791767013$o1$g1$t1791767069$j4$l0$h0",
+      "value": "GS2.1.s1792126872$o1$g0$t1792126872$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826327069.234208,
+      "expires": 1826686872.865862,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PUL-EMBER\",\"size\":\"13\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
