@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792166522$o2$g1$t1792166571$j11$l0$h0",
+      "value": "GS2.1.s1792267265$o3$g1$t1792267324$j1$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826726571.280367,
+      "expires": 1826827324.585765,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-RAZ-WHEAT\",\"size\":\"9.5\",\"quantity\":2},{\"productId\":\"VRD-AMU-RUST\",\"size\":\"10.5\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVCTOUC0-A0YL\"]"
         }
       ]
     }
