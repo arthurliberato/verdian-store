@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1116893620.1791511739",
+      "value": "GA1.1.1604834948.1792202518",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826071739.138229,
+      "expires": 1826762517.808811,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791846195$o3$g1$t1791846246$j9$l0$h0",
+      "value": "GS2.1.s1792202517$o1$g0$t1792202517$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826406246.668116,
+      "expires": 1826762517.833703,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-KIT-NATURAL\",\"size\":\"One size\",\"quantity\":1},{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"6\",\"quantity\":2},{\"productId\":\"VRD-SND-FOREST\",\"size\":\"7\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
