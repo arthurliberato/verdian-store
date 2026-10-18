@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791979283$o1$g1$t1791979332$j11$l0$h0",
+      "value": "GS2.1.s1792296060$o2$g1$t1792296175$j15$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826539332.71946,
+      "expires": 1826856175.745728,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-VNT-CARBON\",\"size\":\"6\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVDAV817-W2E7\"]"
         }
       ]
     }
