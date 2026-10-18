@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1323160460.1791942847",
+      "value": "GA1.1.1767956983.1792328567",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826502847.082086,
+      "expires": 1826888567.495242,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1791942847$o1$g1$t1791942931$j47$l0$h0",
+      "value": "GS2.1.s1792328567$o1$g1$t1792328603$j24$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826502931.33818,
+      "expires": 1826888603.081413,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SND-STONE\",\"size\":\"10\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ERT-UNDYED\",\"size\":\"M\",\"quantity\":1}]"
         }
       ]
     }
