@@ -93,3 +93,11 @@ npm run traffic -- --sessions 3 --always-buy    # test the full purchase flow
   `vercel.json`).
 - GA4 geolocates by IP, so scheduled visits appear to come from GitHub's
   data centers (mostly the US).
+
+## Analysis dataset
+
+`npm run dataset` generates a simulated Year 1 of marketing data (ad spend,
+sessions, orders, returns, customers) from the catalog, unit costs and plans in
+this repo. Output goes to `data/analysis/`; start with its `README.md`.
+Options: `-- --scale 3` (more traffic and budget), `-- --seed 7` (another
+random world).

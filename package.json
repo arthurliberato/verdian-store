@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "export:catalog": "tsx scripts/export-catalog.ts",
+    "dataset": "tsx scripts/generate-marketing-dataset.ts",
     "traffic": "tsx traffic/run.ts"
   },
   "dependencies": {

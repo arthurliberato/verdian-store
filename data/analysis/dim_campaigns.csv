@@ -1,0 +1,16 @@
+campaign_id,campaign_name,platform,channel,layer,start_date,end_date,objective,audience,owner
+fall_launch,Fall launch,Meta,Meta Paid,Always-on,2026-09-27,2026-11-15,Sales (prospecting),"Three ad sets: broad_us (18–44), int_sneakers (sneakers and streetwear interests), int_running",lucas
+weekly_edit,The Weekly Edit,Email,Newsletter,Owned,2026-09-30,2027-09-29,Repeat visits and sales from subscribers,"All subscribers, every Wednesday",tomas
+welcome_flow,Welcome flow,Email,Newsletter,Owned,2026-09-27,,First purchase from new subscribers,"New subscribers, 3 emails over 10 days",tomas
+creator_seeding,Creator seeding,Instagram,Instagram Organic,Owned,2026-10-01,2027-09-30,Reach and credibility,~100 small creators (5k–50k followers) across the year,amara
+rt_cart,Cart retargeting,Meta,Meta Paid,Always-on,2026-11-01,,Recover abandoned carts,"rt_cart_7d: added to cart in the last 7 days, no purchase",lucas
+drop2_fosco,Drop 2: Fosco winter,Meta,Meta Paid + Newsletter + creators,Burst,2026-11-13,2026-11-19,Sell through the drop in two weeks,"Subscribers first (early access), then broad Meta burst",amara
+holiday_gifting,Holiday gifting,Meta,Meta Paid,Burst,2026-11-20,2026-12-22,"Sales, with a higher AOV",broad_us plus gift buyers (interest: gifts for him or her),lucas
+bf_early_access,Black Friday early access,Email,Newsletter,Owned,2026-11-24,2026-11-30,Reward subscribers without discounting,Subscribers get 48 h early access to the Drop 2 restock,tomas
+running_resolutions,Running resolutions,Meta,Meta Paid,Burst,2027-01-02,2027-01-31,Sell the Performance line in the January fitness peak,"int_running, int_gym",lucas
+ao_prospecting,Always-on prospecting,Meta,Meta Paid,Always-on,2026-11-16,2027-09-30,"New customers, all year",One or two broad ad sets (broad_us); Meta finds the audience from the creative,lucas
+archive_sale_jan27,Archive sale,Meta,Newsletter + Meta (existing audiences only),Burst,2027-01-20,2027-01-31,Clear discontinued colorways and aged stock,"Subscribers first (24 h), then the site. No discount ads to new audiences",hannah
+drop3_spring,Drop 3,Meta,Meta Paid + Newsletter + creators,Burst,2027-03-12,2027-03-19,Sell through the drop in two weeks,"Waitlist and subscribers first, then a broad Meta burst",amara
+drop4_summer,Drop 4,Meta,Meta Paid + Newsletter + creators,Burst,2027-06-11,2027-06-18,Sell through the drop in two weeks,"Waitlist and subscribers first, then a broad Meta burst",amara
+gads_shopping_nb,"Google Shopping, non-brand",Google,Paid Search,Always-on,2027-03-01,,Sales (feed-based),All US,lucas
+gads_brand_search,Google brand search,Google,Paid Search,Always-on,2027-03-01,,Defend brand terms,Searches for 'verdian',lucas
