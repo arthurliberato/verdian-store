@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.78844381.1791813714",
+      "value": "GA1.1.1675224543.1792386068",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826373714.023334,
+      "expires": 1826946068.06236,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792022607$o2$g1$t1792022651$j16$l0$h0",
+      "value": "GS2.1.s1792386068$o1$g1$t1792386083$j45$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826582651.37415,
+      "expires": 1826946083.321102,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-LICHEN\",\"size\":\"6\",\"quantity\":1},{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"8\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
