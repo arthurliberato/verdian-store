@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792054863$o1$g0$t1792054863$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1090145950.1792429300",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826614863.20763,
+      "expires": 1826989300.404482,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.829315567.1792054863",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1792429300$o1$g1$t1792429331$j29$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826614863.208117,
+      "expires": 1826989331.377756,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CAP-FOREST\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
