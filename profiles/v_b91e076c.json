@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792224057$o3$g1$t1792224095$j22$l0$h0",
+      "value": "GS2.1.s1792447279$o4$g1$t1792447326$j13$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826784095.619945,
+      "expires": 1827007326.816317,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-FOREST-BONE\",\"size\":\"11\",\"quantity\":2},{\"productId\":\"VRD-AMU-FOG\",\"size\":\"10\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVFSUWXZ-PNN8\"]"
         }
       ]
     }
