@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.489620718.1792177275",
+      "value": "GA1.1.801510787.1792537269",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826737275.357076,
+      "expires": 1827097269.469372,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792177275$o1$g1$t1792177302$j33$l0$h0",
+      "value": "GS2.1.s1792537269$o1$g1$t1792537337$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826737302.125244,
+      "expires": 1827097337.921483,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RCP-CARBON\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
