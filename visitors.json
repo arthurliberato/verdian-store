@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_359fffbf",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-18T02:01:10.486Z",
+  "last_seen": "2026-10-20T05:01:48.701Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1898886910.1792288914"
+ },
+ {
+  "visitor_id": "v_f0c1d748",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-19T18:01:13.667Z",
+  "last_seen": "2026-10-20T05:00:54.738Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1284533909.1792432914"
+ },
+ {
+  "visitor_id": "v_0961dd04",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-20T05:00:50.521Z",
+  "last_seen": "2026-10-20T05:00:54.169Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "900418657.1792472451"
+ },
+ {
   "visitor_id": "v_8f90acd2",
   "archetype": "window_shopper",
   "device": "mobile",
@@ -1527,17 +1560,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1370104630.1792432880"
- },
- {
-  "visitor_id": "v_f0c1d748",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-19T18:01:13.667Z",
-  "last_seen": "2026-10-19T18:01:58.183Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1284533909.1792432914"
  },
  {
   "visitor_id": "v_0fda3e06",
@@ -4882,17 +4904,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1658428607.1792288963"
- },
- {
-  "visitor_id": "v_359fffbf",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-18T02:01:10.486Z",
-  "last_seen": "2026-10-18T02:03:08.721Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1898886910.1792288914"
  },
  {
   "visitor_id": "v_7d30b0e1",
@@ -8787,16 +8798,5 @@
   "visits": 2,
   "purchases": 1,
   "client_id": "1864571736.1792105306"
- },
- {
-  "visitor_id": "v_a84b38d5",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-10-14T19:02:35.035Z",
-  "last_seen": "2026-10-16T01:03:28.061Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1395313974.1792004562"
  }
 ]
