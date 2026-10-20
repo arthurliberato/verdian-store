@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792342911$o1$g1$t1792343013$j32$l0$h0",
+      "value": "GS2.1.s1792497706$o2$g1$t1792497779$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826903013.512583,
+      "expires": 1827057779.767717,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-BRU-OBSIDIAN\",\"size\":\"11\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVGMWAOW-I12O\"]"
         }
       ]
     }
