@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.788268238.1791072072",
+      "value": "GA1.1.1663623697.1792540873",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1825632071.688299,
+      "expires": 1827100873.3623,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792184475$o9$g1$t1792184502$j33$l0$h0",
+      "value": "GS2.1.s1792540873$o1$g1$t1792540896$j37$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826744502.476561,
+      "expires": 1827100896.184551,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-IMP-COBALT\",\"size\":\"8\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
