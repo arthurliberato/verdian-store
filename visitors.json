@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_70b5975f",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-20T14:00:52.992Z",
+  "last_seen": "2026-10-21T10:01:50.583Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "619262577.1792504854"
+ },
+ {
+  "visitor_id": "v_f38e7c8a",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-21T10:01:12.625Z",
+  "last_seen": "2026-10-21T10:01:21.009Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "35131623.1792576875"
+ },
+ {
+  "visitor_id": "v_e5106ab5",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-21T10:01:12.626Z",
+  "last_seen": "2026-10-21T10:01:19.276Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1695412986.1792576874"
+ },
+ {
   "visitor_id": "v_46387bca",
   "archetype": "bouncer",
   "device": "mobile",
@@ -1956,17 +1989,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "599195911.1792504873"
- },
- {
-  "visitor_id": "v_70b5975f",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-20T14:00:52.992Z",
-  "last_seen": "2026-10-20T14:01:26.109Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "619262577.1792504854"
  },
  {
   "visitor_id": "v_10d61223",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1542925550.1792206065"
- },
- {
-  "visitor_id": "v_99d4ede8",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-10-17T02:00:53.443Z",
-  "last_seen": "2026-10-17T02:03:05.415Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "812510197.1792202560"
- },
- {
-  "visitor_id": "v_aede7eec",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-17T02:00:53.443Z",
-  "last_seen": "2026-10-17T02:02:59.617Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1525036055.1792202527"
  }
 ]
