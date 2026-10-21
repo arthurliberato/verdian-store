@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792267266$o1$g0$t1792267266$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1134746534.1792623666",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826827266.668997,
+      "expires": 1827183665.904334,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.934142091.1792267267",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1792623665$o1$g1$t1792623746$j42$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826827266.669395,
+      "expires": 1827183746.195499,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CMP-NAVY\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
