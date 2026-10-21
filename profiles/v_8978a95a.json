@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.162195386.1792206105",
+      "value": "GA1.1.731620695.1792584085",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826766104.969235,
+      "expires": 1827144085.317553,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792206104$o1$g1$t1792206145$j19$l0$h0",
+      "value": "GS2.1.s1792584085$o1$g1$t1792584101$j44$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826766145.157552,
+      "expires": 1827144101.07063,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-IMP-CHALK\",\"size\":\"6\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-FNJ-CARBON\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
