@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.913764969.1792285154",
+      "value": "GA1.1.1133138928.1792638426",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826845153.87208,
+      "expires": 1827198425.611438,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792285153$o1$g1$t1792285174$j39$l0$h0",
+      "value": "GS2.1.s1792638425$o1$g1$t1792638443$j42$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826845174.870291,
+      "expires": 1827198443.80553,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-BONE-RUST\",\"size\":\"12\",\"quantity\":1}]"
         }
       ]
     }
