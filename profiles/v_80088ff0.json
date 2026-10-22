@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1767956983.1792328567",
+      "value": "GA1.1.1422316135.1792688539",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826888567.495242,
+      "expires": 1827248539.261953,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792328567$o1$g1$t1792328603$j24$l0$h0",
+      "value": "GS2.1.s1792688539$o1$g0$t1792688539$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826888603.081413,
+      "expires": 1827248539.299404,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ERT-UNDYED\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
