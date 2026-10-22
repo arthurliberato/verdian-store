@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.2095582819.1791972067",
+      "value": "GA1.1.489376781.1792634513",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826532066.839532,
+      "expires": 1827194513.312728,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792278181$o2$g1$t1792278231$j10$l0$h0",
+      "value": "GS2.1.s1792634513$o1$g1$t1792634525$j48$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826838231.856607,
+      "expires": 1827194525.592192,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PUL-FOG\",\"size\":\"10.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
