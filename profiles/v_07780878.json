@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792544455$o1$g1$t1792544465$j50$l0$h0",
+      "value": "GS2.1.s1792711128$o2$g1$t1792711160$j28$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827104465.396225,
+      "expires": 1827271160.654174,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-FNJ-CARBON\",\"size\":\"M\",\"quantity\":1}]"
         }
       ]
     }
