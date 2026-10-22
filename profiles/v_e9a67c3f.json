@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792465341$o1$g1$t1792465373$j28$l0$h0",
+      "value": "GS2.1.s1792659673$o2$g1$t1792659715$j18$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827025373.809563,
+      "expires": 1827219715.846666,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SGT-BONE\",\"size\":\"XL\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-SGT-BONE\",\"size\":\"XL\",\"quantity\":1},{\"productId\":\"VRD-ECO-CLAY\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
