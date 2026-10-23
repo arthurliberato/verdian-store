@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792544634$o1$g1$t1792544675$j19$l0$h0",
+      "value": "GS2.1.s1792760993$o2$g1$t1792761070$j54$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827104675.619884,
+      "expires": 1827321070.682331,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TOT-NATURAL\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-TOT-NATURAL\",\"size\":\"One size\",\"quantity\":1},{\"productId\":\"VRD-PRJ-VOLT\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
