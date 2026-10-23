@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792422203$o1$g0$t1792422203$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.822879969.1792782067",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826982203.54648,
+      "expires": 1827342066.544231,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.1403402290.1792422204",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1792782066$o1$g1$t1792782103$j23$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826982203.546955,
+      "expires": 1827342103.595221,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TEE-FOREST\",\"size\":\"XS\",\"quantity\":2}]"
         }
       ]
     }
