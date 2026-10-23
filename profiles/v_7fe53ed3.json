@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.991067326.1792364526",
+      "value": "GA1.1.679695600.1792720904",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826924526.089033,
+      "expires": 1827280903.681436,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792364526$o1$g1$t1792364584$j2$l0$h0",
+      "value": "GS2.1.s1792720903$o1$g1$t1792720954$j9$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826924584.042735,
+      "expires": 1827280954.79457,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BRU-ATELIER-SAND\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
