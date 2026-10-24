@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1711467869.1792447346",
+      "value": "GA1.1.339604515.1792803661",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827007346.177965,
+      "expires": 1827363661.465369,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792447346$o1$g1$t1792447394$j12$l0$h0",
+      "value": "GS2.1.s1792803661$o1$g1$t1792803710$j11$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827007394.070536,
+      "expires": 1827363710.647262,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-FSC-FOREST-BONE\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }

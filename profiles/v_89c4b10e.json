@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1715841776.1792450870",
+      "value": "GA1.1.1487290841.1792803722",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827010870.087201,
+      "expires": 1827363721.975378,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792450870$o1$g1$t1792450915$j15$l0$h0",
+      "value": "GS2.1.s1792803721$o1$g0$t1792803722$j59$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827010915.220467,
+      "expires": 1827363722.014188,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CAP-BONE\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
