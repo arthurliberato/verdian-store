@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792761067$o1$g1$t1792761078$j49$l0$h0",
+      "value": "GS2.1.s1792868543$o2$g1$t1792868668$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827321078.166815,
+      "expires": 1827428668.400994,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-SLATE\",\"size\":\"11.5\",\"quantity\":2}]"
         }
       ]
     }
