@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792598483$o2$g1$t1792598506$j37$l0$h0",
+      "value": "GS2.1.s1792800071$o3$g1$t1792800111$j20$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827158506.212327,
+      "expires": 1827360111.463151,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-CARBON\",\"size\":\"6\",\"quantity\":1}]"
         }
       ]
     }
