@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.599195911.1792504873",
+      "value": "GA1.1.709750472.1792864896",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827064872.55255,
+      "expires": 1827424896.27025,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792504872$o1$g1$t1792504919$j13$l0$h0",
+      "value": "GS2.1.s1792864896$o1$g0$t1792864896$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827064919.333919,
+      "expires": 1827424896.309005,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-HOD-CARBON\",\"size\":\"S\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
