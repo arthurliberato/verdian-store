@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.196732111.1792540873",
+      "value": "GA1.1.612513725.1792890207",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827100873.382018,
+      "expires": 1827450207.369872,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792540873$o1$g0$t1792540873$j60$l0$h0",
+      "value": "GS2.1.s1792890207$o1$g1$t1792890242$j25$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827100873.422894,
+      "expires": 1827450242.511438,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TEE-WHITE\",\"size\":\"L\",\"quantity\":1}]"
         }
       ]
     }
