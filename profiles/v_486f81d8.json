@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1806916928.1792220468",
+      "value": "GA1.1.421020001.1792933277",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826780468.073706,
+      "expires": 1827493276.608076,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792584087$o2$g0$t1792584087$j60$l0$h0",
+      "value": "GS2.1.s1792933276$o1$g1$t1792933331$j5$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827144087.929758,
+      "expires": 1827493331.98755,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RAZ-CARBON\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
