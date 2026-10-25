@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1788031506.1792533675",
+      "value": "GA1.1.1840246962.1792886576",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827093674.523042,
+      "expires": 1827446575.526774,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792533674$o1$g1$t1792533701$j33$l0$h0",
+      "value": "GS2.1.s1792886575$o1$g0$t1792886575$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827093701.828415,
+      "expires": 1827446575.566192,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FNJ-CARBON\",\"size\":\"XL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
