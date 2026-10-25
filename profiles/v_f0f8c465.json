@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792800283$o1$g1$t1792800299$j44$l0$h0",
+      "value": "GS2.1.s1792951257$o2$g1$t1792951278$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827360299.807453,
+      "expires": 1827511278.067821,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SND-SAND\",\"size\":\"13\",\"quantity\":1}]"
         }
       ]
     }

@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.522430725.1792494069",
+      "value": "GA1.1.942430184.1792951262",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827054068.949411,
+      "expires": 1827511261.629416,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792602138$o2$g1$t1792602172$j26$l0$h0",
+      "value": "GS2.1.s1792951261$o1$g1$t1792951374$j23$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827162172.65243,
+      "expires": 1827511374.080417,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-AMU-BONE-CARBON\",\"size\":\"11.5\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-CAP-FOREST\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
