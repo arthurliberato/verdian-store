@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792620062$o2$g1$t1792620134$j60$l0$h0",
+      "value": "GS2.1.s1792936883$o3$g1$t1792936937$j6$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827180134.540552,
+      "expires": 1827496937.504036,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ERT-CLAY\",\"size\":\"XXL\",\"quantity\":2}]"
         },
         {
           "name": "verdian_sent_purchases",
