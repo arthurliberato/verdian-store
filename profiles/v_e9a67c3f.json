@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792814459$o3$g1$t1792814489$j30$l0$h0",
+      "value": "GS2.1.s1792954861$o4$g1$t1792954913$j8$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827374489.991211,
+      "expires": 1827514913.319434,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SGT-BONE\",\"size\":\"XL\",\"quantity\":1},{\"productId\":\"VRD-ECO-CLAY\",\"size\":\"10\",\"quantity\":1},{\"productId\":\"VRD-TEE-WHITE\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVO72972-OD5S\"]"
         }
       ]
     }
