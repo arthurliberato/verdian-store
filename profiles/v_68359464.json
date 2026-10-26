@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.2101634345.1792191736",
+      "value": "GA1.1.1322793015.1792990865",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1826751736.15743,
+      "expires": 1827550864.790132,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792638377$o3$g1$t1792638387$j50$l0$h0",
+      "value": "GS2.1.s1792990864$o1$g0$t1792990864$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827198387.148159,
+      "expires": 1827550864.837159,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-RAZ-TOBACCO\",\"size\":\"12\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
