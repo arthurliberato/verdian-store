@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1212297740.1792711129",
+      "value": "GA1.1.15201865.1793059280",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827271129.022891,
+      "expires": 1827619280.257198,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792711129$o1$g1$t1792711217$j39$l0$h0",
+      "value": "GS2.1.s1793059280$o1$g0$t1793059280$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827271217.36688,
+      "expires": 1827619280.310997,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ITT-CARBON\",\"size\":\"XXL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
