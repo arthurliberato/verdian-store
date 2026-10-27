@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1367612917.1792724527",
+      "value": "GA1.1.1140724183.1793070120",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827284527.332499,
+      "expires": 1827630119.783092,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792724527$o1$g1$t1792724544$j43$l0$h0",
+      "value": "GS2.1.s1793070119$o1$g0$t1793070119$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827284544.902367,
+      "expires": 1827630119.820099,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PLT-WHITE-FOREST\",\"size\":\"12\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

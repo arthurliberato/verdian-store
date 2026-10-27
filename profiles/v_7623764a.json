@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.451119170.1792724513",
+      "value": "GA1.1.2054253565.1793070142",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827284512.718643,
+      "expires": 1827630142.352008,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792724512$o1$g0$t1792724512$j60$l0$h0",
+      "value": "GS2.1.s1793070142$o1$g1$t1793070171$j31$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827284512.757512,
+      "expires": 1827630171.230817,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SND-FOREST\",\"size\":\"10.5\",\"quantity\":2}]"
         }
       ]
     }
