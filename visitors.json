@@ -1,5 +1,82 @@
 [
  {
+  "visitor_id": "v_a5d0ba73",
+  "archetype": "heritage",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-10-25T18:00:57.208Z",
+  "last_seen": "2026-10-27T20:05:48.452Z",
+  "visits": 2,
+  "purchases": 1,
+  "client_id": "942430184.1792951262"
+ },
+ {
+  "visitor_id": "v_bc01d02c",
+  "archetype": "heritage",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-27T20:01:59.530Z",
+  "last_seen": "2026-10-27T20:04:43.524Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "391093694.1793131366"
+ },
+ {
+  "visitor_id": "v_ae7b88d4",
+  "archetype": "heritage",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-27T20:01:59.530Z",
+  "last_seen": "2026-10-27T20:04:20.177Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "878839570.1793131367"
+ },
+ {
+  "visitor_id": "v_fa4c9f8e",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-27T00:01:19.096Z",
+  "last_seen": "2026-10-27T20:03:30.404Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "514590036.1793059415"
+ },
+ {
+  "visitor_id": "v_994a505b",
+  "archetype": "window_shopper",
+  "device": "tablet",
+  "device_profile": "Galaxy Tab S4",
+  "first_seen": "2026-10-25T23:01:01.535Z",
+  "last_seen": "2026-10-27T20:02:46.259Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1506522630.1792969266"
+ },
+ {
+  "visitor_id": "v_31aef1cb",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-25T01:01:08.137Z",
+  "last_seen": "2026-10-27T20:02:46.016Z",
+  "visits": 3,
+  "purchases": 1,
+  "client_id": "42515863.1792890185"
+ },
+ {
+  "visitor_id": "v_62e57daa",
+  "archetype": "bouncer",
+  "device": "tablet",
+  "device_profile": "iPad (gen 7)",
+  "first_seen": "2026-10-27T20:01:59.529Z",
+  "last_seen": "2026-10-27T20:02:03.265Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1841946900.1793131321"
+ },
+ {
   "visitor_id": "v_ee829c21",
   "archetype": "heritage",
   "device": "desktop",
@@ -1736,17 +1813,6 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "2053538717.1792803866"
- },
- {
-  "visitor_id": "v_fa4c9f8e",
-  "archetype": "runner",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-10-27T00:01:19.096Z",
-  "last_seen": "2026-10-27T00:04:35.169Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "514590036.1793059415"
  },
  {
   "visitor_id": "v_4a6c37bd",
@@ -4378,17 +4444,6 @@
   "client_id": "608499400.1792972862"
  },
  {
-  "visitor_id": "v_994a505b",
-  "archetype": "window_shopper",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-25T23:01:01.535Z",
-  "last_seen": "2026-10-25T23:02:29.134Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1506522630.1792969266"
- },
- {
   "visitor_id": "v_32ef464f",
   "archetype": "bouncer",
   "device": "mobile",
@@ -4818,17 +4873,6 @@
   "client_id": "1484856708.1792956889"
  },
  {
-  "visitor_id": "v_31aef1cb",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-10-25T01:01:08.137Z",
-  "last_seen": "2026-10-25T19:02:31.226Z",
-  "visits": 2,
-  "purchases": 1,
-  "client_id": "42515863.1792890185"
- },
- {
   "visitor_id": "v_e9a67c3f",
   "archetype": "hype",
   "device": "desktop",
@@ -4904,17 +4948,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "421179539.1792954862"
- },
- {
-  "visitor_id": "v_a5d0ba73",
-  "archetype": "heritage",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-25T18:00:57.208Z",
-  "last_seen": "2026-10-25T18:02:56.526Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "942430184.1792951262"
  },
  {
   "visitor_id": "v_ba24aad7",
@@ -8765,38 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "960736364.1792792860"
- },
- {
-  "visitor_id": "v_207fccdf",
-  "archetype": "bouncer",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-23T22:00:59.080Z",
-  "last_seen": "2026-10-23T22:01:54.265Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1119180237.1792792908"
- },
- {
-  "visitor_id": "v_46bde6a1",
-  "archetype": "hype",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-23T22:00:59.079Z",
-  "last_seen": "2026-10-23T22:01:47.586Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "716170230.1792792889"
- },
- {
-  "visitor_id": "v_0db07b39",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-23T22:00:59.079Z",
-  "last_seen": "2026-10-23T22:01:24.463Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "698517173.1792792877"
  }
 ]
