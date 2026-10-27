@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_ee829c21",
+  "archetype": "heritage",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-10-04T12:01:09.497Z",
+  "last_seen": "2026-10-27T19:30:49.004Z",
+  "visits": 16,
+  "purchases": 7,
+  "client_id": "109814933.1791115298"
+ },
+ {
+  "visitor_id": "v_6a97f25d",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-27T19:28:23.974Z",
+  "last_seen": "2026-10-27T19:28:32.073Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "100499659.1793129305"
+ },
+ {
+  "visitor_id": "v_6fab20e9",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-27T19:28:23.974Z",
+  "last_seen": "2026-10-27T19:28:28.833Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1508442662.1793129306"
+ },
+ {
   "visitor_id": "v_ea995e34",
   "archetype": "heritage",
   "device": "mobile",
@@ -1296,17 +1329,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "540547682.1793066594"
- },
- {
-  "visitor_id": "v_ee829c21",
-  "archetype": "heritage",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-10-04T12:01:09.497Z",
-  "last_seen": "2026-10-27T02:04:09.376Z",
-  "visits": 15,
-  "purchases": 7,
-  "client_id": "109814933.1791115298"
  },
  {
   "visitor_id": "v_a1b629ee",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "698517173.1792792877"
- },
- {
-  "visitor_id": "v_07abfd22",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-23T22:00:59.079Z",
-  "last_seen": "2026-10-23T22:01:16.340Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1369461059.1792792869"
- },
- {
-  "visitor_id": "v_6144739d",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-23T22:00:59.079Z",
-  "last_seen": "2026-10-23T22:01:08.235Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1875238724.1792792866"
  }
 ]
