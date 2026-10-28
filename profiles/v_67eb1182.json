@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792868562$o1$g0$t1792868562$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.317796033.1793210482",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827428562.542827,
+      "expires": 1827770481.979379,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.500602836.1792868563",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793210481$o1$g1$t1793210559$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827428562.543158,
+      "expires": 1827770559.580957,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-FOG\",\"size\":\"13\",\"quantity\":1}]"
         }
       ]
     }
