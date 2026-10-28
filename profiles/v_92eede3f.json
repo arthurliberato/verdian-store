@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.27451633.1792591276",
+      "value": "GA1.1.352418097.1793149515",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827151275.592843,
+      "expires": 1827709515.128518,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792805698$o2$g1$t1792805773$j60$l0$h0",
+      "value": "GS2.1.s1793149515$o1$g1$t1793149595$j45$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827365773.072326,
+      "expires": 1827709595.260839,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PUL-EMBER\",\"size\":\"11\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-CSJ-RUST\",\"size\":\"XL\",\"quantity\":2}]"
         }
       ]
     }
