@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793217666$o2$g1$t1793217754$j36$l0$h0",
+      "value": "GS2.1.s1793282531$o3$g1$t1793282596$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827777754.541862,
+      "expires": 1827842596.577118,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TEE-WHITE\",\"size\":\"XXL\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVTM5N7O-H6ZQ\"]"
         }
       ]
     }

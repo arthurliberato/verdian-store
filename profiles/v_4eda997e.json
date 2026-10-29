@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793041455$o2$g1$t1793041522$j56$l0$h0",
+      "value": "GS2.1.s1793282543$o3$g1$t1793282625$j38$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827601522.998443,
+      "expires": 1827842625.873673,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CIM-MOSS-RUST\",\"size\":\"10\",\"quantity\":2}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVTM69TI-ZV81\"]"
         }
       ]
     }

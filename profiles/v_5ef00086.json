@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792933270$o1$g0$t1792933270$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.813713099.1793282477",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827493270.523531,
+      "expires": 1827842477.128346,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.2083811501.1792933271",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793282477$o1$g1$t1793282499$j38$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827493270.524029,
+      "expires": 1827842499.97335,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CLM-INK\",\"size\":\"11.5\",\"quantity\":2}]"
         }
       ]
     }
