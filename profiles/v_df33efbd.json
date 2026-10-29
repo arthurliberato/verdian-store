@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793048471$o1$g1$t1793048529$j2$l0$h0",
+      "value": "GS2.1.s1793271661$o2$g1$t1793271758$j30$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827608529.429125,
+      "expires": 1827831758.967922,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CSJ-MOSS\",\"size\":\"M\",\"quantity\":1}]"
         }
       ]
     }
