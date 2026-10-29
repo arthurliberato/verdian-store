@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_0c2e22c3",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-28T05:01:02.982Z",
+  "last_seen": "2026-10-29T23:16:25.067Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "140661990.1793163664"
+ },
+ {
+  "visitor_id": "v_0fcd356d",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-10-29T23:15:31.587Z",
+  "last_seen": "2026-10-29T23:15:37.648Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "672651843.1793315733"
+ },
+ {
+  "visitor_id": "v_8c106d84",
+  "archetype": "bouncer",
+  "device": "tablet",
+  "device_profile": "iPad (gen 7)",
+  "first_seen": "2026-10-29T23:15:31.588Z",
+  "last_seen": "2026-10-29T23:15:37.183Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "585416602.1793315733"
+ },
+ {
   "visitor_id": "v_6ed0b47e",
   "archetype": "hype",
   "device": "mobile",
@@ -3826,17 +3859,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1672733925.1793165472"
- },
- {
-  "visitor_id": "v_0c2e22c3",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-28T05:01:02.982Z",
-  "last_seen": "2026-10-28T05:01:17.409Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "140661990.1793163664"
  },
  {
   "visitor_id": "v_86811b53",
@@ -8776,27 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "2025832118.1792774867"
- },
- {
-  "visitor_id": "v_32ef464f",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-10-25T23:01:01.536Z",
-  "last_seen": "2026-10-25T23:01:15.134Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "496622127.1792969268"
- },
- {
-  "visitor_id": "v_9af0bd3f",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-25T23:01:01.536Z",
-  "last_seen": "2026-10-25T23:01:13.959Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1853061062.1792969268"
  }
 ]
