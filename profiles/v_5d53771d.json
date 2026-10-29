@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793120543$o1$g1$t1793120576$j27$l0$h0",
+      "value": "GS2.1.s1793286068$o2$g1$t1793286141$j49$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827680576.336987,
+      "expires": 1827846141.832078,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TRP-NAVY\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
