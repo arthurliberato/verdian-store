@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.512194651.1792548071",
+      "value": "GA1.1.370728723.1793289732",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827108070.98252,
+      "expires": 1827849732.383,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792940496$o3$g1$t1792940545$j11$l0$h0",
+      "value": "GS2.1.s1793289732$o1$g1$t1793289788$j4$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827500545.426891,
+      "expires": 1827849788.136286,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MVNYIAUW-CY3V\"]"
+          "value": "[{\"productId\":\"VRD-HOD-HEATHER-GREY\",\"size\":\"L\",\"quantity\":1}]"
         }
       ]
     }
