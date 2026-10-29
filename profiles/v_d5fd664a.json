@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792886577$o1$g1$t1792886643$j54$l0$h0",
+      "value": "GS2.1.s1793235828$o2$g1$t1793235913$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446643.018314,
+      "expires": 1827795913.448227,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PUL-FOG\",\"size\":\"8.5\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVSUD2A3-XBDZ\"]"
         }
       ]
     }

@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793149300$o2$g1$t1793149362$j60$l0$h0",
+      "value": "GS2.1.s1793235812$o3$g1$t1793235964$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827709362.498278,
+      "expires": 1827795964.136924,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-HOD-HEATHER-GREY\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }
