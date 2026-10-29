@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792886618$o1$g0$t1792886618$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1580093315.1793232121",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446618.808921,
+      "expires": 1827792121.258861,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.1037936002.1792886619",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793232121$o1$g1$t1793232141$j40$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446618.809415,
+      "expires": 1827792141.769764,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PLT-BONE\",\"size\":\"9.5\",\"quantity\":1}]"
         }
       ]
     }

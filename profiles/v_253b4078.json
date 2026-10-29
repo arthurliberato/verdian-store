@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.172277582.1792886469",
+      "value": "GA1.1.1860179619.1793232185",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446468.771097,
+      "expires": 1827792185.221508,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792886468$o1$g1$t1792886519$j9$l0$h0",
+      "value": "GS2.1.s1793232185$o1$g1$t1793232229$j16$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446519.204591,
+      "expires": 1827792229.757078,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"11\",\"quantity\":1}]"
         }
       ]
     }
