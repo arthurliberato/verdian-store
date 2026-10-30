@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.203378997.1792980127",
+      "value": "GA1.1.1282831997.1793332874",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827540127.474176,
+      "expires": 1827892873.845947,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1792980127$o1$g0$t1792980127$j60$l0$h0",
+      "value": "GS2.1.s1793332873$o1$g1$t1793332966$j27$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827540127.503482,
+      "expires": 1827892966.950878,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RAZ-WHEAT\",\"size\":\"7.5\",\"quantity\":1}]"
         }
       ]
     }
