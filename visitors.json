@@ -1,5 +1,49 @@
 [
  {
+  "visitor_id": "v_317296e1",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-10-30T10:01:00.262Z",
+  "last_seen": "2026-10-30T10:01:07.634Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1885004329.1793354464"
+ },
+ {
+  "visitor_id": "v_0436ed95",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-30T10:01:00.261Z",
+  "last_seen": "2026-10-30T10:01:06.162Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1530392966.1793354461"
+ },
+ {
+  "visitor_id": "v_b663b19f",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-30T10:01:00.262Z",
+  "last_seen": "2026-10-30T10:01:04.447Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1728564798.1793354462"
+ },
+ {
+  "visitor_id": "v_c0389206",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-10-30T10:01:00.262Z",
+  "last_seen": "2026-10-30T10:01:03.324Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "200115700.1793354461"
+ },
+ {
   "visitor_id": "v_26cc02a3",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8754,49 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "1682473989.1792767673"
- },
- {
-  "visitor_id": "v_4966dbbf",
-  "archetype": "bouncer",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-26T04:01:00.722Z",
-  "last_seen": "2026-10-26T04:01:12.021Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "716616589.1792987266"
- },
- {
-  "visitor_id": "v_fc6542b2",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-26T04:01:00.721Z",
-  "last_seen": "2026-10-26T04:01:08.028Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "678243870.1792987262"
- },
- {
-  "visitor_id": "v_94052e3b",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-26T04:01:00.721Z",
-  "last_seen": "2026-10-26T04:01:05.881Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "36480108.1792987262"
- },
- {
-  "visitor_id": "v_0731b414",
-  "archetype": "bouncer",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-10-26T04:01:00.721Z",
-  "last_seen": "2026-10-26T04:01:04.328Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "33665630.1792987262"
  }
 ]
