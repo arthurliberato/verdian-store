@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793372463$o1$g1$t1793372598$j60$l0$h0",
+      "value": "GS2.1.s1793458921$o2$g1$t1793459029$j12$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827932598.928631,
+      "expires": 1828019029.49689,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-VNT-SIGNAL\",\"size\":\"7\",\"quantity\":1}]"
         }
       ]
     }
