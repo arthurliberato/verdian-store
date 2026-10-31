@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_799b3d06",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-31T05:01:42.758Z",
+  "last_seen": "2026-10-31T05:02:17.625Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "467414849.1793422904"
+ },
+ {
+  "visitor_id": "v_002a0dd9",
+  "archetype": "hype",
+  "device": "tablet",
+  "device_profile": "iPad (gen 7)",
+  "first_seen": "2026-10-26T20:38:05.637Z",
+  "last_seen": "2026-10-31T05:02:14.296Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "51399689.1793047093"
+ },
+ {
+  "visitor_id": "v_ed45f517",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-10-31T05:01:42.758Z",
+  "last_seen": "2026-10-31T05:01:49.072Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1536957178.1793422904"
+ },
+ {
   "visitor_id": "v_544a592e",
   "archetype": "heritage",
   "device": "desktop",
@@ -8701,17 +8734,6 @@
   "client_id": "1140724183.1793070120"
  },
  {
-  "visitor_id": "v_002a0dd9",
-  "archetype": "hype",
-  "device": "tablet",
-  "device_profile": "iPad (gen 7)",
-  "first_seen": "2026-10-26T20:38:05.637Z",
-  "last_seen": "2026-10-27T03:01:52.396Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "51399689.1793047093"
- },
- {
   "visitor_id": "v_22e9f2bc",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8776,27 +8798,5 @@
   "visits": 3,
   "purchases": 0,
   "client_id": "64406676.1792965673"
- },
- {
-  "visitor_id": "v_576e5f60",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-27T02:01:01.790Z",
-  "last_seen": "2026-10-27T02:03:13.533Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1659964894.1793066551"
- },
- {
-  "visitor_id": "v_7f117adb",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-27T02:01:01.791Z",
-  "last_seen": "2026-10-27T02:03:06.715Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1083239391.1793066580"
  }
 ]
