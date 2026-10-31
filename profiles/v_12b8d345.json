@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793191468$o2$g1$t1793191538$j56$l0$h0",
+      "value": "GS2.1.s1793437283$o3$g1$t1793437353$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827751538.174396,
+      "expires": 1827997353.486379,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PRJ-VOLT\",\"size\":\"L\",\"quantity\":1}]"
         }
       ]
     }
