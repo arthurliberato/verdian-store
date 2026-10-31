@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793385262$o4$g1$t1793385403$j60$l0$h0",
+      "value": "GS2.1.s1793461405$o5$g1$t1793461573$j37$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827945403.067927,
+      "expires": 1828021573.832787,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-KIT-NATURAL\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[]"
         },
         {
           "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MVPE2W2A-V0XN\"]"
+          "value": "[\"VRD-MVPE2W2A-V0XN\",\"VRD-MVWKPQY8-IHDS\"]"
         }
       ]
     }
