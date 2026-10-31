@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793451737$o2$g1$t1793451845$j18$l0$h0",
+      "value": "GS2.1.s1793476586$o3$g1$t1793476699$j23$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828011845.903067,
+      "expires": 1828036699.808509,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CAP-BONE\",\"size\":\"One size\",\"quantity\":1},{\"productId\":\"VRD-SND-CREAM-NAVY\",\"size\":\"13\",\"quantity\":2}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVWTPY82-L556\"]"
         }
       ]
     }
