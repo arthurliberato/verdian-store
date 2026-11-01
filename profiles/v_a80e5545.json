@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.117928831.1793153071",
+      "value": "GA1.1.1374677552.1793534484",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827713070.634553,
+      "expires": 1828094483.612153,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793153070$o1$g0$t1793153070$j60$l0$h0",
+      "value": "GS2.1.s1793534483$o1$g1$t1793534586$j30$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827713070.666553,
+      "expires": 1828094586.421518,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TSH-FOREST\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
