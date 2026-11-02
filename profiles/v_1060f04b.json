@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.339604515.1792803661",
+      "value": "GA1.1.123173932.1793592147",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827363661.465369,
+      "expires": 1828152146.802284,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793228482$o3$g1$t1793228510$j32$l0$h0",
+      "value": "GS2.1.s1793592146$o1$g1$t1793592199$j7$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827788510.103999,
+      "expires": 1828152199.662153,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-FOREST-BONE\",\"size\":\"10\",\"quantity\":1},{\"productId\":\"VRD-CLM-OAT\",\"size\":\"8.5\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-FNJ-BONE-RUST\",\"size\":\"XL\",\"quantity\":1}]"
         }
       ]
     }
