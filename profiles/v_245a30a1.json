@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793329353$o1$g1$t1793329398$j15$l0$h0",
+      "value": "GS2.1.s1793584901$o2$g1$t1793584937$j24$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827889398.735276,
+      "expires": 1828144937.867213,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"10.5\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"10.5\",\"quantity\":1},{\"productId\":\"VRD-TRP-CARBON\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }

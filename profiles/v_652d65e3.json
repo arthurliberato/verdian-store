@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793476695$o3$g1$t1793476769$j50$l0$h0",
+      "value": "GS2.1.s1793584892$o4$g1$t1793584978$j38$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828036769.395396,
+      "expires": 1828144978.917837,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-ASH\",\"size\":\"11\",\"quantity\":2},{\"productId\":\"VRD-CSJ-MOSS\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MVYM6QX8-U1DW\"]"
         }
       ]
     }
