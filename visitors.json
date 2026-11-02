@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_aa6cc8e4",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-29T19:03:00.053Z",
+  "last_seen": "2026-11-02T21:01:54.306Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "766246792.1793300582"
+ },
+ {
+  "visitor_id": "v_3c42f729",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-02T21:01:46.287Z",
+  "last_seen": "2026-11-02T21:01:52.477Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "505665265.1793653307"
+ },
+ {
+  "visitor_id": "v_3a7571b9",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-02T21:01:46.287Z",
+  "last_seen": "2026-11-02T21:01:50.814Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "214370796.1793653307"
+ },
+ {
   "visitor_id": "v_1052cbab",
   "archetype": "hype",
   "device": "mobile",
@@ -1098,17 +1131,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "403162675.1793592156"
- },
- {
-  "visitor_id": "v_aa6cc8e4",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-29T19:03:00.053Z",
-  "last_seen": "2026-11-02T04:03:32.877Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "766246792.1793300582"
  },
  {
   "visitor_id": "v_1060f04b",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "862662250.1793282514"
- },
- {
-  "visitor_id": "v_17088b80",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-10-29T14:01:11.709Z",
-  "last_seen": "2026-10-29T14:01:53.155Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "944172377.1793282510"
- },
- {
-  "visitor_id": "v_18a51568",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-10-29T14:01:11.709Z",
-  "last_seen": "2026-10-29T14:01:49.859Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1755627125.1793282503"
  }
 ]
