@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793563285$o13$g1$t1793563399$j14$l0$h0",
+      "value": "GS2.1.s1793692903$o14$g1$t1793692991$j44$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828123399.729008,
+      "expires": 1828252991.672652,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"12\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"12\",\"quantity\":1},{\"productId\":\"VRD-CLM-INK\",\"size\":\"10\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
