@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.285012981.1792519291",
+      "value": "GA1.1.1658482470.1793728930",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827079290.90645,
+      "expires": 1828288929.666114,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793325697$o6$g1$t1793325808$j11$l0$h0",
+      "value": "GS2.1.s1793728929$o1$g1$t1793729031$j24$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827885808.806402,
+      "expires": 1828289031.393629,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MVILOJKP-AIDS\"]"
+          "value": "[{\"productId\":\"VRD-CIM-CLAY\",\"size\":\"9\",\"quantity\":1}]"
         }
       ]
     }
