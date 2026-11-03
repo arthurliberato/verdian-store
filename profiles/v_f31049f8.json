@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.1057647659.1792893736",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793718135$o1$g0$t1793718135$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827453736.124142,
+      "expires": 1828278135.479713,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793322136$o3$g1$t1793322175$j21$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1622465376.1793718135",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827882175.992301,
+      "expires": 1828278135.480118,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"7.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
