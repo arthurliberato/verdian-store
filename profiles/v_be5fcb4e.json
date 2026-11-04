@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1396468604.1792886530",
+      "value": "GA1.1.1043224374.1793811772",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827446530.495443,
+      "expires": 1828371772.146136,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793408505$o5$g1$t1793408534$j31$l0$h0",
+      "value": "GS2.1.s1793811772$o1$g1$t1793811798$j34$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827968534.810287,
+      "expires": 1828371798.580536,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-BRH-OBSIDIAN\",\"size\":\"L\",\"quantity\":1},{\"productId\":\"VRD-FSC-CREAM-GREY\",\"size\":\"9\",\"quantity\":1},{\"productId\":\"VRD-FSC-CREAM-GREY\",\"size\":\"10\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
