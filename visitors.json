@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_370efb5b",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-27T00:01:19.095Z",
+  "last_seen": "2026-11-04T21:19:13.385Z",
+  "visits": 4,
+  "purchases": 1,
+  "client_id": "2001661534.1793059327"
+ },
+ {
+  "visitor_id": "v_34f2205b",
+  "archetype": "heritage",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-10-23T21:01:27.636Z",
+  "last_seen": "2026-11-04T21:18:31.164Z",
+  "visits": 6,
+  "purchases": 2,
+  "client_id": "258758549.1792789333"
+ },
+ {
+  "visitor_id": "v_2b129e8e",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-04T21:17:00.867Z",
+  "last_seen": "2026-11-04T21:17:09.841Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1605784843.1793827022"
+ },
+ {
   "visitor_id": "v_99f18f9a",
   "archetype": "hype",
   "device": "mobile",
@@ -5159,17 +5192,6 @@
   "client_id": "210511620.1793588623"
  },
  {
-  "visitor_id": "v_370efb5b",
-  "archetype": "runner",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-27T00:01:19.095Z",
-  "last_seen": "2026-11-02T03:04:10.355Z",
-  "visits": 3,
-  "purchases": 0,
-  "client_id": "2001661534.1793059327"
- },
- {
   "visitor_id": "v_fc0536b3",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8261,17 +8283,6 @@
   "client_id": "1864781710.1793462496"
  },
  {
-  "visitor_id": "v_34f2205b",
-  "archetype": "heritage",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-10-23T21:01:27.636Z",
-  "last_seen": "2026-10-31T15:46:19.293Z",
-  "visits": 5,
-  "purchases": 2,
-  "client_id": "258758549.1792789333"
- },
- {
   "visitor_id": "v_315f80bc",
   "archetype": "hype",
   "device": "mobile",
@@ -8787,16 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1412318136.1793419320"
- },
- {
-  "visitor_id": "v_703537aa",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-31T04:01:58.315Z",
-  "last_seen": "2026-10-31T04:02:07.480Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "922710392.1793419324"
  }
 ]
