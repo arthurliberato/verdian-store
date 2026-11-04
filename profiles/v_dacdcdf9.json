@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793829722$o1$g1$t1793829779$j3$l0$h0",
+      "value": "GS2.1.s1793833321$o2$g1$t1793833356$j25$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828389779.27483,
+      "expires": 1828393356.775627,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-RUST\",\"size\":\"7\",\"quantity\":1}]"
         }
       ]
     }
