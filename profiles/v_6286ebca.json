@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.723996772.1793498618",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793920302$o1$g0$t1793920302$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828058618.267663,
+      "expires": 1828480302.87635,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793498618$o1$g1$t1793498664$j14$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.665524984.1793920303",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828058664.292369,
+      "expires": 1828480302.87681,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ARC-CARBON\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
