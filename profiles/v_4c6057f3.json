@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1525311721.1793487834",
+      "value": "GA1.1.1729114361.1793898262",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828047833.510872,
+      "expires": 1828458261.874805,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793487833$o1$g0$t1793487833$j60$l0$h0",
+      "value": "GS2.1.s1793898261$o1$g1$t1793898295$j26$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828047833.553233,
+      "expires": 1828458295.856586,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TOT-FOREST\",\"size\":\"One size\",\"quantity\":1}]"
         }
       ]
     }
