@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.547480695.1793372464",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1793844121$o1$g0$t1793844121$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827932463.530468,
+      "expires": 1828404121.866707,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793458921$o2$g1$t1793459029$j12$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.58068611.1793844122",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828019029.49689,
+      "expires": 1828404121.867072,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-VNT-SIGNAL\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

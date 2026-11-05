@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1179077066.1793242860",
+      "value": "GA1.1.1842290416.1793844108",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827802859.988093,
+      "expires": 1828404108.384253,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793455296$o2$g1$t1793455361$j60$l0$h0",
+      "value": "GS2.1.s1793844108$o1$g0$t1793844108$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828015361.101205,
+      "expires": 1828404108.424218,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SGT-BONE\",\"size\":\"L\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
