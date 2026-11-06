@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1891942200.1793329353",
+      "value": "GA1.1.61973740.1794006141",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827889353.494439,
+      "expires": 1828566140.910404,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793584901$o2$g1$t1793584937$j24$l0$h0",
+      "value": "GS2.1.s1794006140$o1$g1$t1794006150$j50$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828144937.867213,
+      "expires": 1828566150.58457,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"10.5\",\"quantity\":1},{\"productId\":\"VRD-TRP-CARBON\",\"size\":\"XXL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
