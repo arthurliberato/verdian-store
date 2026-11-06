@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1917143337.1793048472",
+      "value": "GA1.1.1070698910.1794001033",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827608471.882657,
+      "expires": 1828561033.09858,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793581285$o4$g1$t1793581331$j14$l0$h0",
+      "value": "GS2.1.s1794001033$o1$g1$t1794001073$j20$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828141331.155193,
+      "expires": 1828561073.824104,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CSJ-MOSS\",\"size\":\"M\",\"quantity\":1},{\"productId\":\"VRD-CMP-WHITE-CLAY\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
