@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793822504$o1$g1$t1793822629$j60$l0$h0",
+      "value": "GS2.1.s1793934096$o2$g1$t1793934200$j19$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828382629.730496,
+      "expires": 1828494200.131628,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RAZ-WHEAT\",\"size\":\"11\",\"quantity\":2}]"
         }
       ]
     }
