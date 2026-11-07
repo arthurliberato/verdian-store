@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.898942970.1793491323",
+      "value": "GA1.1.726116242.1794060102",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828051322.810178,
+      "expires": 1828620101.540768,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793638903$o2$g1$t1793639004$j27$l0$h0",
+      "value": "GS2.1.s1794060101$o1$g1$t1794060184$j49$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828199004.017867,
+      "expires": 1828620184.231406,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-IMP-CARBON\",\"size\":\"11.5\",\"quantity\":1},{\"productId\":\"VRD-PUL-GLACIER\",\"size\":\"13\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
