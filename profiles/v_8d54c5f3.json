@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1646042944.1793300294",
+      "value": "GA1.1.1640334195.1794009698",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827860293.88014,
+      "expires": 1828569698.187734,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793586424$o2$g1$t1793586469$j15$l0$h0",
+      "value": "GS2.1.s1794009698$o1$g0$t1794009698$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828146469.01827,
+      "expires": 1828569698.228615,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-MCP-CARBON\",\"size\":\"S\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
