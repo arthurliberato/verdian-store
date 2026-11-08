@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794121295$o1$g1$t1794121352$j3$l0$h0",
+      "value": "GS2.1.s1794157282$o2$g1$t1794157364$j48$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828681352.727906,
+      "expires": 1828717364.427939,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ITT-NAVY\",\"size\":\"XL\",\"quantity\":1}]"
         }
       ]
     }
