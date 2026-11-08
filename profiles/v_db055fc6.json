@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1453051195.1793700111",
+      "value": "GA1.1.1000818781.1794103414",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828260111.032082,
+      "expires": 1828663413.791953,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793700111$o1$g1$t1793700148$j23$l0$h0",
+      "value": "GS2.1.s1794103413$o1$g1$t1794103473$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828260148.661387,
+      "expires": 1828663473.890293,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-ASH\",\"size\":\"7.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
