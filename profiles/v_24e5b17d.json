@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793923811$o2$g1$t1793923844$j27$l0$h0",
+      "value": "GS2.1.s1794106969$o3$g1$t1794106997$j32$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828483844.043972,
+      "expires": 1828666997.63057,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SND-STONE\",\"size\":\"6.5\",\"quantity\":1}]"
         }
       ]
     }
