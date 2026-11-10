@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794229304$o4$g1$t1794229417$j19$l0$h0",
+      "value": "GS2.1.s1794337410$o5$g1$t1794337594$j9$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828789417.562055,
+      "expires": 1828897594.567919,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CLM-INK\",\"size\":\"6\",\"quantity\":1},{\"productId\":\"VRD-ARC-SLATE\",\"size\":\"10\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWB29WV8-FEXO\"]"
         }
       ]
     }
