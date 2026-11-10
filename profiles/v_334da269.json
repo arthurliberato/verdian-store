@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1338754049.1792490461",
+      "value": "GA1.1.1672000585.1794279841",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827050460.962478,
+      "expires": 1828839840.644453,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1793887801$o13$g1$t1793887885$j42$l0$h0",
+      "value": "GS2.1.s1794279840$o1$g0$t1794279840$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828447885.614212,
+      "expires": 1828839840.683711,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CAP-BONE\",\"size\":\"One size\",\"quantity\":1}]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MVMSOHPJ-I8M6\",\"VRD-MVPBUIHL-7USC\",\"VRD-MVQ3S5MM-ILEG\",\"VRD-MVUG69JP-MQU9\"]"
+          "value": "[]"
         }
       ]
     }
