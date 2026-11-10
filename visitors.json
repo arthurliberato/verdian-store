@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_045ae419",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-10-25T11:01:05.234Z",
+  "last_seen": "2026-11-10T18:02:15.529Z",
+  "visits": 6,
+  "purchases": 1,
+  "client_id": "1555340594.1792926116"
+ },
+ {
+  "visitor_id": "v_c64c029d",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-06T03:01:34.275Z",
+  "last_seen": "2026-11-10T18:01:55.130Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1103348184.1793934095"
+ },
+ {
+  "visitor_id": "v_311ccd38",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-10T18:01:14.174Z",
+  "last_seen": "2026-11-10T18:01:21.086Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2025765864.1794333675"
+ },
+ {
   "visitor_id": "v_c8707223",
   "archetype": "runner",
   "device": "mobile",
@@ -6952,17 +6985,6 @@
   "client_id": "1139080463.1794009788"
  },
  {
-  "visitor_id": "v_045ae419",
-  "archetype": "runner",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-10-25T11:01:05.234Z",
-  "last_seen": "2026-11-07T00:03:07.306Z",
-  "visits": 5,
-  "purchases": 1,
-  "client_id": "1555340594.1792926116"
- },
- {
   "visitor_id": "v_de0c9355",
   "archetype": "window_shopper",
   "device": "desktop",
@@ -8294,17 +8316,6 @@
   "client_id": "66517516.1793934136"
  },
  {
-  "visitor_id": "v_c64c029d",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-06T03:01:34.275Z",
-  "last_seen": "2026-11-06T03:02:15.932Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1103348184.1793934095"
- },
- {
   "visitor_id": "v_dff6612a",
   "archetype": "bouncer",
   "device": "tablet",
@@ -8787,16 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1857681219.1793916104"
- },
- {
-  "visitor_id": "v_aced4adb",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-05T22:01:42.921Z",
-  "last_seen": "2026-11-05T22:02:05.832Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "911317546.1793916122"
  }
 ]
