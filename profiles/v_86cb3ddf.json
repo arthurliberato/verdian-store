@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1951133549.1794013386",
+      "value": "GA1.1.1155272592.1794438116",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828573385.745123,
+      "expires": 1828998116.144363,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794013385$o1$g0$t1794013385$j60$l0$h0",
+      "value": "GS2.1.s1794438116$o1$g1$t1794438142$j34$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828573385.773436,
+      "expires": 1828998142.231758,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CLM-MOSS\",\"size\":\"13\",\"quantity\":1}]"
         }
       ]
     }
