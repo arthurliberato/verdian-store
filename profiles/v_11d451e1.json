@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.776235214.1793858492",
+      "value": "GA1.1.717750628.1794434151",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828418492.487006,
+      "expires": 1828994151.011404,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794013313$o2$g1$t1794013343$j30$l0$h0",
+      "value": "GS2.1.s1794434151$o1$g1$t1794434250$j28$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828573343.694684,
+      "expires": 1828994250.262639,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-AMU-FOG\",\"size\":\"9\",\"quantity\":1},{\"productId\":\"VRD-MCP-CARBON\",\"size\":\"XL\",\"quantity\":2}]"
+          "value": "[{\"productId\":\"VRD-CLM-INK\",\"size\":\"9.5\",\"quantity\":1}]"
         }
       ]
     }

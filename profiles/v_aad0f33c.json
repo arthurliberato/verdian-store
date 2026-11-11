@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.259855463.1794013321",
+      "value": "GA1.1.975260108.1794434109",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828573321.010036,
+      "expires": 1828994108.900183,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794013321$o1$g1$t1794013362$j19$l0$h0",
+      "value": "GS2.1.s1794434108$o1$g1$t1794434173$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828573362.049701,
+      "expires": 1828994173.123984,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-HZM-FOREST\",\"size\":\"XXL\",\"quantity\":2}]"
         }
       ]
     }
