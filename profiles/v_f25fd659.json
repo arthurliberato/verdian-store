@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.448178053.1793829722",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1794495756$o1$g0$t1794495756$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828389722.386454,
+      "expires": 1829055756.888477,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794070974$o3$g1$t1794071035$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.313179146.1794495757",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828631035.437546,
+      "expires": 1829055756.888782,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-AMU-RUST\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
