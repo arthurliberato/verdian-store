@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.71210890.1794071050",
+      "value": "GA1.1.660364608.1794499382",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828631050.137116,
+      "expires": 1829059381.777716,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794071050$o1$g0$t1794071050$j60$l0$h0",
+      "value": "GS2.1.s1794499381$o1$g1$t1794499545$j51$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828631050.180518,
+      "expires": 1829059545.755612,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SCK-WHITE\",\"size\":\"M\",\"quantity\":1}]"
         }
       ]
     }
