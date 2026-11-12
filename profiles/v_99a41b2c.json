@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.664719097.1793750760",
+      "value": "GA1.1.300675814.1794452184",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828310759.819112,
+      "expires": 1829012183.646644,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794049287$o3$g1$t1794049337$j10$l0$h0",
+      "value": "GS2.1.s1794452183$o1$g1$t1794452215$j28$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828609337.501311,
+      "expires": 1829012215.660615,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-ASH\",\"size\":\"10.5\",\"quantity\":1},{\"productId\":\"VRD-ARC-CHALK-FOREST\",\"size\":\"10\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

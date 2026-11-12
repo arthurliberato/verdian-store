@@ -1,5 +1,148 @@
 [
  {
+  "visitor_id": "v_e566c3a8",
+  "archetype": "heritage",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-07T22:01:22.761Z",
+  "last_seen": "2026-11-12T02:59:46.821Z",
+  "visits": 2,
+  "purchases": 1,
+  "client_id": "1913566195.1794088894"
+ },
+ {
+  "visitor_id": "v_95c7232f",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-09T01:01:33.525Z",
+  "last_seen": "2026-11-12T02:58:45.117Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1026910888.1794186175"
+ },
+ {
+  "visitor_id": "v_dde44550",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-12T02:56:22.710Z",
+  "last_seen": "2026-11-12T02:58:37.815Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1641494738.1794452291"
+ },
+ {
+  "visitor_id": "v_5c3b5138",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-12T02:56:22.710Z",
+  "last_seen": "2026-11-12T02:58:10.642Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "604577534.1794452231"
+ },
+ {
+  "visitor_id": "v_efd9049d",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-12T02:56:22.710Z",
+  "last_seen": "2026-11-12T02:58:02.392Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "442934289.1794452280"
+ },
+ {
+  "visitor_id": "v_c17b0ca4",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-12T02:56:22.710Z",
+  "last_seen": "2026-11-12T02:57:59.873Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "95325431.1794452247"
+ },
+ {
+  "visitor_id": "v_0c62f276",
+  "archetype": "window_shopper",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-11-07T17:01:37.012Z",
+  "last_seen": "2026-11-12T02:57:53.256Z",
+  "visits": 4,
+  "purchases": 0,
+  "client_id": "2145205662.1794070976"
+ },
+ {
+  "visitor_id": "v_d0cd21fa",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-12T02:56:22.709Z",
+  "last_seen": "2026-11-12T02:57:26.132Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "929845149.1794452215"
+ },
+ {
+  "visitor_id": "v_99a41b2c",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-12T02:56:22.709Z",
+  "last_seen": "2026-11-12T02:57:10.782Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "300675814.1794452184"
+ },
+ {
+  "visitor_id": "v_9f681fb7",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-11-12T02:56:22.709Z",
+  "last_seen": "2026-11-12T02:57:02.003Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "274916135.1794452216"
+ },
+ {
+  "visitor_id": "v_e553ade4",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-09T13:01:43.186Z",
+  "last_seen": "2026-11-12T02:56:55.728Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1888604878.1794229461"
+ },
+ {
+  "visitor_id": "v_d70c4418",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-12T02:56:22.709Z",
+  "last_seen": "2026-11-12T02:56:54.355Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1639798019.1794452209"
+ },
+ {
+  "visitor_id": "v_b011e0b3",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-08T02:01:32.585Z",
+  "last_seen": "2026-11-12T02:56:48.153Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "1516303690.1794103306"
+ },
+ {
   "visitor_id": "v_7d376e43",
   "archetype": "window_shopper",
   "device": "tablet",
@@ -1274,17 +1417,6 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "468057214.1794279787"
- },
- {
-  "visitor_id": "v_0c62f276",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-11-07T17:01:37.012Z",
-  "last_seen": "2026-11-11T17:03:32.551Z",
-  "visits": 3,
-  "purchases": 0,
-  "client_id": "2145205662.1794070976"
  },
  {
   "visitor_id": "v_ba410cc0",
@@ -5258,17 +5390,6 @@
   "client_id": "1229724542.1793721720"
  },
  {
-  "visitor_id": "v_e553ade4",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-09T13:01:43.186Z",
-  "last_seen": "2026-11-09T13:04:53.090Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1888604878.1794229461"
- },
- {
   "visitor_id": "v_41c90462",
   "archetype": "bouncer",
   "device": "mobile",
@@ -5971,17 +6092,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "75463442.1794186220"
- },
- {
-  "visitor_id": "v_95c7232f",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-09T01:01:33.525Z",
-  "last_seen": "2026-11-09T01:03:39.624Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1026910888.1794186175"
  },
  {
   "visitor_id": "v_4bc38143",
@@ -6807,17 +6917,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "601890200.1794153684"
- },
- {
-  "visitor_id": "v_b011e0b3",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-08T02:01:32.585Z",
-  "last_seen": "2026-11-08T15:08:29.330Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1516303690.1794103306"
  },
  {
   "visitor_id": "v_7f6d2e27",
@@ -7788,17 +7887,6 @@
   "client_id": "1960030316.1794092500"
  },
  {
-  "visitor_id": "v_e566c3a8",
-  "archetype": "heritage",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-07T22:01:22.761Z",
-  "last_seen": "2026-11-07T22:03:14.108Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1913566195.1794088894"
- },
- {
   "visitor_id": "v_c211661e",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8710,93 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "496610014.1793702803"
- },
- {
-  "visitor_id": "v_52d8e409",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-07T13:01:44.461Z",
-  "last_seen": "2026-11-07T13:01:53.156Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "554573307.1794056508"
- },
- {
-  "visitor_id": "v_34fd793f",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-07T12:01:31.771Z",
-  "last_seen": "2026-11-07T12:01:41.155Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "402174577.1794052894"
- },
- {
-  "visitor_id": "v_7e398b23",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-07T12:01:31.770Z",
-  "last_seen": "2026-11-07T12:01:40.039Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "2124371003.1794052893"
- },
- {
-  "visitor_id": "v_02a8e3e0",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-07T12:01:31.771Z",
-  "last_seen": "2026-11-07T12:01:39.754Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1599268557.1794052895"
- },
- {
-  "visitor_id": "v_a24ae6f2",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-07T12:01:31.770Z",
-  "last_seen": "2026-11-07T12:01:34.478Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "604041493.1794052893"
- },
- {
-  "visitor_id": "v_53d283b4",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-04T00:05:55.923Z",
-  "last_seen": "2026-11-07T11:02:33.521Z",
-  "visits": 3,
-  "purchases": 0,
-  "client_id": "664719097.1793750760"
- },
- {
-  "visitor_id": "v_66d38a12",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-11-07T10:01:32.196Z",
-  "last_seen": "2026-11-07T10:01:36.892Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "864516961.1794045695"
- },
- {
-  "visitor_id": "v_c6448ddc",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-07T10:01:32.195Z",
-  "last_seen": "2026-11-07T10:01:36.674Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "607909714.1794045694"
  }
 ]
