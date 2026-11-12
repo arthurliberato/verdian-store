@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.823136582.1794056589",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1794456111$o1$g0$t1794456111$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828616588.860599,
+      "expires": 1829016111.631357,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794056588$o1$g1$t1794056659$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.2175644.1794456112",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828616659.880932,
+      "expires": 1829016111.631703,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PUL-FOREST-MINT\",\"size\":\"7.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
