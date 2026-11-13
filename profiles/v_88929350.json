@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1110278023.1794121296",
+      "value": "GA1.1.16396385.1794578506",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828681295.754529,
+      "expires": 1829138506.151392,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794157282$o2$g1$t1794157364$j48$l0$h0",
+      "value": "GS2.1.s1794578506$o1$g0$t1794578506$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828717364.427939,
+      "expires": 1829138506.18221,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ITT-NAVY\",\"size\":\"XL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

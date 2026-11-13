@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.365783047.1794153699",
+      "value": "GA1.1.392324997.1794578500",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828713699.357481,
+      "expires": 1829138499.988152,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794153699$o1$g1$t1794153707$j52$l0$h0",
+      "value": "GS2.1.s1794578499$o1$g1$t1794578557$j2$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828713707.697776,
+      "expires": 1829138557.950625,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PUL-GLACIER\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
