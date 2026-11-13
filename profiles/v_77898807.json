@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794366181$o7$g1$t1794366309$j60$l0$h0",
+      "value": "GS2.1.s1794607296$o8$g1$t1794607456$j45$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828926309.922557,
+      "expires": 1829167456.246044,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PLT-WHITE-SILVER\",\"size\":\"9\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWFIXZH5-I2R7\"]"
         }
       ]
     }
