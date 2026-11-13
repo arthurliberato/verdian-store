@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.506175219.1793671438",
+      "value": "GA1.1.1968653745.1794556402",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828231437.811206,
+      "expires": 1829116401.660899,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794142905$o3$g1$t1794142937$j28$l0$h0",
+      "value": "GS2.1.s1794556401$o1$g0$t1794556401$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828702937.536222,
+      "expires": 1829116401.699183,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TSH-FOREST\",\"size\":\"S\",\"quantity\":1},{\"productId\":\"VRD-BRU-OBSIDIAN\",\"size\":\"11.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
