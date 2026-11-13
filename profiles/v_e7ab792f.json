@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794513711$o1$g1$t1794513820$j13$l0$h0",
+      "value": "GS2.1.s1794571399$o2$g1$t1794571498$j29$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829073820.382117,
+      "expires": 1829131498.237735,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-VNT-GHOST\",\"size\":\"11.5\",\"quantity\":2}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWEXJA3W-JTEO\"]"
         }
       ]
     }
