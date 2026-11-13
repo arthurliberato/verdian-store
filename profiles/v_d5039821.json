@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.668746590.1794038489",
+      "value": "GA1.1.379286805.1794600128",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828598489.46496,
+      "expires": 1829160127.667695,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794178904$o2$g1$t1794178928$j36$l0$h0",
+      "value": "GS2.1.s1794600127$o1$g1$t1794600195$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828738928.788016,
+      "expires": 1829160195.159098,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-CREAM-GREY\",\"size\":\"13\",\"quantity\":1},{\"productId\":\"VRD-ECO-INDIGO\",\"size\":\"11.5\",\"quantity\":2}]"
+          "value": "[{\"productId\":\"VRD-RAZ-TOBACCO\",\"size\":\"11.5\",\"quantity\":2}]"
         }
       ]
     }
