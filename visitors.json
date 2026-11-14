@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_9d0a02fa",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-13T19:01:35.769Z",
+  "last_seen": "2026-11-14T11:02:21.081Z",
+  "visits": 2,
+  "purchases": 1,
+  "client_id": "547579734.1794596510"
+ },
+ {
+  "visitor_id": "v_9f25591c",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-14T11:01:35.806Z",
+  "last_seen": "2026-11-14T11:01:43.501Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1969271251.1794654097"
+ },
+ {
+  "visitor_id": "v_37745cc8",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Chrome",
+  "first_seen": "2026-11-14T11:01:35.806Z",
+  "last_seen": "2026-11-14T11:01:42.137Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "508257537.1794654097"
+ },
+ {
   "visitor_id": "v_49002582",
   "archetype": "hype",
   "device": "mobile",
@@ -1285,17 +1318,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1374906811.1794600128"
- },
- {
-  "visitor_id": "v_9d0a02fa",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-13T19:01:35.769Z",
-  "last_seen": "2026-11-13T19:03:14.301Z",
-  "visits": 1,
-  "purchases": 1,
-  "client_id": "547579734.1794596510"
  },
  {
   "visitor_id": "v_02e26d87",
@@ -8776,27 +8798,5 @@
   "visits": 3,
   "purchases": 0,
   "client_id": "1495620070.1793840596"
- },
- {
-  "visitor_id": "v_1570631a",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-09T15:01:15.886Z",
-  "last_seen": "2026-11-09T15:01:22.719Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "438371797.1794236478"
- },
- {
-  "visitor_id": "v_befa8157",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-09T15:01:15.886Z",
-  "last_seen": "2026-11-09T15:01:19.452Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "727344634.1794236478"
  }
 ]
