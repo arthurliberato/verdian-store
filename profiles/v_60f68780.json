@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794283406$o1$g1$t1794283420$j46$l0$h0",
+      "value": "GS2.1.s1794686504$o2$g1$t1794686523$j41$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828843420.649848,
+      "expires": 1829246523.488044,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ECO-LICHEN\",\"size\":\"7\",\"quantity\":1}]"
         }
       ]
     }
