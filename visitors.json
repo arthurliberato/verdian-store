@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_d70a9379",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-13T13:01:13.925Z",
+  "last_seen": "2026-11-14T22:19:35.313Z",
+  "visits": 2,
+  "purchases": 1,
+  "client_id": "49365811.1794574889"
+ },
+ {
+  "visitor_id": "v_5e98d889",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-14T22:17:59.052Z",
+  "last_seen": "2026-11-14T22:18:06.632Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1086238657.1794694680"
+ },
+ {
+  "visitor_id": "v_348ef505",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-14T22:17:59.052Z",
+  "last_seen": "2026-11-14T22:18:05.285Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1192297852.1794694680"
+ },
+ {
   "visitor_id": "v_050867ef",
   "archetype": "heritage",
   "device": "desktop",
@@ -2847,17 +2880,6 @@
   "visits": 6,
   "purchases": 1,
   "client_id": "12692223.1793646098"
- },
- {
-  "visitor_id": "v_d70a9379",
-  "archetype": "runner",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-13T13:01:13.925Z",
-  "last_seen": "2026-11-13T13:02:59.116Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "49365811.1794574889"
  },
  {
   "visitor_id": "v_98d817f1",
@@ -8776,27 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "1110385792.1793854897"
- },
- {
-  "visitor_id": "v_13a3b708",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-11-10T01:01:56.341Z",
-  "last_seen": "2026-11-10T01:02:32.056Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1218092397.1794272548"
- },
- {
-  "visitor_id": "v_881b5404",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-10T01:01:56.341Z",
-  "last_seen": "2026-11-10T01:02:30.060Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "550282365.1794272530"
  }
 ]
