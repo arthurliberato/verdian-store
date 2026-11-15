@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_6f7e0b4f",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-14T20:01:42.513Z",
+  "last_seen": "2026-11-15T23:02:14.741Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1809530693.1794686504"
+ },
+ {
+  "visitor_id": "v_106f0dbf",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-15T23:01:30.421Z",
+  "last_seen": "2026-11-15T23:02:04.591Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2146775997.1794783691"
+ },
+ {
+  "visitor_id": "v_a354aea7",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-15T23:01:30.422Z",
+  "last_seen": "2026-11-15T23:01:35.645Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "556001359.1794783691"
+ },
+ {
   "visitor_id": "v_61516af4",
   "archetype": "heritage",
   "device": "tablet",
@@ -2484,17 +2517,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "412285966.1794686527"
- },
- {
-  "visitor_id": "v_6f7e0b4f",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-14T20:01:42.513Z",
-  "last_seen": "2026-11-14T20:02:08.469Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1809530693.1794686504"
  },
  {
   "visitor_id": "v_60f68780",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "896107937.1794362623"
- },
- {
-  "visitor_id": "v_fd84b0bf",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-08T03:01:34.508Z",
-  "last_seen": "2026-11-11T02:04:11.249Z",
-  "visits": 3,
-  "purchases": 0,
-  "client_id": "1242932032.1794106933"
- },
- {
-  "visitor_id": "v_80580146",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-11T02:01:48.811Z",
-  "last_seen": "2026-11-11T02:03:57.782Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "81730897.1794362602"
  }
 ]
