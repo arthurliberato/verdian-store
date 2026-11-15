@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_0ff09002",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-15T18:01:24.322Z",
+  "last_seen": "2026-11-15T18:02:26.468Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "588436369.1794765685"
+ },
+ {
+  "visitor_id": "v_0cee2f7d",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-13T04:01:08.079Z",
+  "last_seen": "2026-11-15T18:02:09.257Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "770301637.1794542469"
+ },
+ {
+  "visitor_id": "v_b74df6a6",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-15T18:01:24.322Z",
+  "last_seen": "2026-11-15T18:01:28.182Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1916148527.1794765685"
+ },
+ {
   "visitor_id": "v_bb12a3da",
   "archetype": "window_shopper",
   "device": "mobile",
@@ -4675,17 +4708,6 @@
   "client_id": "2146375888.1794542535"
  },
  {
-  "visitor_id": "v_0cee2f7d",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-13T04:01:08.079Z",
-  "last_seen": "2026-11-13T04:02:21.186Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "770301637.1794542469"
- },
- {
   "visitor_id": "v_2d6f6ce4",
   "archetype": "hype",
   "device": "tablet",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "2076828226.1794348097"
- },
- {
-  "visitor_id": "v_dde9c705",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-10T22:01:28.954Z",
-  "last_seen": "2026-11-10T22:01:59.644Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1627475328.1794348118"
- },
- {
-  "visitor_id": "v_9b72829a",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Chrome",
-  "first_seen": "2026-11-10T22:01:28.953Z",
-  "last_seen": "2026-11-10T22:01:57.334Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "843577378.1794348112"
  }
 ]
