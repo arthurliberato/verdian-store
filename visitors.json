@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_3f711fb6",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-09T22:01:29.319Z",
+  "last_seen": "2026-11-15T12:02:52.467Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "1069654733.1794261691"
+ },
+ {
+  "visitor_id": "v_e42be69a",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-15T12:01:34.923Z",
+  "last_seen": "2026-11-15T12:02:18.324Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1415612485.1794744097"
+ },
+ {
+  "visitor_id": "v_a7cbf3e8",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-15T12:01:34.923Z",
+  "last_seen": "2026-11-15T12:01:39.269Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "29691769.1794744097"
+ },
+ {
   "visitor_id": "v_cce2891e",
   "archetype": "bouncer",
   "device": "mobile",
@@ -4211,17 +4244,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "842249316.1794539016"
- },
- {
-  "visitor_id": "v_3f711fb6",
-  "archetype": "runner",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-09T22:01:29.319Z",
-  "last_seen": "2026-11-13T03:03:53.782Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1069654733.1794261691"
  },
  {
   "visitor_id": "v_f7147c74",
@@ -8776,27 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "200397524.1794204070"
- },
- {
-  "visitor_id": "v_890dfb4a",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-10T16:01:28.249Z",
-  "last_seen": "2026-11-10T16:02:28.844Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1148542807.1794326492"
- },
- {
-  "visitor_id": "v_1cd7e040",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-08T22:01:35.297Z",
-  "last_seen": "2026-11-10T16:02:20.571Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "949176021.1794175297"
  }
 ]
