@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794423723$o2$g1$t1794423802$j42$l0$h0",
+      "value": "GS2.1.s1794708235$o3$g1$t1794708328$j35$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828983802.005522,
+      "expires": 1829268328.181241,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CMP-LIME\",\"size\":\"9\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWH700RE-N4FO\"]"
         }
       ]
     }
