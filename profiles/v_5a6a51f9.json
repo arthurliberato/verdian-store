@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.1816409567.1794142896",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1794848494$o1$g0$t1794848494$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828702895.965116,
+      "expires": 1829408494.05323,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794438148$o2$g1$t1794438230$j46$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1588793532.1794848494",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828998230.727587,
+      "expires": 1829408494.053583,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-KIT-NATURAL\",\"size\":\"One size\",\"quantity\":1}]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MW7UEVNW-NVID\"]"
+          "value": "[]"
         }
       ]
     }
