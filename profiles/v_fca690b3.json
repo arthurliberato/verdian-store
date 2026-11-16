@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1579896320.1794225695",
+      "value": "GA1.1.763786480.1794794579",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828785694.789648,
+      "expires": 1829354579.160301,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794373291$o3$g1$t1794373319$j32$l0$h0",
+      "value": "GS2.1.s1794794579$o1$g0$t1794794579$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828933319.472759,
+      "expires": 1829354579.189789,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SGT-CARBON\",\"size\":\"XS\",\"quantity\":1},{\"productId\":\"VRD-ECO-CLAY\",\"size\":\"7.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
