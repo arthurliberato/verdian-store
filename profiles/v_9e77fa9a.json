@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794499381$o1$g1$t1794499545$j51$l0$h0",
+      "value": "GS2.1.s1794859342$o2$g1$t1794859470$j8$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829059545.755612,
+      "expires": 1829419470.433502,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SCK-WHITE\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWJOZIVE-96R1\"]"
         }
       ]
     }
