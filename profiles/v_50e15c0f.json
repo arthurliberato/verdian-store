@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1451100092.1794402095",
+      "value": "GA1.1.1911610893.1794934904",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828962094.588776,
+      "expires": 1829494903.786578,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794528089$o2$g0$t1794528089$j60$l0$h0",
+      "value": "GS2.1.s1794934903$o1$g1$t1794934953$j10$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829088089.069227,
+      "expires": 1829494953.762618,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-IMP-CHALK\",\"size\":\"6\",\"quantity\":1}]"
         }
       ]
     }
