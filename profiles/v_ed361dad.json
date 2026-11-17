@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794852124$o1$g1$t1794852170$j14$l0$h0",
+      "value": "GS2.1.s1794949282$o2$g1$t1794949306$j36$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829412170.891729,
+      "expires": 1829509306.929545,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-MCP-OLIVE\",\"size\":\"XS\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-MCP-OLIVE\",\"size\":\"XS\",\"quantity\":1},{\"productId\":\"VRD-PUL-GLACIER\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
