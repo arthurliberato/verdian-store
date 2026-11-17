@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.2070137859.1793152939",
+      "value": "GA1.1.2109521980.1794942166",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1827712939.288368,
+      "expires": 1829502166.136866,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794535315$o6$g1$t1794535345$j30$l0$h0",
+      "value": "GS2.1.s1794942166$o1$g1$t1794942256$j38$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829095345.169221,
+      "expires": 1829502256.834329,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FSC-TRIPLE-CARBON\",\"size\":\"12\",\"quantity\":1}]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MW72J9GP-G1MW\"]"
+          "value": "[]"
         }
       ]
     }
