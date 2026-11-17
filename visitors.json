@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_1c8a450d",
+  "archetype": "heritage",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-03T19:02:32.213Z",
+  "last_seen": "2026-11-17T22:18:56.971Z",
+  "visits": 7,
+  "purchases": 4,
+  "client_id": "1337813096.1793732553"
+ },
+ {
+  "visitor_id": "v_a5b242dd",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-17T22:16:47.533Z",
+  "last_seen": "2026-11-17T22:17:30.470Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1131309010.1794953809"
+ },
+ {
+  "visitor_id": "v_8385ae9e",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-14T00:02:28.641Z",
+  "last_seen": "2026-11-17T22:17:30.459Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "745646413.1794614558"
+ },
+ {
   "visitor_id": "v_a277e0ee",
   "archetype": "heritage",
   "device": "desktop",
@@ -1549,17 +1582,6 @@
   "visits": 3,
   "purchases": 0,
   "client_id": "1335078845.1794258106"
- },
- {
-  "visitor_id": "v_8385ae9e",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-14T00:02:28.641Z",
-  "last_seen": "2026-11-17T02:02:31.717Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "745646413.1794614558"
  },
  {
   "visitor_id": "v_1f64493a",
@@ -7975,17 +7997,6 @@
   "client_id": "800724477.1794603702"
  },
  {
-  "visitor_id": "v_1c8a450d",
-  "archetype": "heritage",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-03T19:02:32.213Z",
-  "last_seen": "2026-11-13T20:04:40.755Z",
-  "visits": 6,
-  "purchases": 3,
-  "client_id": "1337813096.1793732553"
- },
- {
   "visitor_id": "v_14c5999a",
   "archetype": "heritage",
   "device": "tablet",
@@ -8787,16 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "805068529.1794542488"
- },
- {
-  "visitor_id": "v_1ef67ceb",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-13T04:01:08.081Z",
-  "last_seen": "2026-11-13T04:02:44.375Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "2146375888.1794542535"
  }
 ]
