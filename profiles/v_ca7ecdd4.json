@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794603762$o1$g1$t1794603863$j22$l0$h0",
+      "value": "GS2.1.s1794938573$o2$g1$t1794938723$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829163863.227851,
+      "expires": 1829498723.857649,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TRJ-FOREST-CREAM\",\"size\":\"L\",\"quantity\":1}]"
         }
       ]
     }
