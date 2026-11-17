@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794625401$o1$g1$t1794625426$j35$l0$h0",
+      "value": "GS2.1.s1794877305$o2$g1$t1794877360$j5$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829185426.748884,
+      "expires": 1829437360.19547,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"6.5\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"6.5\",\"quantity\":1},{\"productId\":\"VRD-PRT-GLACIER\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
