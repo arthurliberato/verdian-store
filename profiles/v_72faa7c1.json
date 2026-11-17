@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794776517$o1$g1$t1794776575$j2$l0$h0",
+      "value": "GS2.1.s1794873783$o2$g1$t1794873800$j43$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829336575.731345,
+      "expires": 1829433800.065345,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-UNDYED\",\"size\":\"12\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-ECO-UNDYED\",\"size\":\"12\",\"quantity\":1},{\"productId\":\"VRD-SND-SAND\",\"size\":\"11\",\"quantity\":2}]"
         }
       ]
     }
