@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.5252968.1794186220",
+      "value": "GA1.1.110473454.1794988883",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828746219.855924,
+      "expires": 1829548883.261137,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794603700$o2$g1$t1794603781$j42$l0$h0",
+      "value": "GS2.1.s1794988883$o1$g0$t1794988883$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829163781.805087,
+      "expires": 1829548883.284065,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CIM-MOSS-RUST\",\"size\":\"6.5\",\"quantity\":1},{\"productId\":\"VRD-VNT-SIGNAL\",\"size\":\"11\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
