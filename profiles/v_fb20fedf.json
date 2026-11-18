@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.468057214.1794279787",
+      "value": "GA1.1.1213572645.1795017718",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828839786.86764,
+      "expires": 1829577717.728889,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794618121$o5$g1$t1794618151$j30$l0$h0",
+      "value": "GS2.1.s1795017717$o1$g1$t1795017737$j40$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829178151.033429,
+      "expires": 1829577737.570723,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PLT-WHITE-FOREST\",\"size\":\"10\",\"quantity\":1},{\"productId\":\"VRD-BRU-MIST\",\"size\":\"7.5\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
