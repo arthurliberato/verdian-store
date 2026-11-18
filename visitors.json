@@ -1,5 +1,71 @@
 [
  {
+  "visitor_id": "v_6209c95f",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-18T21:54:25.097Z",
+  "last_seen": "2026-11-18T21:55:10.248Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "863640100.1795038866"
+ },
+ {
+  "visitor_id": "v_54fc489f",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-16T01:01:44.508Z",
+  "last_seen": "2026-11-18T21:55:07.031Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1580796575.1794790916"
+ },
+ {
+  "visitor_id": "v_8b3896ac",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-18T21:54:25.098Z",
+  "last_seen": "2026-11-18T21:55:05.179Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1908438890.1795038902"
+ },
+ {
+  "visitor_id": "v_8307e60a",
+  "archetype": "hype",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-11-18T02:03:11.860Z",
+  "last_seen": "2026-11-18T21:55:01.462Z",
+  "visits": 2,
+  "purchases": 1,
+  "client_id": "453245120.1794967431"
+ },
+ {
+  "visitor_id": "v_a69ddf7c",
+  "archetype": "window_shopper",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-16T16:01:33.594Z",
+  "last_seen": "2026-11-18T21:54:59.400Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "2141377420.1794844898"
+ },
+ {
+  "visitor_id": "v_c2513e48",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-18T21:54:25.097Z",
+  "last_seen": "2026-11-18T21:54:29.934Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1408830938.1795038866"
+ },
+ {
   "visitor_id": "v_e2b4910e",
   "archetype": "runner",
   "device": "mobile",
@@ -1417,17 +1483,6 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "350818542.1794830511"
- },
- {
-  "visitor_id": "v_8307e60a",
-  "archetype": "hype",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-18T02:03:11.860Z",
-  "last_seen": "2026-11-18T02:05:00.115Z",
-  "visits": 1,
-  "purchases": 1,
-  "client_id": "453245120.1794967431"
  },
  {
   "visitor_id": "v_fe5cc6f3",
@@ -4521,17 +4576,6 @@
   "client_id": "696336053.1794844973"
  },
  {
-  "visitor_id": "v_a69ddf7c",
-  "archetype": "window_shopper",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-16T16:01:33.594Z",
-  "last_seen": "2026-11-16T16:02:52.918Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "2141377420.1794844898"
- },
- {
   "visitor_id": "v_38c00fa8",
   "archetype": "bouncer",
   "device": "desktop",
@@ -5432,17 +5476,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "669860262.1794790921"
- },
- {
-  "visitor_id": "v_54fc489f",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-16T01:01:44.508Z",
-  "last_seen": "2026-11-16T01:02:00.600Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1580796575.1794790916"
  },
  {
   "visitor_id": "v_ff1a5344",
@@ -8765,38 +8798,5 @@
   "visits": 4,
   "purchases": 1,
   "client_id": "473629280.1793905270"
- },
- {
-  "visitor_id": "v_cedf1dc5",
-  "archetype": "window_shopper",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-11-13T22:01:34.831Z",
-  "last_seen": "2026-11-14T03:03:17.896Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "161463404.1794607305"
- },
- {
-  "visitor_id": "v_75d9df28",
-  "archetype": "hype",
-  "device": "tablet",
-  "device_profile": "Galaxy Tab S4",
-  "first_seen": "2026-11-14T03:01:33.964Z",
-  "last_seen": "2026-11-14T03:02:38.462Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1888798125.1794625331"
- },
- {
-  "visitor_id": "v_f1ea1cc8",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-14T03:01:33.964Z",
-  "last_seen": "2026-11-14T03:02:18.750Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "496182353.1794625333"
  }
 ]
