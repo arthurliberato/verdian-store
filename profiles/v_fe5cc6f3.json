@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.668776508.1794585714",
+      "value": "GA1.1.348900155.1794967401",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829145713.580162,
+      "expires": 1829527400.612913,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794585713$o1$g0$t1794585713$j60$l0$h0",
+      "value": "GS2.1.s1794967400$o1$g1$t1794967464$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829145713.617601,
+      "expires": 1829527464.884062,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PUL-CARBON-VOLT\",\"size\":\"9.5\",\"quantity\":1}]"
         }
       ]
     }
