@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794618271$o1$g0$t1794618271$j60$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.721311386.1795021642",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829178271.037003,
+      "expires": 1829581642.259498,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga",
-      "value": "GA1.1.1598706814.1794618271",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1795021642$o1$g1$t1795021699$j3$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829178271.037442,
+      "expires": 1829581699.893362,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PRJ-VOLT\",\"size\":\"M\",\"quantity\":1}]"
         }
       ]
     }
