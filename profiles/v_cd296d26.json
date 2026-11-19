@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.922475799.1794283406",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1795093358$o1$g0$t1795093358$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1828843406.11298,
+      "expires": 1829653358.661649,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794686504$o2$g1$t1794686523$j41$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1923576120.1795093359",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829246523.488044,
+      "expires": 1829653358.662032,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-LICHEN\",\"size\":\"7\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
