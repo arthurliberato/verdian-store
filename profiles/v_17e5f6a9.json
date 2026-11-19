@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.782986735.1794668505",
+      "value": "GA1.1.399798646.1795053852",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829228505.3871,
+      "expires": 1829613851.850624,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794668505$o1$g0$t1794668505$j60$l0$h0",
+      "value": "GS2.1.s1795053851$o1$g1$t1795053944$j33$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829228505.425925,
+      "expires": 1829613944.725635,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-IMP-CARBON\",\"size\":\"10.5\",\"quantity\":1}]"
         }
       ]
     }
