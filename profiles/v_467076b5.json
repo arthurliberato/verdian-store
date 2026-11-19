@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1452516717.1794708111",
+      "value": "GA1.1.1602630493.1795114909",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829268111.163395,
+      "expires": 1829674908.555738,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794708111$o1$g0$t1794708111$j60$l0$h0",
+      "value": "GS2.1.s1795114908$o1$g1$t1795114993$j49$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829268111.221846,
+      "expires": 1829674993.88664,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PLT-WHITE-SILVER\",\"size\":\"12\",\"quantity\":1}]"
         }
       ]
     }
