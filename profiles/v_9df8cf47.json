@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794960087$o1$g1$t1794960111$j36$l0$h0",
+      "value": "GS2.1.s1795179712$o2$g1$t1795179765$j7$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829520111.269163,
+      "expires": 1829739765.904144,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-ACID\",\"size\":\"10.5\",\"quantity\":1}]"
         }
       ]
     }
