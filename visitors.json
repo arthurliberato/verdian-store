@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_17e5f6a9",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-19T02:01:42.392Z",
+  "last_seen": "2026-11-20T12:02:57.529Z",
+  "visits": 3,
+  "purchases": 1,
+  "client_id": "399798646.1795053852"
+ },
+ {
+  "visitor_id": "v_95f2a9c6",
+  "archetype": "hype",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-20T00:08:11.350Z",
+  "last_seen": "2026-11-20T12:02:25.839Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1979063698.1795133495"
+ },
+ {
+  "visitor_id": "v_818ca52b",
+  "archetype": "runner",
+  "device": "desktop",
+  "device_profile": "Desktop Edge",
+  "first_seen": "2026-11-20T12:01:43.056Z",
+  "last_seen": "2026-11-20T12:02:24.495Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "989875303.1795176104"
+ },
+ {
   "visitor_id": "v_8b3ea7d6",
   "archetype": "bouncer",
   "device": "desktop",
@@ -119,17 +152,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "1744699000.1795154583"
- },
- {
-  "visitor_id": "v_17e5f6a9",
-  "archetype": "runner",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-19T02:01:42.392Z",
-  "last_seen": "2026-11-20T05:03:28.348Z",
-  "visits": 2,
-  "purchases": 1,
-  "client_id": "399798646.1795053852"
  },
  {
   "visitor_id": "v_9fd4295e",
@@ -724,17 +746,6 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "754816153.1795133545"
- },
- {
-  "visitor_id": "v_95f2a9c6",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-20T00:08:11.350Z",
-  "last_seen": "2026-11-20T00:12:38.939Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1979063698.1795133495"
  },
  {
   "visitor_id": "v_8385ae9e",
@@ -8787,16 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "242653244.1794769339"
- },
- {
-  "visitor_id": "v_45df9eb7",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-15T19:01:38.723Z",
-  "last_seen": "2026-11-15T19:02:21.177Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1250894694.1794769337"
  }
 ]
