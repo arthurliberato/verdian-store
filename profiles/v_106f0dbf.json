@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794783691$o1$g1$t1794783716$j35$l0$h0",
+      "value": "GS2.1.s1795143749$o2$g1$t1795143796$j13$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829343716.902326,
+      "expires": 1829703796.132385,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-MCP-CARBON\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
