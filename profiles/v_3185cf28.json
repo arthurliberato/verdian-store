@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795100616$o1$g1$t1795100624$j52$l0$h0",
+      "value": "GS2.1.s1795140360$o2$g1$t1795140387$j33$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829660624.328488,
+      "expires": 1829700387.634952,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-RAZ-CARBON\",\"size\":\"10\",\"quantity\":1}]"
         }
       ]
     }
