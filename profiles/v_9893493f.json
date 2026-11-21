@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.297897234.1794625402",
+      "value": "GA1.1.1789954167.1795294946",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829185401.999853,
+      "expires": 1829854945.549571,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794877305$o2$g1$t1794877360$j5$l0$h0",
+      "value": "GS2.1.s1795294945$o1$g1$t1795294991$j14$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829437360.19547,
+      "expires": 1829854991.319059,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"6.5\",\"quantity\":1},{\"productId\":\"VRD-PRT-GLACIER\",\"size\":\"S\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
