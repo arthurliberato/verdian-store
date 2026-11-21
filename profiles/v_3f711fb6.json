@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795007254$o5$g1$t1795007308$j6$l0$h0",
+      "value": "GS2.1.s1795298558$o6$g1$t1795298649$j33$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829567308.972831,
+      "expires": 1829858649.973796,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CSJ-MOSS\",\"size\":\"XL\",\"quantity\":1},{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"9\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWQYGNYZ-0K29\"]"
         }
       ]
     }
