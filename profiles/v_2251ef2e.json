@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794992623$o1$g1$t1794992680$j3$l0$h0",
+      "value": "GS2.1.s1795226558$o2$g1$t1795226596$j22$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829552680.025169,
+      "expires": 1829786596.766284,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PUL-GLACIER\",\"size\":\"9\",\"quantity\":1}]"
         }
       ]
     }
