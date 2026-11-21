@@ -1,5 +1,71 @@
 [
  {
+  "visitor_id": "v_7eca1468",
+  "archetype": "runner",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-18T13:54:50.564Z",
+  "last_seen": "2026-11-21T12:02:47.078Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1181015029.1795010092"
+ },
+ {
+  "visitor_id": "v_21b26479",
+  "archetype": "bouncer",
+  "device": "desktop",
+  "device_profile": "Desktop Safari",
+  "first_seen": "2026-11-21T12:01:51.327Z",
+  "last_seen": "2026-11-21T12:02:05.121Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "894477869.1795262522"
+ },
+ {
+  "visitor_id": "v_924e7f23",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-20T14:02:08.516Z",
+  "last_seen": "2026-11-21T12:02:03.058Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1301042898.1795183388"
+ },
+ {
+  "visitor_id": "v_87094563",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-17T02:01:45.947Z",
+  "last_seen": "2026-11-21T12:02:01.376Z",
+  "visits": 2,
+  "purchases": 0,
+  "client_id": "1150654874.1794880913"
+ },
+ {
+  "visitor_id": "v_47218dd9",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-21T12:01:51.327Z",
+  "last_seen": "2026-11-21T12:01:59.370Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "660556589.1795262514"
+ },
+ {
+  "visitor_id": "v_baa8d953",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 13",
+  "first_seen": "2026-11-21T12:01:51.326Z",
+  "last_seen": "2026-11-21T12:01:58.039Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "223231357.1795262514"
+ },
+ {
   "visitor_id": "v_dd15191b",
   "archetype": "window_shopper",
   "device": "mobile",
@@ -1857,17 +1923,6 @@
   "visits": 3,
   "purchases": 0,
   "client_id": "914312463.1794764544"
- },
- {
-  "visitor_id": "v_924e7f23",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-20T14:02:08.516Z",
-  "last_seen": "2026-11-20T14:03:14.555Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1301042898.1795183388"
  },
  {
   "visitor_id": "v_d9407ff5",
@@ -5566,17 +5621,6 @@
   "client_id": "1240323749.1795010161"
  },
  {
-  "visitor_id": "v_7eca1468",
-  "archetype": "runner",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-18T13:54:50.564Z",
-  "last_seen": "2026-11-18T13:56:04.204Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1181015029.1795010092"
- },
- {
   "visitor_id": "v_eb5f9f6e",
   "archetype": "bouncer",
   "device": "mobile",
@@ -7997,17 +8041,6 @@
   "client_id": "1826290416.1794686529"
  },
  {
-  "visitor_id": "v_87094563",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Galaxy S9+",
-  "first_seen": "2026-11-17T02:01:45.947Z",
-  "last_seen": "2026-11-17T02:01:58.848Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1150654874.1794880913"
- },
- {
   "visitor_id": "v_4659dd72",
   "archetype": "bouncer",
   "device": "desktop",
@@ -8765,38 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "1968653745.1794556402"
- },
- {
-  "visitor_id": "v_ba98f532",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-15T00:01:32.690Z",
-  "last_seen": "2026-11-16T19:02:18.119Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "373842482.1794700944"
- },
- {
-  "visitor_id": "v_4b86efee",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-14T06:01:31.598Z",
-  "last_seen": "2026-11-16T18:02:49.927Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "1524185971.1794636093"
- },
- {
-  "visitor_id": "v_71e0a0e5",
-  "archetype": "bouncer",
-  "device": "desktop",
-  "device_profile": "Desktop Safari",
-  "first_seen": "2026-11-16T18:01:50.577Z",
-  "last_seen": "2026-11-16T18:02:15.427Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1394830393.1794852128"
  }
 ]
