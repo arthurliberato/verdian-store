@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.278775730.1794776518",
+      "value": "GA1.1.1909468425.1795291314",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829336517.771528,
+      "expires": 1829851314.28121,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794873783$o2$g1$t1794873800$j43$l0$h0",
+      "value": "GS2.1.s1795291314$o1$g1$t1795291377$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829433800.065345,
+      "expires": 1829851377.954701,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-UNDYED\",\"size\":\"12\",\"quantity\":1},{\"productId\":\"VRD-SND-SAND\",\"size\":\"11\",\"quantity\":2}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWQU4SUP-NVYF\"]"
         }
       ]
     }
