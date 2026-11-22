@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.33384222.1794891703",
+      "value": "GA1.1.1012760424.1795313050",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829451702.745698,
+      "expires": 1829873050.402689,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794891702$o1$g0$t1794891702$j60$l0$h0",
+      "value": "GS2.1.s1795313050$o1$g1$t1795313109$j1$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829451702.777558,
+      "expires": 1829873109.809096,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-PKT-BONE\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }

@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795042916$o3$g1$t1795042978$j60$l0$h0",
+      "value": "GS2.1.s1795312988$o4$g1$t1795313045$j3$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829602978.442628,
+      "expires": 1829873045.043178,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CSJ-RUST\",\"size\":\"M\",\"quantity\":2}]"
         }
       ]
     }
