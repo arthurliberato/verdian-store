@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.359888633.1794888120",
+      "value": "GA1.1.1509348620.1795309305",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829448120.108049,
+      "expires": 1829869305.463067,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794888120$o1$g1$t1794888160$j20$l0$h0",
+      "value": "GS2.1.s1795309305$o1$g1$t1795309323$j42$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829448160.825768,
+      "expires": 1829869323.748124,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SNL-RAW-CANVAS\",\"size\":\"6\",\"quantity\":2}]"
+          "value": "[{\"productId\":\"VRD-SND-STONE\",\"size\":\"8\",\"quantity\":2}]"
         }
       ]
     }
