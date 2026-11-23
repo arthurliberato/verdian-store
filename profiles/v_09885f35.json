@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1374349724.1794970919",
+      "value": "GA1.1.964435974.1795392239",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829530919.480959,
+      "expires": 1829952238.965103,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1794970919$o1$g1$t1794970967$j12$l0$h0",
+      "value": "GS2.1.s1795392238$o1$g1$t1795392272$j26$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829530967.522899,
+      "expires": 1829952272.011298,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SCK-CARBON\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
