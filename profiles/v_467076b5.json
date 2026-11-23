@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795222972$o3$g1$t1795223124$j43$l0$h0",
+      "value": "GS2.1.s1795402910$o4$g1$t1795403015$j19$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829783124.838589,
+      "expires": 1829963015.094791,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-PLT-WHITE-SILVER\",\"size\":\"12\",\"quantity\":1},{\"productId\":\"VRD-CAP-BONE\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MWSOLKLX-VCXP\"]"
         }
       ]
     }
