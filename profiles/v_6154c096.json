@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1591660175.1795107707",
+      "value": "GA1.1.441652917.1795493306",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829667707.4504,
+      "expires": 1830053305.918566,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795107707$o1$g0$t1795107707$j60$l0$h0",
+      "value": "GS2.1.s1795493305$o1$g1$t1795493388$j39$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829667707.494615,
+      "expires": 1830053388.931094,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SNL-OXBLOOD\",\"size\":\"11\",\"quantity\":1}]"
         }
       ]
     }
