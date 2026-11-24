@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1803512307.1794964179",
+      "value": "GA1.1.384467626.1795543311",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829524178.516167,
+      "expires": 1830103311.131327,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795129387$o3$g1$t1795129411$j36$l0$h0",
+      "value": "GS2.1.s1795543311$o1$g0$t1795543311$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829689411.74264,
+      "expires": 1830103311.170365,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-BRU-OBSIDIAN\",\"size\":\"10\",\"quantity\":2}]"
-        },
-        {
-          "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MWLFCS01-6DSS\"]"
+          "value": "[]"
         }
       ]
     }
