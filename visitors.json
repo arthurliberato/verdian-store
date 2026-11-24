@@ -1,5 +1,38 @@
 [
  {
+  "visitor_id": "v_581928c0",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-19T19:01:41.079Z",
+  "last_seen": "2026-11-24T10:53:09.399Z",
+  "visits": 3,
+  "purchases": 0,
+  "client_id": "942150985.1795114978"
+ },
+ {
+  "visitor_id": "v_7ca2c56e",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-24T10:53:02.159Z",
+  "last_seen": "2026-11-24T10:53:06.940Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2087822397.1795517583"
+ },
+ {
+  "visitor_id": "v_6255e207",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-24T10:53:02.158Z",
+  "last_seen": "2026-11-24T10:53:04.946Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2131819718.1795517583"
+ },
+ {
   "visitor_id": "v_80eb0576",
   "archetype": "bouncer",
   "device": "mobile",
@@ -7260,17 +7293,6 @@
   "client_id": "1571305496.1795190504"
  },
  {
-  "visitor_id": "v_581928c0",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "Pixel 5",
-  "first_seen": "2026-11-19T19:01:41.079Z",
-  "last_seen": "2026-11-20T16:01:44.971Z",
-  "visits": 2,
-  "purchases": 0,
-  "client_id": "942150985.1795114978"
- },
- {
   "visitor_id": "v_2a32847b",
   "archetype": "bouncer",
   "device": "desktop",
@@ -8776,27 +8798,5 @@
   "visits": 1,
   "purchases": 0,
   "client_id": "2094064477.1795111384"
- },
- {
-  "visitor_id": "v_d518b72d",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-19T18:01:50.626Z",
-  "last_seen": "2026-11-19T18:03:01.470Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1640237584.1795111316"
- },
- {
-  "visitor_id": "v_bc634c48",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-19T18:01:50.626Z",
-  "last_seen": "2026-11-19T18:02:43.344Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "695328433.1795111359"
  }
 ]
