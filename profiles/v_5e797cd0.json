@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1380109611.1795183334",
+      "value": "GA1.1.552066927.1795572124",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829743334.43669,
+      "expires": 1830132123.717779,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795183334$o1$g1$t1795183377$j17$l0$h0",
+      "value": "GS2.1.s1795572123$o1$g1$t1795572204$j46$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829743377.531963,
+      "expires": 1830132204.659947,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-CSJ-MOSS\",\"size\":\"XXL\",\"quantity\":1}]"
         }
       ]
     }
