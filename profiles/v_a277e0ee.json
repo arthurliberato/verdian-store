@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795401714$o4$g1$t1795401797$j37$l0$h0",
+      "value": "GS2.1.s1795575720$o5$g1$t1795575814$j42$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829961797.342796,
+      "expires": 1830135814.546007,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,11 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-IMP-CARBON\",\"size\":\"9\",\"quantity\":1}]"
+          "value": "[]"
         },
         {
           "name": "verdian_sent_purchases",
-          "value": "[\"VRD-MWRUMX08-GS1E\"]"
+          "value": "[\"VRD-MWRUMX08-GS1E\",\"VRD-MWVJH9IY-LMC2\"]"
         }
       ]
     }
