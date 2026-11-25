@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.875001614.1795223001",
+      "value": "GA1.1.1634949650.1795633314",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829783001.145154,
+      "expires": 1830193313.784472,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795223001$o1$g1$t1795223038$j23$l0$h0",
+      "value": "GS2.1.s1795633313$o1$g1$t1795633337$j36$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829783038.224656,
+      "expires": 1830193337.669666,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-FNJ-BONE-RUST\",\"size\":\"S\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }

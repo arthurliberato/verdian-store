@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1705752240.1795222950",
+      "value": "GA1.1.510861520.1795633307",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829782950.215114,
+      "expires": 1830193307.444202,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795222950$o1$g1$t1795222987$j23$l0$h0",
+      "value": "GS2.1.s1795633307$o1$g1$t1795633350$j17$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829782987.133305,
+      "expires": 1830193350.281626,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TSH-SLATE\",\"size\":\"XS\",\"quantity\":1}]"
         }
       ]
     }
