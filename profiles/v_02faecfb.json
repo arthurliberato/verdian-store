@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.220928864.1795223086",
+      "value": "GA1.1.110055586.1795636912",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829783085.624571,
+      "expires": 1830196911.733205,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795223085$o1$g0$t1795223085$j60$l0$h0",
+      "value": "GS2.1.s1795636911$o1$g1$t1795636952$j19$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829783085.653883,
+      "expires": 1830196952.038735,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-AMU-BONE-CARBON\",\"size\":\"7\",\"quantity\":2}]"
         }
       ]
     }
