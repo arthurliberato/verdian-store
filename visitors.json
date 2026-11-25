@@ -1,5 +1,16 @@
 [
  {
+  "visitor_id": "v_1ee95786",
+  "archetype": "bouncer",
+  "device": "tablet",
+  "device_profile": "iPad (gen 7)",
+  "first_seen": "2026-11-25T10:01:52.683Z",
+  "last_seen": "2026-11-25T10:02:01.236Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1064035268.1795600916"
+ },
+ {
   "visitor_id": "v_0437526d",
   "archetype": "bouncer",
   "device": "mobile",
@@ -8787,16 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "2026598960.1795114902"
- },
- {
-  "visitor_id": "v_e82ea184",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 13",
-  "first_seen": "2026-11-20T18:02:17.197Z",
-  "last_seen": "2026-11-20T18:02:57.548Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "727176240.1795197770"
  }
 ]
