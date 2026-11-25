@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1337274325.1795007232",
+      "value": "GA1.1.2078315320.1795640505",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829567231.90136,
+      "expires": 1830200505.345105,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795224546$o3$g1$t1795224587$j19$l0$h0",
+      "value": "GS2.1.s1795640505$o1$g1$t1795640562$j3$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829784587.334872,
+      "expires": 1830200562.039497,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-LICHEN\",\"size\":\"9\",\"quantity\":2},{\"productId\":\"VRD-BPK-CARBON\",\"size\":\"One size\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
