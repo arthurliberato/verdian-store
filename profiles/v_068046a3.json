@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1979063698.1795133495",
+      "value": "GA1.1.293337098.1795579312",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829693495.347896,
+      "expires": 1830139312.493776,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795190530$o3$g1$t1795190563$j27$l0$h0",
+      "value": "GS2.1.s1795579312$o1$g1$t1795579325$j47$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829750563.893432,
+      "expires": 1830139325.904538,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-ECO-CLAY\",\"size\":\"7\",\"quantity\":1},{\"productId\":\"VRD-PLT-WHITE-FOREST\",\"size\":\"8\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
