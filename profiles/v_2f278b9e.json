@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.677907138.1795302114",
+      "value": "GA1.1.437968456.1795716115",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829862113.898452,
+      "expires": 1830276115.156147,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795302113$o1$g1$t1795302161$j12$l0$h0",
+      "value": "GS2.1.s1795716115$o1$g1$t1795716152$j23$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829862161.374109,
+      "expires": 1830276152.425944,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-ARC-CHALK\",\"size\":\"7.5\",\"quantity\":1}]"
         }
       ]
     }
