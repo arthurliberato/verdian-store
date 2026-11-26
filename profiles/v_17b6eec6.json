@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.921900494.1795276928",
+      "value": "GA1.1.559831564.1795665847",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829836927.968023,
+      "expires": 1830225847.138186,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795276927$o1$g1$t1795276958$j29$l0$h0",
+      "value": "GS2.1.s1795665847$o1$g0$t1795665847$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829836958.872888,
+      "expires": 1830225847.166089,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CMP-WHITE-CLAY\",\"size\":\"6\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
