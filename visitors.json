@@ -1,5 +1,49 @@
 [
  {
+  "visitor_id": "v_4f205075",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Galaxy S9+",
+  "first_seen": "2026-11-26T19:36:12.814Z",
+  "last_seen": "2026-11-26T19:36:22.561Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1650888117.1795721775"
+ },
+ {
+  "visitor_id": "v_337c4752",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-26T19:36:12.814Z",
+  "last_seen": "2026-11-26T19:36:21.668Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "1369110953.1795721777"
+ },
+ {
+  "visitor_id": "v_c0ca9a8a",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "iPhone 12",
+  "first_seen": "2026-11-26T19:36:12.814Z",
+  "last_seen": "2026-11-26T19:36:19.864Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "2093529204.1795721774"
+ },
+ {
+  "visitor_id": "v_95ab74c3",
+  "archetype": "bouncer",
+  "device": "mobile",
+  "device_profile": "Pixel 5",
+  "first_seen": "2026-11-26T19:36:12.814Z",
+  "last_seen": "2026-11-26T19:36:16.733Z",
+  "visits": 1,
+  "purchases": 0,
+  "client_id": "75223712.1795721774"
+ },
+ {
   "visitor_id": "v_edb259d7",
   "archetype": "runner",
   "device": "desktop",
@@ -8754,49 +8798,5 @@
   "visits": 2,
   "purchases": 0,
   "client_id": "1774111854.1794891688"
- },
- {
-  "visitor_id": "v_bd1f631f",
-  "archetype": "window_shopper",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-22T01:01:44.388Z",
-  "last_seen": "2026-11-22T01:02:36.044Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1312972884.1795309305"
- },
- {
-  "visitor_id": "v_10cf30aa",
-  "archetype": "hype",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-22T01:01:44.389Z",
-  "last_seen": "2026-11-22T01:02:16.268Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1993834638.1795309319"
- },
- {
-  "visitor_id": "v_272807e2",
-  "archetype": "hype",
-  "device": "desktop",
-  "device_profile": "Desktop Edge",
-  "first_seen": "2026-11-22T01:01:44.389Z",
-  "last_seen": "2026-11-22T01:02:07.615Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "1509348620.1795309305"
- },
- {
-  "visitor_id": "v_e5b8b6c0",
-  "archetype": "bouncer",
-  "device": "mobile",
-  "device_profile": "iPhone 12",
-  "first_seen": "2026-11-22T01:01:44.389Z",
-  "last_seen": "2026-11-22T01:01:58.106Z",
-  "visits": 1,
-  "purchases": 0,
-  "client_id": "525064740.1795309312"
  }
 ]
