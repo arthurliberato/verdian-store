@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.352466958.1795312988",
+      "value": "GA1.1.1835102454.1795734119",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829872988.234985,
+      "expires": 1830294119.042844,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795312988$o1$g0$t1795312988$j60$l0$h0",
+      "value": "GS2.1.s1795734119$o1$g1$t1795734142$j37$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829872988.272449,
+      "expires": 1830294142.369448,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BRU-MIST\",\"size\":\"11\",\"quantity\":1}]"
         }
       ]
     }
