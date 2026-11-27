@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795647740$o1$g1$t1795647774$j26$l0$h0",
+      "value": "GS2.1.s1795737707$o2$g1$t1795737762$j5$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830207774.865569,
+      "expires": 1830297762.733257,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-BRU-MIST\",\"size\":\"7\",\"quantity\":1}]"
         }
       ]
     }

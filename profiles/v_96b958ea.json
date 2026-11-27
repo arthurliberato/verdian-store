@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.1434531211.1795316507",
+      "value": "GA1.1.591906476.1795737713",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829876507.191334,
+      "expires": 1830297713.254991,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795316507$o1$g1$t1795316551$j16$l0$h0",
+      "value": "GS2.1.s1795737713$o1$g1$t1795737742$j31$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829876551.748877,
+      "expires": 1830297742.294919,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TRJ-FOREST-CREAM\",\"size\":\"M\",\"quantity\":1}]"
+          "value": "[{\"productId\":\"VRD-SND-CREAM-NAVY\",\"size\":\"8.5\",\"quantity\":1}]"
         }
       ]
     }
