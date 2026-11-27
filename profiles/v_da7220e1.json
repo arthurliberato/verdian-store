@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795730522$o2$g1$t1795730575$j7$l0$h0",
+      "value": "GS2.1.s1795795318$o3$g1$t1795795372$j6$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830290575.432837,
+      "expires": 1830355372.835896,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TEE-CARBON\",\"size\":\"S\",\"quantity\":1}]"
         },
         {
           "name": "verdian_sent_purchases",
