@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.627398482.1794870195",
+      "value": "GA1.1.872689862.1795741395",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829430195.147038,
+      "expires": 1830301395.38326,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795316575$o3$g1$t1795316601$j34$l0$h0",
+      "value": "GS2.1.s1795741395$o1$g1$t1795741461$j54$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829876601.319522,
+      "expires": 1830301461.029758,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-SND-SAND\",\"size\":\"11.5\",\"quantity\":2}]"
+          "value": "[]"
         }
       ]
     }
