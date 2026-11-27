@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "_ga",
-      "value": "GA1.1.913390854.1795356234",
+      "value": "GA1.1.1020862164.1795752149",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829916233.734015,
+      "expires": 1830312148.799507,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795356233$o1$g1$t1795356281$j12$l0$h0",
+      "value": "GS2.1.s1795752148$o1$g1$t1795752172$j36$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1829916281.689869,
+      "expires": 1830312172.693997,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-CIM-BASALT\",\"size\":\"13\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
