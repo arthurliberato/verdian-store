@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795633307$o1$g1$t1795633350$j17$l0$h0",
+      "value": "GS2.1.s1795845715$o2$g1$t1795845765$j10$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830193350.281626,
+      "expires": 1830405765.607348,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,11 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-TSH-SLATE\",\"size\":\"XS\",\"quantity\":1}]"
+          "value": "[]"
+        },
+        {
+          "name": "verdian_sent_purchases",
+          "value": "[\"VRD-MX00793K-8AIA\"]"
         }
       ]
     }
