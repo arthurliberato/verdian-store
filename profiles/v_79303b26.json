@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795690907$o3$g1$t1795690949$j18$l0$h0",
+      "value": "GS2.1.s1795885294$o4$g1$t1795885408$j13$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830250949.24147,
+      "expires": 1830445408.983408,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-TSH-CARBON\",\"size\":\"S\",\"quantity\":2}]"
         }
       ]
     }
