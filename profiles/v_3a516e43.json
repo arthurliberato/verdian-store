@@ -1,21 +1,21 @@
 {
   "cookies": [
     {
-      "name": "_ga",
-      "value": "GA1.1.174389568.1795453364",
+      "name": "_ga_5JNZXNTD6R",
+      "value": "GS2.1.s1795849319$o1$g0$t1795849319$j60$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830013364.144119,
+      "expires": 1830409319.795254,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795453364$o1$g1$t1795453443$j45$l0$h0",
+      "name": "_ga",
+      "value": "GA1.1.1361273881.1795849320",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830013443.604895,
+      "expires": 1830409319.795622,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[{\"productId\":\"VRD-BRH-OBSIDIAN\",\"size\":\"XXL\",\"quantity\":1}]"
+          "value": "[]"
         }
       ]
     }
