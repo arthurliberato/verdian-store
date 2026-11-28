@@ -12,10 +12,10 @@
     },
     {
       "name": "_ga_5JNZXNTD6R",
-      "value": "GS2.1.s1795798896$o1$g1$t1795799011$j5$l0$h0",
+      "value": "GS2.1.s1795881715$o2$g1$t1795881834$j13$l0$h0",
       "domain": ".verdian-store.vercel.app",
       "path": "/",
-      "expires": 1830359011.371998,
+      "expires": 1830441834.801007,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -27,7 +27,7 @@
       "localStorage": [
         {
           "name": "verdian_cart",
-          "value": "[]"
+          "value": "[{\"productId\":\"VRD-SCK-CARBON\",\"size\":\"S\",\"quantity\":1}]"
         }
       ]
     }
